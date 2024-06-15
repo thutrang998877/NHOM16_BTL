@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="giohang.css">
+</head>
+<body>
+    <div class="container">
+       <!--<header>
+            <h1>magonn</h1>
+            <nav>
+                <a href="#">Trang chủ</a>
+                <a href="#">Sản phẩm</a>
+                <a href="#">SALE</a>
+                <a href="#">Blog</a>
+                <a href="#">Giới thiệu</a>
+                <a href="#">Giỏ hàng</a>
+                <a href="#">Tài khoản</a>
+            </nav>
+        </header> -->
+        <main>
+            <div class="left-column">
+                <h2>Giỏ hàng</h2>
+                <div class="cart-item">
+                    <button class="remove-item">X</button>
+                    <img src="images/anhBSTmuaHe/hoDinh_trang01.jpg" alt="hoDinh_trang01">
+                    <div class="item-details">
+                        <h3>Hồ Dĩnh</h3>
+                        <p>FF / 00 / NV</p>
+                    </div>
+                    <div class="item-quantity">
+                        <button class="decrease">-</button>
+                        <input type="text" value="1">
+                        <button class="increase">+</button>
+                    </div>
+                    <div class="item-price">
+                        <p>299,000₫</p>
+                    </div>
+                </div>
+                <div class="order-notes">
+                    <label for="order-notes">Ghi chú đơn hàng</label>
+                    <textarea id="order-notes"></textarea>
+                </div>
+            </div>
+            <div class="right-column">
+               <!-- <div class="invoice-option">
+                    <input type="checkbox" id="invoice" name="invoice">
+                    <label for="invoice">Xuất hóa đơn công ty</label>
+                </div>-->
+                <div class="total-price">
+                    <p>TỔNG CỘNG</p>
+                    <p>299,000₫</p>
+                    <!-- <small>(Đã bao gồm VAT nếu có)</small> -->
+                </div>
+                <div class="checkout">
+                    <button id="checkout-button">Thanh Toán</button>
+                </div>
+                <div class="payment-methods">
+                    <img src="images/logo/logo_visa.webp" alt="Visa">
+                    <img src="images/logo/mastercard.svg" alt="Mastercard">
+                    <img src="images/logo/cod.png" alt="COD">
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="giohang.js"></script>
+</body>
+</html>
