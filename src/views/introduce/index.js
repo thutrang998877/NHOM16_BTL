@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 function Introduce() {
   return (
       <div className="body" style={{marginLeft: '4rem', marginRight: '4rem', display: 'flex', flexDirection: 'column', marginBottom: '2rem', alignItems: 'center'}}>
-        <div className='row' style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginBottom: '6rem', width: '100%'}}>
+        <div className='row' style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginBottom: '6rem', width: '100%', height: '30rem'}}>
             <div className='intro-card' style={{width: '30%'}}>
                 <a href='https://www.tunhamay.vn/magazine/11-hang-gai/'>
                 <img style={{borderRadius: '0.5rem', height: '20rem !important;'}} src='https://www.tunhamay.vn/content/images/size/w1600/2024/03/IMG_2215.jpeg'></img>
@@ -29,7 +29,7 @@ function Introduce() {
                 <div>Tháng 3 01, 2024 — STYLE & STORIES</div>
             </div>
         </div>
-        <div className='row' style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginBottom: '6rem', width: '100%'}}>
+        <div className='row' style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginBottom: '6rem', width: '100%', height: '30rem'}}>
             <div className='intro-card' style={{width: '30%'}}>
                 <a href='https://www.tunhamay.vn/magazine/ao-dai-tu-hoa/'>
                     <img style={{borderRadius: '0.5rem', height: '20rem !important;'}} src='https://www.tunhamay.vn/content/images/size/w1600/2023/09/IMG_4213.jpeg'></img>
