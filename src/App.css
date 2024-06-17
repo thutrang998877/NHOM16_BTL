@@ -137,7 +137,7 @@ cursor: pointer;
   width: 100%;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding-bottom: 0.5rem;
-  height: calc(100vh - 3.5rem);
+  height: calc(100vh - 10rem);
 }
 
 .image-cards {

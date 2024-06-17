@@ -8,6 +8,7 @@ import Product from './views/products';
 import { useState } from 'react';
 import ScrollToTop from "react-scroll-to-top";
 import ProductDetail from './views/productDetail';
+import Cart from './views/carts';
 
 const AppRoutes = () => {
   return (
@@ -20,6 +21,9 @@ const AppRoutes = () => {
         )} />
       <Route path="/product_detail/*" element={(
         <ProductDetail />
+        )} />
+      <Route path="/carts/*" element={(
+        <Cart />
         )} />
       <Route path="/*" element={<Home />} />
     </Routes>
@@ -59,10 +63,10 @@ function App() {
         <div className="header">
           <a href='/home'>Tủ nhà mây</a>
           <div className="menu"
-            onMouseLeave={() => setIsShowingCollection(false)}
           >
             <a>Trang chủ</a>
             <a href='/products'
+            onMouseLeave={() => setIsShowingCollection(false)}
             onMouseEnter={() => setIsShowingCollection(true)}
             >
               Sản phẩm &#9663;
@@ -94,7 +98,7 @@ function App() {
                 </div>
               }
             </a>
-            <a>Giỏ hàng</a>
+            <a href='/carts'>Giỏ hàng</a>
             <a>Thanh toán</a>
             <a>Giới thiệu</a>
           </div>

@@ -43,7 +43,7 @@ function ProductDetail() {
 
     const currentCarts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts')) : null
     if (!currentCarts) {
-        localStorage.setItem('carts', JSON.stringify([{key: currentProduct.key, color: currentColor, quantity: +numOfProduct}]))
+        localStorage.setItem('carts', JSON.stringify([{name: currentProduct.name, key: currentProduct.key, color: currentColor, quantity: +numOfProduct, link: currentProduct.link, price: currentProduct.price}]))
     } else {
         const indexSameProductExisted = currentCarts.findIndex(item => item.key === currentProduct.key && item.color === currentColor)
         if (indexSameProductExisted !== -1) {
@@ -52,7 +52,7 @@ function ProductDetail() {
             window.alert('Đã thêm vào giỏ hàng!')
             return
         }
-        currentCarts.push({key: currentProduct.key, color: currentColor, quantity: +numOfProduct})
+        currentCarts.push({name: currentProduct.name, key: currentProduct.key, color: currentColor, quantity: +numOfProduct, link: currentProduct.link, price: currentProduct.price})
         localStorage.setItem('carts', JSON.stringify(currentCarts))
         window.alert('Đã thêm vào giỏ hàng!')
     }
@@ -64,7 +64,7 @@ function ProductDetail() {
         return
     }
 
-    localStorage.setItem('buyNow', JSON.stringify([{key: currentProduct.key, color: currentColor, quantity: +numOfProduct}]))
+    localStorage.setItem('buyNow', JSON.stringify([{name: currentProduct.name, key: currentProduct.key, color: currentColor, quantity: +numOfProduct, link: currentProduct.link, price: currentProduct.price}]))
     window.location.replace('/carts/buy_now')
   }
 
@@ -129,7 +129,7 @@ function ProductDetail() {
             <div className='same-collection-cards'>
                 {sameProducts.length > 0 && sameProducts.map(it => {
                     return <div className='same-collection-card'>
-                        <a className='card-image' href={`/product_detail?id=${it.key}`}>
+                        <a className='card-image-detail' href={`/product_detail?id=${it.key}`}>
                             <img src={it.link}></img>
                         </a>
                         <div className='card-product-name'>{it.name}</div>
