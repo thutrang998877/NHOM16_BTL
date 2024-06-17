@@ -7,16 +7,20 @@ export const PRODUCTS = [
       collection: 'spring',
       price: 299000,
       description: 'yenMinhTet_xanhcom02',
-      color: ['green', 'cream', 'red'],
+      color: ['green', 'gray', 'red'],
     },
     {
       key: 2,
       name: 'yenMinhTet_xanhcom02',
+      linksWithAngle: [
+        'https://bizweb.dktcdn.net/100/326/676/files/401095303-1404334063791219-5668493901391269089-n.jpg?v=1703486158592',
+        'https://product.hstatic.net/200000544093/product/diep_ha__2__50c7aa23a8424ac28a8916cb8749ff77.jpg',
+      ],
       link: 'https://bizweb.dktcdn.net/100/326/676/files/401095303-1404334063791219-5668493901391269089-n.jpg?v=1703486158592',
       collection: 'spring',
       price: 300000,
       description: 'yenMinhTet_xanhcom02',
-      color: ['green', 'cream', 'red'],
+      color: ['green', 'gray', 'red'],
     },
     {
       key: 3,
@@ -25,7 +29,7 @@ export const PRODUCTS = [
       collection: 'spring',
       price: 299000,
       description: 'yenMinhTet_xanhcom02',
-      color: ['green', 'cream', 'red'],
+      color: ['green', 'gray', 'red'],
     },
     {
       key: 4,
@@ -34,7 +38,7 @@ export const PRODUCTS = [
       collection: 'spring',
       price: 299000,
       description: 'yenMinhTet_xanhcom02',
-      color: ['green', 'cream', 'red'],
+      color: ['green', 'gray', 'red'],
     },
   ],
   [
@@ -45,7 +49,7 @@ export const PRODUCTS = [
       collection: 'spring',
       price: 299000,
       description: 'yenMinhTet_xanhcom02',
-      color: ['green', 'cream', 'red'],
+      color: ['green', 'gray', 'red'],
     },
     {
       key: 6,
@@ -54,7 +58,7 @@ export const PRODUCTS = [
       collection: 'spring',
       price: 299000,
       description: 'yenMinhTet_xanhcom02',
-      color: ['green', 'cream', 'red'],
+      color: ['green', 'gray', 'red'],
     },
     {
       key: 7,
@@ -63,7 +67,7 @@ export const PRODUCTS = [
       collection: 'spring',
       price: 299000,
       description: 'yenMinhTet_xanhcom02',
-      color: ['green', 'cream', 'red'],
+      color: ['green', 'gray', 'red'],
     },
     {
       key: 8,
@@ -72,7 +76,7 @@ export const PRODUCTS = [
       collection: 'summer',
       price: 299000,
       description: 'yenMinhTet_xanhcom02',
-      color: ['green', 'cream', 'red'],
+      color: ['green', 'gray', 'red'],
     },
   ],
   [
@@ -83,7 +87,7 @@ export const PRODUCTS = [
       collection: 'summer',
       price: 299000,
       description: 'yenMinhTet_xanhcom02',
-      color: ['green', 'cream', 'red'],
+      color: ['green', 'gray', 'red'],
     },
     {
       key: 10,
@@ -92,7 +96,7 @@ export const PRODUCTS = [
       collection: 'summer',
       price: 299000,
       description: 'yenMinhTet_xanhcom02',
-      color: ['green', 'cream', 'red'],
+      color: ['green', 'gray', 'red'],
     },
     {
       key: 11,
@@ -101,7 +105,7 @@ export const PRODUCTS = [
       collection: 'summer',
       price: 299000,
       description: 'yenMinhTet_xanhcom02',
-      color: ['green', 'cream', 'red'],
+      color: ['green', 'gray', 'red'],
     },
     {
       key: 12,
@@ -110,7 +114,7 @@ export const PRODUCTS = [
       collection: 'summer',
       price: 299000,
       description: 'yenMinhTet_xanhcom02',
-      color: ['green', 'cream', 'red'],
+      color: ['green', 'gray', 'red'],
     },
   ],
   [
@@ -121,7 +125,7 @@ export const PRODUCTS = [
       collection: 'winter',
       price: 299000,
       description: 'yenMinhTet_xanhcom02',
-      color: ['green', 'cream', 'red'],
+      color: ['green', 'gray', 'red'],
     },
     {
       key: 10,
@@ -130,7 +134,7 @@ export const PRODUCTS = [
       collection: 'winter',
       price: 299000,
       description: 'yenMinhTet_xanhcom02',
-      color: ['green', 'cream', 'red'],
+      color: ['green', 'gray', 'red'],
     },
     {
       key: 11,
@@ -139,7 +143,7 @@ export const PRODUCTS = [
       collection: 'winter',
       price: 299000,
       description: 'yenMinhTet_xanhcom02',
-      color: ['green', 'cream', 'red'],
+      color: ['green', 'gray', 'red'],
     },
     {
       key: 12,
@@ -148,7 +152,7 @@ export const PRODUCTS = [
       collection: 'winter',
       price: 299000,
       description: 'yenMinhTet_xanhcom02',
-      color: ['green', 'cream', 'red'],
+      color: ['green', 'gray', 'red'],
     },
   ]
 ]

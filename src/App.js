@@ -7,6 +7,7 @@ import Home from './views/Home';
 import Product from './views/products';
 import { useState } from 'react';
 import ScrollToTop from "react-scroll-to-top";
+import ProductDetail from './views/productDetail';
 
 const AppRoutes = () => {
   return (
@@ -16,6 +17,9 @@ const AppRoutes = () => {
         )} />
       <Route path="/products/*" element={(
         <Product />
+        )} />
+      <Route path="/product_detail/*" element={(
+        <ProductDetail />
         )} />
       <Route path="/*" element={<Home />} />
     </Routes>
