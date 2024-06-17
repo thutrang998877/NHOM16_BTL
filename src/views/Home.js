@@ -31,22 +31,22 @@ function Home() {
           <div className='collection-container'>
             <div style={{fontWeight: "bold", fontSize: "2rem"}}>Collection</div>
             <div className='home-collections'>
-              <div className='collection'>
+              <a className='collection' href='/products/spring'>
                 <div className='collection-title'>Xuân</div>
                 <img className='collection-image' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8DyeKqdRkRe78ocuLC2a3Qpx329bYg2WWzw&s'></img>
-              </div>
-              <div className='collection'>
+              </a>
+              <a className='collection' href='/products/summer'>
                 <div className='collection-title'>Hạ</div>
                 <img className='collection-image' src='https://product.hstatic.net/200000265163/product/61dae0b7-4c60-42b8-8bd5-832657b4fa39_7b37084729994fc09b6492cee6ef986d_master.jpg'></img>
-              </div>
-              <div className='collection'>
+              </a>
+              <a className='collection' href='/products/fall'>
                 <div className='collection-title'>Thu</div>
                 <img className='collection-image' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK3IcQKkPd0UCXQcru6RIFR2gw4XssKSOLcw&s'></img>
-              </div>
-              <div className='collection'>
+              </a>
+              <a className='collection' href='/products/winter'>
                 <div className='collection-title'>Đông</div>
                 <img className='collection-image' src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_vU8LzkWR5nwllUDy2ozt_lnC-Ws0xxMPJQ&s'></img>
-              </div>
+              </a>
             </div>
           </div>
           <Swiper
