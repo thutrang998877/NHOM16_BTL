@@ -95,7 +95,7 @@ function Home() {
               </div>
               <div className='sale-content'>
                 <div className='sale-item-title'>
-                  Hotline: 0888 482 886
+                  Hotline: 039 972 5203
                 </div>
                 <div className='sale-item-content'>
                   Đặt hàng nhanh chóng và thuận tiện
