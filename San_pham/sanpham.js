@@ -1,15 +1,15 @@
-// JavaScript để thêm chức năng vào nút wishlist
-document.addEventListener('DOMContentLoaded', function () {
-    const wishlistButtons = document.querySelectorAll('.wishlist-btn');
+document.addEventListener("DOMContentLoaded", function() {
+    const productContainer = document.querySelector('.product-container');
+    const productImage = document.querySelector('.product-image');
+    const productHover = document.querySelector('.product-hover');
 
-    wishlistButtons.forEach(button => {
-        button.addEventListener('click', function () {
-            this.classList.toggle('added');
-            if (this.classList.contains('added')) {
-                this.textContent = '❤️';
-            } else {
-                this.textContent = '🤍';
-            }
-        });
+    productContainer.addEventListener('mouseover', function() {
+        productImage.style.display = 'none';
+        productHover.style.display = 'block';
+    });
+
+    productContainer.addEventListener('mouseout', function() {
+        productImage.style.display = 'block';
+        productHover.style.display = 'none';
     });
 });
