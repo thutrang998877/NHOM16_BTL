@@ -112,5 +112,43 @@ export const PRODUCTS = [
       description: 'yenMinhTet_xanhcom02',
       color: ['green', 'cream', 'red'],
     },
+  ],
+  [
+    {
+      key: 9,
+      name: 'yenMinhTet_xanhcom02',
+      link: 'https://product.hstatic.net/200000544093/product/diep_ha__2__50c7aa23a8424ac28a8916cb8749ff77.jpg',
+      collection: 'winter',
+      price: 299000,
+      description: 'yenMinhTet_xanhcom02',
+      color: ['green', 'cream', 'red'],
+    },
+    {
+      key: 10,
+      name: 'yenMinhTet_xanhcom02',
+      link: 'https://product.hstatic.net/200000544093/product/diep_ha__2__50c7aa23a8424ac28a8916cb8749ff77.jpg',
+      collection: 'winter',
+      price: 299000,
+      description: 'yenMinhTet_xanhcom02',
+      color: ['green', 'cream', 'red'],
+    },
+    {
+      key: 11,
+      name: 'yenMinhTet_xanhcom02',
+      link: 'https://product.hstatic.net/200000544093/product/diep_ha__2__50c7aa23a8424ac28a8916cb8749ff77.jpg',
+      collection: 'winter',
+      price: 299000,
+      description: 'yenMinhTet_xanhcom02',
+      color: ['green', 'cream', 'red'],
+    },
+    {
+      key: 12,
+      name: 'yenMinhTet_xanhcom02',
+      link: 'https://product.hstatic.net/200000544093/product/diep_ha__2__50c7aa23a8424ac28a8916cb8749ff77.jpg',
+      collection: 'winter',
+      price: 299000,
+      description: 'yenMinhTet_xanhcom02',
+      color: ['green', 'cream', 'red'],
+    },
   ]
 ]
