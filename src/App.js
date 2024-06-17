@@ -3,12 +3,13 @@ import {
   Routes,
   Route
 } from 'react-router-dom'
-import Home from './views/Home';
-import Product from './views/products';
-import { useState } from 'react';
-import ScrollToTop from "react-scroll-to-top";
-import ProductDetail from './views/productDetail';
-import Cart from './views/carts';
+import Home from './views/Home'
+import Product from './views/products'
+import { useState } from 'react'
+import ScrollToTop from "react-scroll-to-top"
+import ProductDetail from './views/productDetail'
+import Cart from './views/carts'
+import Payment from './views/payment'
 
 const AppRoutes = () => {
   return (
@@ -24,6 +25,9 @@ const AppRoutes = () => {
         )} />
       <Route path="/carts/*" element={(
         <Cart />
+        )} />
+      <Route path="/payment/*" element={(
+        <Payment />
         )} />
       <Route path="/*" element={<Home />} />
     </Routes>
@@ -99,7 +103,6 @@ function App() {
               }
             </a>
             <a href='/carts'>Giỏ hàng</a>
-            <a>Thanh toán</a>
             <a>Giới thiệu</a>
           </div>
         </div>

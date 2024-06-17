@@ -32,7 +32,7 @@ function Cart() {
     })
 
     setTotal(initTotal)
-  }, productsInCart)
+  }, [productsInCart])
 
   const increaseToCartByKey = (key, color) => {
     const nextProductsInCart = [...productsInCart]
