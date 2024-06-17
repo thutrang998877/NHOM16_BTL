@@ -35,6 +35,29 @@ function ProductDetail() {
     setNumOfProduct(numOfProduct - 1)
   }
 
+  const addToCart = () => {
+    if (currentColor === '') {
+        window.alert('Vui lòng chọn màu!')
+        return
+    }
+
+    const currentCarts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts')) : null
+    if (!currentCarts) {
+        localStorage.setItem('carts', JSON.stringify([{key: currentProduct.key, color: currentColor, quantity: +numOfProduct}]))
+    } else {
+        const indexSameProductExisted = currentCarts.findIndex(item => item.key === currentProduct.key && item.color === currentColor)
+        if (indexSameProductExisted !== -1) {
+            currentCarts[indexSameProductExisted].quantity = currentCarts[indexSameProductExisted].quantity + +numOfProduct
+            localStorage.setItem('carts', JSON.stringify(currentCarts))
+            window.alert('Đã thêm vào giỏ hàng!')
+            return
+        }
+        currentCarts.push({key: currentProduct.key, color: currentColor, quantity: +numOfProduct})
+        localStorage.setItem('carts', JSON.stringify(currentCarts))
+        window.alert('Đã thêm vào giỏ hàng!')
+    }
+  }
+
   return (
       <div className="body">
         <div className='main-detail'>
@@ -63,7 +86,7 @@ function ProductDetail() {
                         <input type='number' className="number-to-text"  value={numOfProduct} min={1} max={99} onChange={handleChangeNumOfProduct}></input>
                         <div className='up-down' onClick={clickIncrease}>&#43;</div>
                     </div>
-                    <button className='add-to-cart-button'>Thêm vào giỏ</button>
+                    <button className='add-to-cart-button' onClick={addToCart}>Thêm vào giỏ</button>
                 </div>
                 <button className='buy-now-button'>Mua ngay</button>
 
@@ -88,7 +111,7 @@ function ProductDetail() {
                     <input type='number' className="number-to-text quick-number-to-text"  value={numOfProduct} min={1} max={99} onChange={handleChangeNumOfProduct}></input>
                     <div className='quick-up-down' onClick={clickIncrease}>&#43;</div>
                 </div>
-                <button className='quick-add-to-cart-button'>Thêm vào giỏ</button>
+                <button className='quick-add-to-cart-button' onClick={addToCart}>Thêm vào giỏ</button>
             </div>
         </div>
         <div className='same-collection-container'>
