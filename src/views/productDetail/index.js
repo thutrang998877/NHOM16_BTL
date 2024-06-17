@@ -1,5 +1,5 @@
 import './productDetail.css'
-import { getProductById } from '../../helper/common';
+import { getProductById, getProductsByCollection } from '../../helper/common';
 import { useEffect, useState } from 'react';
 
 function ProductDetail() {
@@ -15,6 +15,7 @@ function ProductDetail() {
     window.location.replace('/home')
   }
   const [currentProduct, setCurrentProduct] = useState(getProductById(productId))
+  const [sameProducts, setSameProducts] = useState(getProductsByCollection(currentProduct.collection, 5))
   const [numOfProduct, setNumOfProduct] = useState(1)
   const handleChangeNumOfProduct = (e) => {
     setNumOfProduct(+e.target.value)
@@ -92,7 +93,17 @@ function ProductDetail() {
         </div>
         <div className='same-collection-container'>
             <h1>Sản phẩm cùng loại</h1>
-            <div className='same-collection-cards'></div>
+            <div className='same-collection-cards'>
+                {sameProducts.length > 0 && sameProducts.map(it => {
+                    return <div className='same-collection-card'>
+                        <a className='card-image' href={`/product_detail?id=${it.key}`}>
+                            <img src={it.link}></img>
+                        </a>
+                        <div className='card-product-name'>{it.name}</div>
+                        <div className='card-product-price'>{USDollar.format(it.price)}</div>
+                    </div>
+                })}
+            </div>
         </div>
       </div>
   );

@@ -9,4 +9,12 @@ export const getProductById = (id) =>  {
       }
     }
     return null;
-  }
+}
+
+export const getProductsByCollection = (collection, numOfProducts) => {
+  const flattenedProducts = PRODUCTS.flat();
+
+  const filteredProducts = flattenedProducts.filter(product => product.collection === collection);
+
+  return filteredProducts.slice(0, numOfProducts);
+}
