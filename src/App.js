@@ -10,6 +10,7 @@ import ScrollToTop from "react-scroll-to-top"
 import ProductDetail from './views/productDetail'
 import Cart from './views/carts'
 import Payment from './views/payment'
+import Introduce from './views/introduce'
 
 const AppRoutes = () => {
   return (
@@ -28,6 +29,9 @@ const AppRoutes = () => {
         )} />
       <Route path="/payment/*" element={(
         <Payment />
+        )} />
+      <Route path="/introduce" element={(
+        <Introduce />
         )} />
       <Route path="/*" element={<Home />} />
     </Routes>
@@ -103,7 +107,7 @@ function App() {
               }
             </a>
             <a href='/carts'>Giỏ hàng</a>
-            <a>Giới thiệu</a>
+            <a href='/introduce'>Giới thiệu</a>
           </div>
         </div>
         <AppRoutes />
