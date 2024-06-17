@@ -58,6 +58,16 @@ function ProductDetail() {
     }
   }
 
+  const buyNow = () => {
+    if (currentColor === '') {
+        window.alert('Vui lòng chọn màu!')
+        return
+    }
+
+    localStorage.setItem('buyNow', JSON.stringify([{key: currentProduct.key, color: currentColor, quantity: +numOfProduct}]))
+    window.location.replace('/carts/buy_now')
+  }
+
   return (
       <div className="body">
         <div className='main-detail'>
@@ -88,7 +98,7 @@ function ProductDetail() {
                     </div>
                     <button className='add-to-cart-button' onClick={addToCart}>Thêm vào giỏ</button>
                 </div>
-                <button className='buy-now-button'>Mua ngay</button>
+                <button className='buy-now-button' onClick={buyNow}>Mua ngay</button>
 
                 <div style={{fontSize: '1.5rem', marginTop: '1rem', fontWeight: 'bold'}}>Mô tả</div>
             </div>
