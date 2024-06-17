@@ -46,7 +46,8 @@ const orderProductsByPrice = (products, chunkSize, isIncrease) => {
 
 function Product() {
   const currentPath = window.location.pathname.replace('/products/', '')
-  const [currentProduct, setCurrentProduct] = useState(currentPath !== 'products' ? filterAndReconstructProducts(PRODUCTS, currentPath, 4) : PRODUCTS)
+  console.info(currentPath)
+  const [currentProduct, setCurrentProduct] = useState(!currentPath.includes('products') ? filterAndReconstructProducts(PRODUCTS, currentPath, 4) : PRODUCTS)
   const USDollar = new Intl.NumberFormat('vi-VI', {
     style: 'currency',
     currency: 'VND',
