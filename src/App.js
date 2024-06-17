@@ -99,25 +99,21 @@ function App() {
         <div className="footer">
           <div className="link-items-container">
             <div className="link-items">
-              <div className="links">Địa chỉ: 110 Thái Hà, Đống Đa, Hà Nội</div>
-              <div className="links">Số điện thoại: 0888 482 886</div>
-              <div className="links">Email: cskh@magonn.com</div>
-              <div className="links">© Bản quyền thuộc về công ty TNHH Chi An</div>
+              <div className="links">THÔNG TIN</div>
+              <div className="links">Địa chỉ: 137 Tôn Đức Thắng, Đống Đa, Hà Nội</div>
+              <div className="links">Số điện thoại: 039 972 5203</div>
+              <div className="links">Email: cskh@tunhamay.com</div>
             </div>
             <div className="link-items">
-              <div className="links">Chính sách</div>
-              <div className="links">Hệ thống cửa hàng</div>
-              <div className="links">Hướng dẫn mua hàng</div>
-              <div className="links">Chính sách mua hàng</div>
-              <div className="links">Chính sách thẻ khách hàng thân thiết</div>
-              <div className="links">Chính sách bảo mật thông tin khách hàng</div>
+              <div className="links">CHÍNH SÁCH</div>
+              <div className="links">Chính sách thanh toán</div>
+              <div className="links">Chíng sách đổi và trả hàng</div>
+              <div className="links">Chính sách vận chuyển</div>
             </div>
             <div className="link-items">
               <div className="links">HỖ TRỢ KHÁCH HÀNG</div>
-              <div className="links">Chính sách mua hàng</div>
-              <div className="links">Hướng dẫn mua hàng</div>
-              <div className="links">Chính sách thẻ khách hàng thân thiết</div>
-              <div className="links">Hệ thống cửa hàng</div>
+              <div className="links">Đội ngũ</div>
+              <div className="links">Liên hệ</div>
             </div>
             <div className="link-items">
               <div className="links">ĐĂNG KÝ NHẬN TIN</div>
