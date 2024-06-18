@@ -121,10 +121,6 @@ function App() {
               <div className="links" style={{color: "red"}}>Logos - add later</div>
             </div>
           </div>
-          <div className="about-image">
-            <img class="img-fluid" src="//theme.hstatic.net/200000623993/1001008164/14/logo_bct.png?v=1395" width="350" alt="Logo bộ công thương" style={{marginRight: "2rem"}}/>
-            <img class=" img-fluid" src="//theme.hstatic.net/200000623993/1001008164/14/footer_trustbadge.jpg?v=1395" alt="Phương thức thanh toán" style={{marginLeft: "2rem"}}></img>
-          </div>
         </div>
       </div>
     </Router>
