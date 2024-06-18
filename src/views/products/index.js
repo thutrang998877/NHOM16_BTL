@@ -46,7 +46,6 @@ const orderProductsByPrice = (products, chunkSize, isIncrease) => {
 
 function Product() {
   const currentPath = window.location.pathname.replace('/products/', '')
-  console.info(currentPath)
   const [currentProduct, setCurrentProduct] = useState(!currentPath.includes('products') ? filterAndReconstructProducts(PRODUCTS, currentPath, 4) : PRODUCTS)
   const USDollar = new Intl.NumberFormat('vi-VI', {
     style: 'currency',
@@ -114,9 +113,9 @@ function Product() {
               {item.map(it => {
                 return (
                   <div className='card' key={it.key}>
-                    <div className='card-image'>
+                    <a className='card-image' href={`/product_detail?id=${it.key}`}>
                       <img src={it.link}></img>
-                    </div>
+                    </a>
                     <div className='card-detail'>
                       <div className='card-branch-name'>Mây design</div>
                       <div className='card-product-name'>{it.name}</div>

@@ -3,10 +3,14 @@ import {
   Routes,
   Route
 } from 'react-router-dom'
-import Home from './views/Home';
-import Product from './views/products';
-import { useState } from 'react';
-import ScrollToTop from "react-scroll-to-top";
+import Home from './views/Home'
+import Product from './views/products'
+import { useState } from 'react'
+import ScrollToTop from "react-scroll-to-top"
+import ProductDetail from './views/productDetail'
+import Cart from './views/carts'
+import Payment from './views/payment'
+import Introduce from './views/introduce'
 
 const AppRoutes = () => {
   return (
@@ -16,6 +20,18 @@ const AppRoutes = () => {
         )} />
       <Route path="/products/*" element={(
         <Product />
+        )} />
+      <Route path="/product_detail/*" element={(
+        <ProductDetail />
+        )} />
+      <Route path="/carts/*" element={(
+        <Cart />
+        )} />
+      <Route path="/payment/*" element={(
+        <Payment />
+        )} />
+      <Route path="/introduce" element={(
+        <Introduce />
         )} />
       <Route path="/*" element={<Home />} />
     </Routes>
@@ -55,10 +71,10 @@ function App() {
         <div className="header">
           <a href='/home'>Tủ nhà mây</a>
           <div className="menu"
-            onMouseLeave={() => setIsShowingCollection(false)}
           >
             <a>Trang chủ</a>
             <a href='/products'
+            onMouseLeave={() => setIsShowingCollection(false)}
             onMouseEnter={() => setIsShowingCollection(true)}
             >
               Sản phẩm &#9663;
@@ -90,9 +106,8 @@ function App() {
                 </div>
               }
             </a>
-            <a>Giỏ hàng</a>
-            <a>Thanh toán</a>
-            <a>Giới thiệu</a>
+            <a href='/carts'>Giỏ hàng</a>
+            <a href='/introduce'>Giới thiệu</a>
           </div>
         </div>
         <AppRoutes />

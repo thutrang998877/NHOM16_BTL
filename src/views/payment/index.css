@@ -1,0 +1,49 @@
+.payment-body {
+    display: flex;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.payment-detail {
+    flex-grow: 1;
+    background-color: rgb(243, 243, 243);
+    margin-bottom: 2rem;
+}
+
+.information-body {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+input {
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+    margin-right: 2rem;
+    border: 1px solid rgb(188, 188, 188);
+}
+
+.confirm-payment {
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+    margin-right: 2rem;
+    background-color: black;
+    color: white;
+}
+
+.product-payment-detail {
+    height: 5rem;
+    display: flex;
+}
+
+.side-preview-img-payment {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    width: 3rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 0.3rem;
+}
