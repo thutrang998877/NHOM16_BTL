@@ -13,6 +13,9 @@ import Payment from './views/payment'
 import Introduce from './views/introduce'
 import { SearchOutlined } from '@ant-design/icons'
 import { Button, Tooltip } from 'antd';
+import Story from './views/story'
+import About from './views/about'
+import Policy from './views/policy'
 
 const AppRoutes = () => {
   return (
@@ -35,6 +38,15 @@ const AppRoutes = () => {
       <Route path="/introduce" element={(
         <Introduce />
         )} />
+      <Route path="/about" element={(
+        <About />
+      )} />
+      <Route path="/policy" element={(
+        <Policy />
+      )} />
+      <Route path="/story" element={(
+        <Story />
+      )} />
       <Route path="/*" element={<Home />} />
     </Routes>
   )
@@ -62,6 +74,7 @@ const winterCollectionPath = [
 
 function App() {
   const [isShowingCollection, setIsShowingCollection] = useState(false)
+  const [isShowingIntroduce, setIsShowingIntroduce] = useState(false)
   const [collectionPaths, setCollectionPaths] = useState([
   'https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/448506007_988771586165204_2963683013417972027_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF_GLDTnaj6sBnN8Ph2EuvhIkEPD-GM4egiQQ8P4Yzh6HzzrmbMnS_KJ_U3-AnutKc9NlaD2H2RoIRgdMsXWLZp&_nc_ohc=XptmSTZyRtMQ7kNvgEro6GQ&_nc_ht=scontent.fhan14-1.fna&oh=00_AYBhVrCi8DFGgTy6bJuguxXAH6Quldl-_DL2f7BGjf_qiQ&oe=6678D79D',
   'https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/448629089_988772196165143_7726208503917413772_n.jpg?stp=cp6_dst-jpg&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGiYSk1XNJ52KEqh0KuhzWeoipu1-_tIl-iKm7X7-0iX7jndsOPFVWie92XMAGGcFbQr59Vyg7F4mknWgYbPaUw&_nc_ohc=BMyKlhNeAP0Q7kNvgHY7v5m&_nc_ht=scontent.fhan14-4.fna&oh=00_AYCTMn2YFt5sm9yYgaclD7mmeED73lJ7wAi_Xx8PKwOqyg&oe=6678ECEA',
@@ -108,7 +121,21 @@ function App() {
               }
             </a>
             <a href='/carts'>Giỏ hàng</a>
-            <a href='/introduce'>Giới thiệu</a>
+            <a href='/introduce'
+              onMouseLeave={() => setIsShowingIntroduce(false)}
+              onMouseEnter={() => setIsShowingIntroduce(true)}
+            >
+              Giới thiệu
+              {isShowingIntroduce && <div className='introduce-options'>
+                <a href='/story'
+                >Câu chuyện thương hiệu</a>
+                <a href='/about'
+                >Đội ngũ</a>
+                <a href='/policy'
+                >Chính sách</a>
+              </div>
+              }
+            </a>
           </div>
           <div className='action'>
             <Button type="dashed" icon={<SearchOutlined />}>

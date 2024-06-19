@@ -1,0 +1,22 @@
+.top-image {
+    width: 100%;
+}
+
+.story-image {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.content-image-right {
+    height: 20rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-right {
+    height: 20rem;
+    width: 40rem;
+}

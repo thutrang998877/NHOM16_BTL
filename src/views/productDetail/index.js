@@ -1,8 +1,10 @@
 import './productDetail.css'
 import { getProductById, getProductsByCollection } from '../../helper/common';
 import { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 function ProductDetail() {
+    const navigate = useNavigate();
   const USDollar = new Intl.NumberFormat('vi-VI', {
     style: 'currency',
     currency: 'VND',
@@ -12,7 +14,7 @@ function ProductDetail() {
 
   const productId = window.location.search.replace('?id=', '')
   if (!productId) {
-    window.location.replace('/home')
+    navigate('/home')
   }
   const [currentProduct, setCurrentProduct] = useState(getProductById(productId))
   const [sameProducts, setSameProducts] = useState(getProductsByCollection(currentProduct.collection, 5))
@@ -65,7 +67,7 @@ function ProductDetail() {
     }
 
     localStorage.setItem('buyNow', JSON.stringify([{name: currentProduct.name, key: currentProduct.key, color: currentColor, quantity: +numOfProduct, link: currentProduct.link, price: currentProduct.price}]))
-    window.location.replace('/carts/buy_now')
+    navigate('/carts/buy_now')
   }
 
   return (

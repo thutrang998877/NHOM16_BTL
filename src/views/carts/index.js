@@ -1,15 +1,12 @@
 import '../../App.css';
 import './index.css'
-import { PRODUCTS } from '../../constants/product'
 import { useEffect, useState } from 'react';
+import { useNavigate } from "react-router-dom";
 
 function Cart() {
   const currentPath = window.location.pathname.replace('/carts/', '')
+  const navigate = useNavigate();
   const [productsInCart, setProductsInCart] = useState(currentPath === 'buy_now' ? JSON.parse(localStorage.getItem('buyNow')) : JSON.parse(localStorage.getItem('carts')))
-  if (!productsInCart) {
-    window.alert('Chưa có sản phẩm, về nhà với Mây nhé!')
-    window.location.replace('/home')
-  }
   const USDollar = new Intl.NumberFormat('vi-VI', {
     style: 'currency',
     currency: 'VND',
@@ -22,9 +19,10 @@ function Cart() {
   const [total, setTotal] = useState(initTotal)
 
   useEffect(() => {
-    if (!productsInCart) {
+    if (!productsInCart || productsInCart.length === 0) {
         window.alert('Chưa có sản phẩm, về nhà với Mây nhé!')
-        window.location.replace('/home')
+        navigate('/home')
+        return
     }
     let initTotal = 0
     productsInCart && productsInCart.forEach(item => {
