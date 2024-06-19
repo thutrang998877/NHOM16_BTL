@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 function Home() {
   const [banners, setBanner] = useState([
-    "https://daisusilk.vn/wp-content/uploads/2020/03/banner-Ao-Dai-032020-scaled.jpg",
+    "https://magentavintage.vn/wp-content/uploads/2023/11/grid40-scaled.jpg",
     "https://pubcdn.ivymoda.com/files/news/2023/01/03/chaugia.jpg",
     "https://riccadesign.vn/wp-content/uploads/2021/04/z2428760593208_c072af971319aefff7b63d2461915114.jpg",
   ])
@@ -18,16 +18,18 @@ function Home() {
 
   return (
       <div className="body">
-        <Swiper
-            spaceBetween={0}
-            slidesPerView={1}
-            loop={true}
-            autoplay={{ delay: 200 }}
-          >
-            {banners.length && banners.map(item => {
-              return <SwiperSlide><div className='swiper-slide-banner'><img style={{width: '100%'}} src={`${item}`}></img></div></SwiperSlide>
-            })}
-          </Swiper>
+        <div style={{width: '100%', overflow: 'hidden'}}>
+          <Swiper
+              spaceBetween={0}
+              slidesPerView={1}
+              loop={true}
+              autoplay={{ delay: 200 }}
+            >
+              {banners.length && banners.map(item => {
+                return <SwiperSlide><div className='swiper-slide-banner'><img style={{width: '100%'}} src={`${item}`}></img></div></SwiperSlide>
+              })}
+            </Swiper>
+        </div>
           <div className='collection-container'>
             <div style={{fontWeight: "bold", fontSize: "2rem"}}>BỘ SƯU TẬP</div>
             <div className='home-collections'>
@@ -49,16 +51,18 @@ function Home() {
               </a>
             </div>
           </div>
-          <Swiper
-            spaceBetween={0}
-            slidesPerView={1}
-            loop={true}
-            autoplay={{ delay: 200 }}
-          >
-            {bannerMid.length && bannerMid.map(item => {
-              return <SwiperSlide><div className='swiper-slide-banner'><img style={{width: '100%'}} src={`${item}`}></img></div></SwiperSlide>
-            })}
-          </Swiper>
+          <div style={{width: '100%', overflow: 'hidden'}}>
+            <Swiper
+              spaceBetween={0}
+              slidesPerView={1}
+              loop={true}
+              autoplay={{ delay: 200 }}
+            >
+              {bannerMid.length && bannerMid.map(item => {
+                return <SwiperSlide><div className='swiper-slide-banner'><img style={{width: '100vw'}} src={`${item}`}></img></div></SwiperSlide>
+              })}
+            </Swiper>
+          </div>
           <div className='sales'>
             <div className='sale-item'>
               <div className='sale-image'>

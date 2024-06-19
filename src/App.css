@@ -1,8 +1,14 @@
+body {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
 .App {
   display: flex;
   flex-direction: column;
-  width: 100%;
   min-height: 100vh;
+  width: 100%;
 }
 
 .header {
@@ -50,7 +56,7 @@
 }
 
 .swiper-slide-banner {
-  width: 100%;
+  width: 100vw;
   height: 30rem;
 }
 
