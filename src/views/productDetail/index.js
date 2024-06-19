@@ -71,13 +71,13 @@ function ProductDetail() {
   return (
       <div className="body">
         <div className='main-detail'>
-            <div className='side-preview-img-container' style={{display: 'flex', flexDirection: 'column', marginLeft: '3rem'}}>
+            <div className='side-preview-img-container' style={{display: 'flex', flexDirection: 'column', marginLeft: '3rem', maxHeight: '35rem', overflow: 'scroll'}}>
                 {currentProduct.linksWithAngle.map(item => {
                     return <img onClick={() => {setPreviewingLink(item)}} className='side-preview-img' style={{marginBottom: '1rem', width: '6rem', height: '9rem', objectFit: 'cover', borderRadius: '0.3rem'}} src={item}></img>
                 })}
             </div>
             <div className='main-preview-img'>
-                <img src={previewingLink ? previewingLink : currentProduct.link} style={{marginLeft: '2rem', width: '20rem', height: '30rem', objectFit: 'cover', borderRadius: '0.3rem'}}></img>
+                <img src={previewingLink ? previewingLink : currentProduct.link} style={{marginLeft: '2rem', width: '100%', height: '35rem', objectFit: 'cover', borderRadius: '0.3rem'}}></img>
             </div>
             <div style={{display: 'flex', flexGrow: 1, flexDirection: 'column', marginLeft: '3rem', marginRight: '3rem'}}>
                 <div style={{fontSize: '1.5rem', fontWeight: '500'}}>{currentProduct.name}</div>
@@ -100,7 +100,10 @@ function ProductDetail() {
                 </div>
                 <button className='buy-now-button' onClick={buyNow}>Mua ngay</button>
 
-                <div style={{fontSize: '1.5rem', marginTop: '1rem', fontWeight: 'bold'}}>Mô tả</div>
+                <div style={{fontSize: '1.5rem', marginTop: '1rem', fontWeight: 'bold'}}>
+                    <div>Mô tả</div>
+                    <p style={{marginTop: '1rem', fontWeight: '300'}}>{currentProduct.description}</p>
+                </div>
             </div>
         </div>
         <div className='quick-buy-container'>

@@ -41,30 +41,30 @@ const AppRoutes = () => {
 }
 
 const springCollectionPath = [
-  'https://product.hstatic.net/1000392326/product/bda50150_-_chua_co_gia_bdq50139-558k__4__96c934460a5d44569c030d5b57d3668c_1024x1024.jpg',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTI3cXrVaYMTHlov_ItX6F_ABvdDSdf2hz4jA&s'
+  'https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/448713953_988669492842080_359556795315329850_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE0NWmhnOseXMItgbv6gOS6iNgQp_yCkWCI2BCn_IKRYFXaqzig9HwiGlDvAyiEnxYNDeI6uH2zw3N3ef4GGmKI&_nc_ohc=qqIqK8NRKScQ7kNvgEFo0gU&_nc_ht=scontent.fhan5-10.fna&oh=00_AYDDz3WXZGMm-FbYc1_oZzVnAzu6qf9VIF_F95tWAM-uBw&oe=6677A785',
+  'https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/448715900_988668739508822_3663831415344971151_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHtdW7rkmuhs9-SgaTJRR_XeNWjOw5EWi541aM7DkRaLorVvzd_9zR5PEwTckirCcb0qMBtnSeXA3-qhdNTRmaN&_nc_ohc=Fgjm4N_4fKUQ7kNvgFxR_M_&_nc_ht=scontent.fhan14-5.fna&oh=00_AYDQh7m9_QsWhf0kR4pcSfreMT4f5OpWn9Bvkulf7sulng&oe=6678DAB8'
 ]
 
 const summerCollectionPath = [
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLUlV2v3y2pV34vjgZ3dMccv8c0kOspoKSHA&s',
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHQFpoknV71Lek_hCvwLcKg8vagw0pjDcedQ&s'
+  'https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/448470280_988741916168171_5795559389784461750_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEWRBKwUJLcE9owkvvF08ZXPE8j4-_17vs8TyPj7_Xu-1-YJIA4MHfZoWYXS3-03AolhCvEJWktzouPG3Zrg-St&_nc_ohc=Z_lNiUFSnKkQ7kNvgF3jPiz&_nc_ht=scontent.fhan14-5.fna&oh=00_AYAdTV3vSRhRGuVDjveqkGyTGAi_7J6FlH6Do9GNmfvWmA&oe=6678D189',
+  'https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/448437729_988742426168120_3849418442315386727_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGgBadXCMLdFoMx3H2AZj0q6z27G_RzcVPrPbsb9HNxUwIf34r0vcZWPRnUOTpHYsLmarmJxKcyCSj8qUsnf5bb&_nc_ohc=KRpx2_cQ664Q7kNvgGMQe_g&_nc_ht=scontent.fhan14-4.fna&oh=00_AYD2tA9t9Nt8XTXH9ge09sz0rXfJOhTwFdoSZW7AubXrJQ&oe=6678CA15'
 ]
 
 const fallCollectionPath = [
-  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK3IcQKkPd0UCXQcru6RIFR2gw4XssKSOLcw&s',
-  'https://down-vn.img.susercontent.com/file/vn-11134201-23020-p5qizro12jnvf1'
+  'https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/448504984_988771239498572_6710264695426703717_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF8duSK17nZfa5pEAc41zBG4Px9C-Hdd43g_H0L4d13jesaWBG4JEtwJJT-Q1gZqdLKrgOrGMOOjJCUma6GYwGy&_nc_ohc=cl7GyRNepl4Q7kNvgFo1Icx&_nc_ht=scontent.fhan14-2.fna&oh=00_AYDccxpBqy7gXvEfig0BCheHtd21e6I1p4ivRadoS15IAA&oe=6678E1A7',
+  'https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/448444487_988770956165267_933289055019508038_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEjpngvOwWGPtHMsYoSEsRtDo_Bh_6yR1UOj8GH_rJHVRZWGW97Cc-1twuEXVZLMbCgOQAU8fTlIPLlbYLBNQT1&_nc_ohc=QvPsR21MKbIQ7kNvgHzlWVP&_nc_ht=scontent.fhan14-5.fna&oh=00_AYCVFiCbdwSjtZLK1rmM6hxSszc4f7HlRUzAfzCclfa86A&oe=6678FDBD'
 ]
 
 const winterCollectionPath = [
-  'https://bizweb.dktcdn.net/100/414/042/products/dsc06774-2.jpg?v=1683969121643',
-  'https://bizweb.dktcdn.net/100/236/196/products/8-1-44ee1440-f558-4e18-b133-78d956d9b559.jpg?v=1667528700197'
+  'https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/448779854_988772429498453_839250750949044573_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFuguKwUQ_pXPK0FioT0nwg97awttGrRMP3trC20atEw4k4W0F2YsHkmNQeRfTqbjHER2ykbYHV0AJWQQvFrEiZ&_nc_ohc=SA1FK4Kex0IQ7kNvgET1F1u&_nc_ht=scontent.fhan5-6.fna&oh=00_AYDRT2z1u_n2Y5WTM9Xx4qbXrth2DvdFcQhEDPahbzCVIA&oe=6677CF14',
+  'https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/448459892_988772696165093_8393146605176307923_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGdb22GP0-ZdYZiOszZ8rTtfRw-JhS9hzB9HD4mFL2HMP3X6T_c4n-B0rYOT4rvMiy7LBK2IlC3t0cFHkLK3kal&_nc_ohc=DTyy_pWU-QkQ7kNvgFoh0pp&_nc_ht=scontent.fhan5-8.fna&oh=00_AYBr0aOOKFGZQ5oWAmPdDe2QWYdtZGCNEauwR0qwYl9HYg&oe=6677C715'
 ]
 
 function App() {
   const [isShowingCollection, setIsShowingCollection] = useState(false)
   const [collectionPaths, setCollectionPaths] = useState([
-  'https://media-cdn-v2.laodong.vn/Storage/newsportal/2018/2/9/590907/J1.jpg',
-  'https://kenh14cdn.com/203336854389633024/2022/12/24/photo-22-16718773627791873791975.jpeg'
+  'https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/448506007_988771586165204_2963683013417972027_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF_GLDTnaj6sBnN8Ph2EuvhIkEPD-GM4egiQQ8P4Yzh6HzzrmbMnS_KJ_U3-AnutKc9NlaD2H2RoIRgdMsXWLZp&_nc_ohc=XptmSTZyRtMQ7kNvgEro6GQ&_nc_ht=scontent.fhan14-1.fna&oh=00_AYBhVrCi8DFGgTy6bJuguxXAH6Quldl-_DL2f7BGjf_qiQ&oe=6678D79D',
+  'https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/448629089_988772196165143_7726208503917413772_n.jpg?stp=cp6_dst-jpg&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGiYSk1XNJ52KEqh0KuhzWeoipu1-_tIl-iKm7X7-0iX7jndsOPFVWie92XMAGGcFbQr59Vyg7F4mknWgYbPaUw&_nc_ohc=BMyKlhNeAP0Q7kNvgHY7v5m&_nc_ht=scontent.fhan14-4.fna&oh=00_AYCTMn2YFt5sm9yYgaclD7mmeED73lJ7wAi_Xx8PKwOqyg&oe=6678ECEA',
   ])
   return (
     <Router>
@@ -93,16 +93,16 @@ function App() {
                   <div className='collections'>
                     <a href='/products/spring'
                       onMouseEnter={() => setCollectionPaths(springCollectionPath)}
-                    >Xuân</a>
+                    >Xuân Thì</a>
                     <a href='/products/summer'
                       onMouseEnter={() => setCollectionPaths(summerCollectionPath)}
-                    >Hạ</a>
+                    >Vào Hạ</a>
                     <a href='/products/fall'
                       onMouseEnter={() => setCollectionPaths(fallCollectionPath)}
-                    >Thu</a>
+                    >Sang Thu</a>
                     <a href='/products/winter'
                       onMouseEnter={() => setCollectionPaths(winterCollectionPath)}
-                    >Đông</a>
+                    >Lập Đông</a>
                   </div>
                 </div>
               }

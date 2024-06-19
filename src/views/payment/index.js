@@ -8,6 +8,7 @@ function Payment() {
     style: 'currency',
     currency: 'VND',
   })
+  const [currentSize, setCurrentSize] = useState('')
   const currentPath = window.location.pathname.replace('/payment/', '')
   const [productsInCart, setProductsInCart] = useState(currentPath === 'buy_now' ? JSON.parse(localStorage.getItem('buyNow')) : JSON.parse(localStorage.getItem('carts')))
   if (!productsInCart) {
@@ -41,7 +42,12 @@ function Payment() {
       <div className="body">
         <div style={{marginLeft: '3rem', fontSize: '1.4rem', fontWeight: 'bold', marginBottom: '1rem'}}>Thông tin giao hàng</div>
         <div className='payment-body'>
-          <form className='information-body' onSubmit={() => {
+          <form className='information-body' onSubmit={(e) => {
+            e.preventDefault()
+            if (currentSize === '') {
+              window.alert('Vui lòng chọn kích cỡ!')
+              return
+            }
             window.alert('Cảm ơn bạn đã mua hàng!')
             clearStorage()
           }}>
@@ -49,6 +55,13 @@ function Payment() {
             <input placeholder='Email' required></input>
             <input placeholder='Số điện thoại' type='number' required></input>
             <input placeholder='Địa chỉ' required></input>
+            <div className='size-picker-container'>
+              <button className={`${currentSize === 'S' ? 'active' : ''}`} onClick={() => {setCurrentSize('S')}}>S</button>
+              <button className={`${currentSize === 'M' ? 'active' : ''}`} onClick={() => {setCurrentSize('M')}}>M</button>
+              <button className={`${currentSize === 'L' ? 'active' : ''}`} onClick={() => {setCurrentSize('L')}}>L</button>
+              <button className={`${currentSize === 'XL' ? 'active' : ''}`} onClick={() => {setCurrentSize('XL')}}>XL</button>
+              <button className={`${currentSize === 'XXL' ? 'active' : ''}`} onClick={() => {setCurrentSize('XXL')}}>XXL</button>
+            </div>
             <button className='confirm-payment' type='submit'>Hoàn tất đơn hàng</button>
           </form>
           <div className='payment-detail'>

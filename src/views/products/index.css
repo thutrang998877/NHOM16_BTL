@@ -14,7 +14,6 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 3rem;
 }
 
 img {
@@ -39,11 +38,10 @@ img {
 }
 
 .card-product-price {
-  color: red;
+  color: rgb(169, 108, 108);
 }
 
 .card-image:hover {
-  scale: 1.05;
   cursor: pointer;
 }
 
@@ -56,4 +54,8 @@ img {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-right: 3rem;
+}
+
+.card-detail {
+  margin-left: 0.15rem;
 }

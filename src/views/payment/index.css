@@ -47,3 +47,15 @@ input {
     object-fit: cover;
     border-radius: 0.3rem;
 }
+
+.size-picker-container {
+    margin-bottom: 1rem;
+}
+
+.size-picker-container > button {
+    margin-right: 0.2rem;
+}
+
+.active {
+    background-color: rgb(120, 255, 118);
+}
