@@ -11,6 +11,8 @@ import ProductDetail from './views/productDetail'
 import Cart from './views/carts'
 import Payment from './views/payment'
 import Introduce from './views/introduce'
+import { SearchOutlined } from '@ant-design/icons'
+import { Button, Tooltip } from 'antd';
 
 const AppRoutes = () => {
   return (
@@ -69,7 +71,7 @@ function App() {
       <div className='App'>
         <ScrollToTop smooth color="black" />
         <div className="header">
-          <a href='/home'>Tủ nhà mây</a>
+          <a href='/home' style={{display: 'flex', alignItems: 'center', marginRight: '1rem'}}><img style={{width: '100%', height: '3rem', objectFit: 'contain', marginLeft: '1rem'}} src='https://www.tunhamay.vn/content/images/2023/09/May-Logo-3.png'></img></a>
           <div className="menu">
             <a href='/home'>Trang chủ</a>
             <a href='/products'
@@ -108,6 +110,11 @@ function App() {
             <a href='/carts'>Giỏ hàng</a>
             <a href='/introduce'>Giới thiệu</a>
           </div>
+          <div className='action'>
+            <Button type="dashed" icon={<SearchOutlined />}>
+              Tìm kiếm
+            </Button>
+          </div>
         </div>
         <AppRoutes />
         <div className="footer">
@@ -115,7 +122,7 @@ function App() {
             <div className="link-items">
               <div className="links">THÔNG TIN</div>
               <div className="links">
-                  <a href="https://maps.app.goo.gl/ywRQ3qH84SwpaUx36" target="_blank">
+                  <a className='footer-link' href="https://maps.app.goo.gl/ywRQ3qH84SwpaUx36" target="_blank">
                     <i class="bx bx-map"></i>
                     Địa chỉ: 137 Tôn Đức Thắng, Quang Trung, Đống Đa, Hà Nội, Vietnam
                   </a>
@@ -133,6 +140,18 @@ function App() {
               <div className="links">HỖ TRỢ KHÁCH HÀNG</div>
               <div className="links">Đội ngũ</div>
               <div className="links">Liên hệ</div>
+              <div style={{display: 'flex'}}>
+                <div className='links' style={{width: '2rem', marginRight: '1rem'}}>
+                  <a class="facebook link" href="https://www.facebook.com/TuNhaMay" target="_blank" title="Theo dõi Facebook MAGONN">
+                    <img src="//theme.hstatic.net/200000623993/1001008164/14/facebook.png?v=1404" width="32" height="32" alt="facebook" />	
+                  </a>
+                </div>
+                <div className='links' style={{width: '2rem'}}>
+                  <a class="instgram link" href="https://www.instagram.com/tunhamay.official/" target="_blank" title="Theo dõi instgram MAGONN">
+                    <img src="//theme.hstatic.net/200000623993/1001008164/14/instagram.png?v=1404" width="10" height="10" alt="instgram" />	
+                  </a>
+                </div>
+              </div>
             </div>
             <div className="link-items">
               <div className="links">ĐĂNG KÝ NHẬN TIN</div>
