@@ -125,7 +125,7 @@ function ProductDetail() {
             </div>
         </div>
         <div className='same-collection-container'>
-            <h1>Sản phẩm cùng loại</h1>
+            <h1>Có thể nàng sẽ thích</h1>
             <div className='same-collection-cards'>
                 {sameProducts.length > 0 && sameProducts.map(it => {
                     return <div className='same-collection-card'>
