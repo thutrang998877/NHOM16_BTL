@@ -142,12 +142,12 @@ function App() {
               <div className="links">Liên hệ</div>
               <div style={{display: 'flex'}}>
                 <div className='links' style={{width: '2rem', marginRight: '1rem'}}>
-                  <a class="facebook link" href="https://www.facebook.com/TuNhaMay" target="_blank" title="Theo dõi Facebook MAGONN">
+                <a class="facebook link" href="https://www.facebook.com/TuNhaMay" target="_blank" title="Theo dõi Facebook Tủ nhà Mây">
                     <img src="//theme.hstatic.net/200000623993/1001008164/14/facebook.png?v=1404" width="32" height="32" alt="facebook" />	
                   </a>
                 </div>
                 <div className='links' style={{width: '2rem'}}>
-                  <a class="instgram link" href="https://www.instagram.com/tunhamay.official/" target="_blank" title="Theo dõi instgram MAGONN">
+                <a class="instgram link" href="https://www.instagram.com/tunhamay.official/" target="_blank" title="Theo dõi instgram Tủ nhà Mây">
                     <img src="//theme.hstatic.net/200000623993/1001008164/14/instagram.png?v=1404" width="10" height="10" alt="instgram" />	
                   </a>
                 </div>
