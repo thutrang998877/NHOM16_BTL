@@ -153,11 +153,6 @@ function App() {
                 </div>
               </div>
             </div>
-            <div className="link-items">
-              <div className="links">ĐĂNG KÝ NHẬN TIN</div>
-              <div className="links">Nhập email</div>
-              <div className="links" style={{color: "red"}}>Logos - add later</div>
-            </div>
           </div>
         </div>
       </div>

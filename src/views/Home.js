@@ -2,18 +2,32 @@ import '../App.css';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import { useState } from 'react';
-
+//Trang chu
 function Home() {
   const [banners, setBanner] = useState([
-    "https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/448803800_1868529236990505_6951073453796265223_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Ij2woMB_YZgQ7kNvgH8WXpe&_nc_ht=scontent.fhan14-2.fna&oh=00_AYB2eiUOZAZq-0sbyx6t37ioAgVj4FRzU6nWiGlFVlGDAg&oe=6678D8DD",
-    "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/448544466_1868525816990847_645939291266345467_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=wDM6bEyP2L4Q7kNvgGVSMvV&_nc_ht=scontent.fhan14-3.fna&oh=00_AYAZQKttS46PoG5T1-cWVuaElICHw4JeikIgvtZ3o5Npnw&oe=6678EB80",
-    "https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/448544468_1867978453712250_3422061733003838236_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=QeJClzD4hc0Q7kNvgHMTlFR&_nc_ht=scontent.fhan14-5.fna&oh=00_AYAZIPHIBNYZILoELHciINAYifv2U1s0MBI9oKL_uFLbJg&oe=6678EA3E",
+    {
+      links: 'http://localhost:3000/products/spring',
+      img: "https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/448803800_1868529236990505_6951073453796265223_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Ij2woMB_YZgQ7kNvgH8WXpe&_nc_ht=scontent.fhan14-2.fna&oh=00_AYB2eiUOZAZq-0sbyx6t37ioAgVj4FRzU6nWiGlFVlGDAg&oe=6678D8DD"
+    },
+    {
+      links: '',
+      img: "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/448544466_1868525816990847_645939291266345467_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=wDM6bEyP2L4Q7kNvgGVSMvV&_nc_ht=scontent.fhan14-3.fna&oh=00_AYAZQKttS46PoG5T1-cWVuaElICHw4JeikIgvtZ3o5Npnw&oe=6678EB80"
+    },
+    {
+      links: '',
+      img: "https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/448544468_1867978453712250_3422061733003838236_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=QeJClzD4hc0Q7kNvgHMTlFR&_nc_ht=scontent.fhan14-5.fna&oh=00_AYAZIPHIBNYZILoELHciINAYifv2U1s0MBI9oKL_uFLbJg&oe=6678EA3E"
+    },
   ])
 
   const [bannerMid, setBannerMid] = useState([
-    "https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/448802593_1867978577045571_5948691714116349292_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Wwj3V4_vdtcQ7kNvgGT6TBC&_nc_ht=scontent.fhan14-5.fna&oh=00_AYCYrkUN5Ynm8K9d_63ah6qskevQ0X3Bps8a7_tqCxcYSg&oe=6678DC8A",
-    "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/448509686_1867978593712236_344505316679113879_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=mPGJEG7_QrMQ7kNvgEe-x0y&_nc_ht=scontent.fhan14-3.fna&oh=00_AYBgFNBH4yysBMBFHV77xJLLVUpJ04T-BjxODlBcRpWPMQ&oe=6678D422",
-    
+    {
+      links: '',
+      img: "https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/448802593_1867978577045571_5948691714116349292_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Wwj3V4_vdtcQ7kNvgGT6TBC&_nc_ht=scontent.fhan14-5.fna&oh=00_AYCYrkUN5Ynm8K9d_63ah6qskevQ0X3Bps8a7_tqCxcYSg&oe=6678DC8A"
+    },
+    {
+      links: '',
+      img: "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/448509686_1867978593712236_344505316679113879_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=mPGJEG7_QrMQ7kNvgEe-x0y&_nc_ht=scontent.fhan14-3.fna&oh=00_AYBgFNBH4yysBMBFHV77xJLLVUpJ04T-BjxODlBcRpWPMQ&oe=6678D422"
+    },
   ])
 
   return (
@@ -26,7 +40,7 @@ function Home() {
               autoplay={{ delay: 200 }}
             >
               {banners.length && banners.map(item => {
-                return <SwiperSlide><div className='swiper-slide-banner'><img style={{width: '100%'}} src={`${item}`}></img></div></SwiperSlide>
+                return <SwiperSlide><a className='swiper-slide-banner' href={item.links}><img style={{width: '100%'}} src={`${item.img}`}></img></a></SwiperSlide>
               })}
             </Swiper>
         </div>
@@ -59,7 +73,7 @@ function Home() {
               autoplay={{ delay: 200 }}
             >
               {bannerMid.length && bannerMid.map(item => {
-                return <SwiperSlide><div className='swiper-slide-banner'><img style={{width: '100vw'}} src={`${item}`}></img></div></SwiperSlide>
+                return <SwiperSlide><a className='swiper-slide-banner' href={item.links}><img style={{width: '100vw'}} src={`${item.img}`}></img></a></SwiperSlide>
               })}
             </Swiper>
           </div>
