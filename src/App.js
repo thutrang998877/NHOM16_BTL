@@ -70,9 +70,8 @@ function App() {
         <ScrollToTop smooth color="black" />
         <div className="header">
           <a href='/home'>Tủ nhà mây</a>
-          <div className="menu"
-          >
-            <a>Trang chủ</a>
+          <div className="menu">
+            <a href='/home'>Trang chủ</a>
             <a href='/products'
             onMouseLeave={() => setIsShowingCollection(false)}
             onMouseEnter={() => setIsShowingCollection(true)}
@@ -115,7 +114,12 @@ function App() {
           <div className="link-items-container">
             <div className="link-items">
               <div className="links">THÔNG TIN</div>
-              <div className="links">Địa chỉ: 137 Tôn Đức Thắng, Đống Đa, Hà Nội</div>
+              <div className="links">
+                  <a href="https://maps.app.goo.gl/ywRQ3qH84SwpaUx36" target="_blank">
+                    <i class="bx bx-map"></i>
+                    Địa chỉ: 137 Tôn Đức Thắng, Quang Trung, Đống Đa, Hà Nội, Vietnam
+                  </a>
+              </div>
               <div className="links">Số điện thoại: 039 972 5203</div>
               <div className="links">Email: cskh@tunhamay.com</div>
             </div>
