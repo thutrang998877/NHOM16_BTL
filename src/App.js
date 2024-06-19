@@ -47,7 +47,7 @@ const springCollectionPath = [
 
 const summerCollectionPath = [
   'https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/448470280_988741916168171_5795559389784461750_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEWRBKwUJLcE9owkvvF08ZXPE8j4-_17vs8TyPj7_Xu-1-YJIA4MHfZoWYXS3-03AolhCvEJWktzouPG3Zrg-St&_nc_ohc=Z_lNiUFSnKkQ7kNvgF3jPiz&_nc_ht=scontent.fhan14-5.fna&oh=00_AYAdTV3vSRhRGuVDjveqkGyTGAi_7J6FlH6Do9GNmfvWmA&oe=6678D189',
-  'https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/448437729_988742426168120_3849418442315386727_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGgBadXCMLdFoMx3H2AZj0q6z27G_RzcVPrPbsb9HNxUwIf34r0vcZWPRnUOTpHYsLmarmJxKcyCSj8qUsnf5bb&_nc_ohc=KRpx2_cQ664Q7kNvgGMQe_g&_nc_ht=scontent.fhan14-4.fna&oh=00_AYD2tA9t9Nt8XTXH9ge09sz0rXfJOhTwFdoSZW7AubXrJQ&oe=6678CA15'
+  'https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/448816069_893365589500735_2388222668003682751_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFd-KGlR_2xj_Snrgx-ClsuFc4sldOWxAMVziyV05bEA8V8ZbYYMq2i4h0gWCYZBuCT4AeAbQhp6WZsBMzyCk3w&_nc_ohc=V25CybFdDAwQ7kNvgE6e_Wg&_nc_ht=scontent.fhan14-3.fna&oh=00_AYCw-b4mo3-jxFjSBayoOvxK_OL6Bk9Lm6-FZpkfc_jUcA&oe=66791BC8'
 ]
 
 const fallCollectionPath = [
