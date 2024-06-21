@@ -3,13 +3,12 @@ import './index.css'
 
 function Policy() {
   return (
-      <div className="body" style={{marginLeft: '4rem', marginRight: '4rem', display: 'flex', flexDirection: 'column', marginBottom: '2rem'}}>
+      <div className="policy-body" style={{marginLeft: '4rem', marginRight: '4rem', display: 'flex', flexDirection: 'column', marginBottom: '2rem'}}>
         <div className='top-image'>
-            <img src="https://www.tunhamay.vn/content/images/size/w1600/2024/04/_LEK1051-1.jpeg"></img>
+            <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/442470041_875857131251581_185681626830436983_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=j5Iae2sCWDkQ7kNvgGsBuwh&_nc_ht=scontent.fhan14-3.fna&oh=00_AYATeuzWwmUxcQE_hyJIHVC60PYwB32DwXneAkujYK_ODA&oe=667B3A34"></img>
         </div>
 
         <h1>CHÍNH SÁCH THANH TOÁN</h1>
-        <h5>1.1 THANH TOÁN BẰNG TIỀN MẶT </h5>
         <h5>1.1 THANH TOÁN TẠI CỬA HÀNG </h5>
         <p>
           Quý khách có thể thanh toán trực tiếp bằng tiền mặt khi mua hàng tại cửa hàng của TỦ NHÀ MÂY: 137 Tôn Đức Thắng, Đống Đa, Hà Nội

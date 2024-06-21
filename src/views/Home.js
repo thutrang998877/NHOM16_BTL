@@ -3,8 +3,19 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import { useState } from 'react';
 import { PRODUCTS } from '../constants/product';
+import { Modal } from 'antd';
 //Trang chu
 function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(true);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
   const youMayLike = [PRODUCTS[0][0], PRODUCTS[0][1], PRODUCTS[0][2], PRODUCTS[0][3], PRODUCTS[1][0]]
   const USDollar = new Intl.NumberFormat('vi-VI', {
     style: 'currency',
@@ -32,12 +43,15 @@ function Home() {
     },
     {
       links: '',
-      img: "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/448509686_1867978593712236_344505316679113879_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_ohc=mPGJEG7_QrMQ7kNvgEe-x0y&_nc_ht=scontent.fhan14-3.fna&oh=00_AYBgFNBH4yysBMBFHV77xJLLVUpJ04T-BjxODlBcRpWPMQ&oe=6678D422"
+      img: "https://scontent.fhan14-2.fna.fbcdn.net/v/t1.15752-9/448366044_989013755995710_5114842244543166636_n.png?stp=dst-png_s2048x2048&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=bmSgOqezZAwQ7kNvgH554lb&_nc_ht=scontent.fhan14-2.fna&oh=03_Q7cD1QGxnmnjiHNx5Q1MGk0y8gnsisZUj5ZSRWbhp0SsQOIu3A&oe=669CD8D2"
     },
   ])
 
   return (
       <div className="body">
+        <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+          <img src='https://scontent.fhan14-1.fna.fbcdn.net/v/t1.15752-9/448611087_7752956641461106_1125639994277575104_n.png?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=h4n192ku0xIQ7kNvgEnXZg-&_nc_ht=scontent.fhan14-1.fna&oh=03_Q7cD1QEenG0Mhg9ynMgm6laUi7oCn7I7EUo3ikE3jltWFz5dPw&oe=669CDE1F'></img>
+        </Modal>
         <div style={{width: '100%', overflow: 'hidden'}}>
           <Swiper
               spaceBetween={0}
