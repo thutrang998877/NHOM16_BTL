@@ -179,7 +179,8 @@ cursor: pointer;
 }
 
 .introduce-options > a:hover {
-  background-color: rgb(2, 16, 144);
+  background-color: rgb(248, 246, 243);
+  color: rgb(65, 93, 169);
 }
 
 .image-cards {
@@ -216,7 +217,7 @@ cursor: pointer;
 }
 
 .collections > a:hover {
-  color: rgb(75, 70, 70);
+  color: rgb(65, 93, 169);
   background-color: rgb(248, 246, 243);
 }
 

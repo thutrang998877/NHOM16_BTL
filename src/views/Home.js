@@ -73,7 +73,7 @@ function Home() {
               </a>
               <a className='collection' href='/products?collection=summer'>
                 <div className='collection-title'>Vào Hạ </div>
-                <img className='collection-image' style={{objectFit: 'cover'}} src='https://scontent.xx.fbcdn.net/v/t1.15752-9/448436973_1506153063628520_5274512159206345262_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHiaMZpf4jFfcLOULXGk6qNVlKcD1ySyClWUpwPXJLIKRlZK7lpqffr3fTTZKA0GYLAKNzkQmi7I8wjgs-XRrjP&_nc_ohc=azHKEmRFmCAQ7kNvgHPXI2k&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEaFSM1edtHBsKLKOC-YjQ199wCNAOzJlGBAzNrpq5CWw&oe=6699570D'></img>
+                <img className='collection-image' style={{objectFit: 'cover'}} src='https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/434868215_845094874327807_4619389078416872442_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFoT5SGtpClcxmJ_rIvJcM2RBOsyWCQPbtEE6zJYJA9u-BfPSXIwJ3YJIzjek4yKQosajxpR-WrQSpqelBis-sC&_nc_ohc=3hXn_taTMD4Q7kNvgFivbiB&_nc_ht=scontent.fhan14-5.fna&oh=00_AYBEiYfi3TbBRi7GkYEFqTlIvX2zvhdgIb8-eGdbs6pKMQ&oe=667B58D2'></img>
               </a>
               <a className='collection' href='/products?collection=fall'>
                 <div className='collection-title'>Sang Thu</div>

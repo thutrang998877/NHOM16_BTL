@@ -196,7 +196,7 @@ function App() {
             <div className="link-items">
               <div className="links">CHÍNH SÁCH</div>
               <div className="links">Chính sách thanh toán</div>
-              <div className="links">Chíng sách đổi và trả hàng</div>
+              <div className="links">Chính sách đổi và trả hàng</div>
               <div className="links">Chính sách vận chuyển</div>
             </div>
             <div className="link-items">
