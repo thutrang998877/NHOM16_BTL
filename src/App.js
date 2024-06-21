@@ -199,7 +199,7 @@ function App() {
               <a className="links" href='/policy'>Chính sách đổi và trả hàng</a>
               <a className="links" href='/policy'>Chính sách vận chuyển</a>
             </div>
-            <div className="link-items">
+            <div className="link-items" style={{display: 'flex', flexDirection: 'column'}}>
               <div className="links">HỖ TRỢ KHÁCH HÀNG</div>
               <a className="links" href='/about'>Đội ngũ</a>
               <a className="links" href='/introduce'>Liên hệ</a>
