@@ -137,7 +137,10 @@ function Home() {
                                 <img src={it.link}></img>
                             </a>
                             <div className='card-product-name'>{it.name}</div>
-                            <div className='card-product-price'>{USDollar.format(it.price)}</div>
+                            <div style={{display: 'flex'}}>
+                              {it.discount && it.discount > 0 && <div style={{textDecoration: 'line-through', color: 'black', marginRight: '0.5rem'}}>{USDollar.format(it.price)}</div>}
+                              <div className='card-product-price'>{USDollar.format(it.discount && it.discount > 0 ? it.price * (100 - it.discount) /100 : it.price)}</div>
+                            </div>
                         </div>
                     })}
                 </div>

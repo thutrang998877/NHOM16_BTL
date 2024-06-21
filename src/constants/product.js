@@ -11,8 +11,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/448715900_988668739508822_3663831415344971151_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHtdW7rkmuhs9-SgaTJRR_XeNWjOw5EWi541aM7DkRaLorVvzd_9zR5PEwTckirCcb0qMBtnSeXA3-qhdNTRmaN&_nc_ohc=mOp6ozGu69AQ7kNvgGcVZMb&_nc_ht=scontent.fhan5-8.fna&oh=00_AYA-w8fw4-8DVcz1oDDft1IJZra4Ji9gcUXncmoEaKKEUw&oe=66778938',
       collection: 'spring',
       price: 999000,
-      description: 'fksfjkahfuajhfjsd',
+      description: `Một sản phẩm đặc biệt của mùa Tết năm nay khi bộ Cánh Thư Tết được mặc bởi 2 items kết hợp thành một tổng thể hài hoà, mới lạ và dễ chịu.\n
+                    Bảo quản:
+                    - Giặt tay/giặt máy với túi giặt với nước lạnh
+                    - Không tẩy, không sấy
+                    - Phơi khô tự nhiên \n
+                    LƯU Ý: 
+                    Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.`,
       color: ['#008B8B'],
+      discount: 20,
     },
     {
       key: 2,
@@ -26,8 +33,16 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/448715116_988669052842124_4012407763190584235_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGwkdSfu-PPxapMIcwbdln93Q103CzE-ubdDXTcLMT65rlB1OlFHYonJLTaquph_VvY4SVJG9c9LOXkJ11n_gB4&_nc_ohc=coYRzbi_slUQ7kNvgEvmqWB&_nc_ht=scontent.fhan5-2.fna&oh=00_AYDzD6w66G2PzByg18YO_HjfjiEn7TV2v8xFNTd79x7KLQ&oe=66779CFF',
       collection: 'spring',
       price: 1100000,
-      description: 'Đồng Dao Tết',
+      description: `Một cành đào rực rỡ, một chút hoa rơi nhẹ mỗi khi gió lướt qua, một cảm hứng Tết chưa khi nào bừng nở đến thế trong các BST Áo Dài của Mây. Xin gói gọn lại những gì đẹp nhất của Tết trong tà áo Đồng Dao. Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời)\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên\n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#008080', '#B22222'],
+      discount: 30,
     },
     {
       key: 3,
@@ -41,8 +56,16 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/448714720_988668962842133_8984867020357797656_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFccPSbNbeoljBbsAyiQ9-57uTS2q0TtN7u5NLarRO03s_6Nt-gaojj0DAhVXmKbekJOx19kkC9NQkD3nt3cpfs&_nc_ohc=mg1Zb3cYmMgQ7kNvgFfQs5F&_nc_ht=scontent.fhan5-2.fna&oh=00_AYBRbWS-GY9e4euMQvPK3SlvuC6xUrQJSvk3RUQugColbQ&oe=66779E2C',
       collection: 'spring',
       price: 1299000,
-      description: 'Hoa Phố Tết',
+      description: `Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời)\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#DB7093','#4682B4'],
+      discount: 10,
     },
     {
       key: 4,
@@ -54,10 +77,18 @@ export const PRODUCTS = [
         'https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/448712683_988669126175450_7522200693660487004_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE7ThjoH0qO00kbfPsC7a7h_cjLt6M969j9yMu3oz3r2FJmKFFlKzi01grHKb11xGQZzbHw5kHniM1a62iztJP7&_nc_ohc=lb_W6W_smOoQ7kNvgHo0DAR&_nc_ht=scontent.fhan5-10.fna&oh=00_AYAmpnoKlY-0jW9M3hwONxI-xCGdLYDjlGDyTXKKWdJNGg&oe=667798EC',
       ],
       link: 'https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/448712683_988669126175450_7522200693660487004_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE7ThjoH0qO00kbfPsC7a7h_cjLt6M969j9yMu3oz3r2FJmKFFlKzi01grHKb11xGQZzbHw5kHniM1a62iztJP7&_nc_ohc=lb_W6W_smOoQ7kNvgHo0DAR&_nc_ht=scontent.fhan5-10.fna&oh=00_AYAmpnoKlY-0jW9M3hwONxI-xCGdLYDjlGDyTXKKWdJNGg&oe=667798EC',
-      collection: 'spring',
+      collection: `spring`,
       price: 1299000,
-      description: 'Hoa Xuân Tết',
+      description: `Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời)\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên\n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#DC143C', '#FAFAD2'],
+      discount: 20,
     },
   ],
   [
@@ -72,8 +103,17 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/448782131_988669336175429_5736856989313671373_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFvdEidqSDEQsc-iMsvRSz3D0GtOMEAQjEPQa04wQBCMfP6pRES4TyQbezg02guZGC_fN0z5TLniuWrt47IWAQ6&_nc_ohc=Xhku6LgxmosQ7kNvgH_4a9r&_nc_ht=scontent.fhan5-8.fna&oh=00_AYCD-5TUorC0q5kN6Gl25JAvCjdfw6K5nDtiSnWqyEwcUA&oe=66778CB4',
       collection: 'spring',
       price: 1399000,
-      description: 'Mây Hồng Tết',
+      description: `Một sản phẩm đặc biệt của mùa Tết năm nay khi bộ Mây Hồng được mặc bởi 2 items kết hợp thành một tổng thể hài hoà, mới lạ và dễ chịu. Vẫn nhận ra cảm hứng áo dài từ hai lớp cổ xếp lớp và các tà áo xẻ cao thướt tha. Trên chất liệu tằm và vải hoa không nhăn, hy vọng mẫu áo dài này sẽ mang lại sự tươi mới cho các cô trong dịp cuối năm này.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên\n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#FFB6C1'],
+      discount: 30,
     },
     {
       key: 6,
@@ -86,8 +126,16 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/448742480_988669599508736_7809980210466134308_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEeJOmTx7LMuflTD2S0dtLp55l6SmsblYXnmXpKaxuVhfP6crLWYkKX427_jFOz3J6snfQkNJspz03Ac0ZlNfF0&_nc_ohc=FNU1EbaNSWMQ7kNvgEJAGCi&_nc_ht=scontent.fhan5-2.fna&oh=00_AYD9iNiwqmcDyfNW_NwbefjMR0_a0D_wn7uwFUfKf25VOQ&oe=6677A8A0',
       collection: 'spring',
       price: 1499000,
-      description: 'Sắc Xuân',
+      description: `Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời)\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['	#FF8C00'],
+      discount: 30,
     },
     {
       key: 7,
@@ -100,7 +148,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/448742306_988669726175390_4883208431840502777_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHQIeW3utE2NvKhswCYBnAKZ-yRRan-uF5n7JFFqf64XoMo-Z7WE2Mc8JT3r0PJ3KDx6FTIAtCl77Ee5GYRViLw&_nc_ohc=HCKIlVaXrlMQ7kNvgG4hKDy&_nc_ht=scontent.fhan5-10.fna&oh=00_AYDrszuMi9kfa3F-nWgQgRCcBnL4vDbvz8oltikPFNDL0w&oe=6677B0ED',
       collection: 'spring',
       price: 1199000,
-      description: 'Tất Niên',
+      description: `Kết hợp 2 chất liệu lụa gẫy và tằm, Áo Dài Tất niên mang tới bạn vẻ ngoài nhớ thương như những ngày cuối năm mưa dịu.\n
+      Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên\n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#B22222'],
     },
     {
@@ -114,7 +170,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/448717627_988669776175385_4074970410185136668_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFbFcB9WeCbhZ8iTcDKaCyvPG84Vx0Ucws8bzhXHRRzC-ttJ65ZwIOXmUOBtCuuIHkW08tXJ7jEGnQvGhNTMA-V&_nc_ohc=UZY2igCzxx4Q7kNvgHT3nX9&_nc_ht=scontent.fhan5-6.fna&oh=00_AYDqo2-BlqwtceSIBjrpxw9RTDFH_Sg98ME62h-IYP4Z4g&oe=6677A0F8',
       collection: 'spring',
       price: 1299000,
-      description: 'Thanh Hà Tết',
+      description: `Một trong những điều khiến áo dài Thanh Hà được giới thiệu sau cùng trong BST bởi sự lựa chọn màu sắc - chất liệu - phom dáng cho một mẫu áo dài trơn thật sự khó khăn. Có được vẻ thướt tha yêu kiều nhưng vẫn cần một nét đơn giản, dung dị đúng kiểu Mây, thật may mắn bởi qua thời gian thử nghiệm, chúng mình có thể giới thiệu một sản phẩm đủ về thiết kế, đủ về sự duyên dáng, đủ về một cảm giác hân hoan ngày Tết. Thanh Hà có lẽ là mẫu áo dài trông có vẻ đơn giản nhất trong BST nhưng lại ngập tràn niềm vui trong mỗi nhịp bước vào năm mới.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên\n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#B22222'],
     },
   ],
@@ -131,7 +195,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/448746004_988669906175372_5742707923277281970_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHufbjBHc9qB_HGmLxHZdVXaRxnPQg2r2FpHGc9CDavYdgS45Ev-M5D8-OEZCZ3f2NTK6JMhpfN2wHL25D8qcd7&_nc_ohc=VcRRaNS8wk8Q7kNvgHhCaBT&_nc_ht=scontent.fhan5-8.fna&oh=00_AYAvjPI1p0kK1sboRYQScU_CuKxMAv59H5x_tJR-50bYKw&oe=6677922F',
       collection: 'spring',
       price: 1299000,
-      description: 'Từ Hoa Tết',
+      description: `Áo dài đỏ rực rỡ với họa tiết hoa đào tượng trưng cho sự tươi mới và may mắn trong năm mới.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên\n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['pink','#FFD700'],
     },
     {
@@ -148,7 +220,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/448715100_988670012842028_4713004211009039595_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFhECbhtT_8nv7zZZgIQXKbt2F9dVw49Ay3YX11XDj0DNQAWegYgGq6bi40Cirkm-ArBvsP0udQqWMGK6VVCMbc&_nc_ohc=15OqB_nIcTcQ7kNvgGUru19&_nc_ht=scontent.fhan5-6.fna&oh=00_AYDGiwO3s8OtRrSeg_aULANcwC6GZ6mV9QanBEXsKFucag&oe=6677A6E0',
       collection: 'spring',
       price: 1199000,
-      description: 'Yên Minh Tết',
+      description: `Là 𝐘𝐞̂𝐧 𝐌𝐢𝐧𝐡 𝐓𝐞̂́𝐭 - mẫu Áo Dài biểu tượng mùa đông của Mây năm nay được điểm lên những cánh hoa bay, nay đã có thêm cả sơ mi Yên Minh phối cùng sẽ giúp set đồ ngày Tết thật mới lạ, nhưng vô cùng truyền thống bởi cảm hứng của áo ngũ thân được tinh chỉnh khéo léo phù hợp với việc mặc hàng ngày. \n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#A1DAA5', '#F3F0C3', '#EB0C13'],
     },
     {
@@ -163,8 +243,17 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/448470280_988741916168171_5795559389784461750_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEWRBKwUJLcE9owkvvF08ZXPE8j4-_17vs8TyPj7_Xu-1-YJIA4MHfZoWYXS3-03AolhCvEJWktzouPG3Zrg-St&_nc_ohc=Z_lNiUFSnKkQ7kNvgE7UmBh&_nc_ht=scontent.fhan5-2.fna&oh=00_AYDwORo6Cl6uEhB4k8DYBejuixsAB4poabt1HoQQebJ47g&oe=66778009',
       collection: 'summer',
       price: 999000,
-      description: 'Đồng Dao Hạ',
+      description: `Một cành đào rực rỡ, một chút hoa rơi nhẹ mỗi khi gió lướt qua, một cảm hứng Tết chưa khi nào bừng nở đến thế trong các BST Áo Dài của Mây. Xin gói gọn lại những gì đẹp nhất của Tết trong tà áo Đồng Dao.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời)\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên\n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#095207', '#BC1E33'],
+      type: 'Hàng mới',
     },
     {
       key: 12,
@@ -177,8 +266,17 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/448502709_988741936168169_5355974675536748654_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGn16vzg37u9IM6k_2T2_U-ayNQdTGjAQprI1B1MaMBCmSB8g9eWx3A9GoJnzkhoyb_TLtBGHH-SEg8FHZ8iH1q&_nc_ohc=1t0EkTH9tDwQ7kNvgFOBRsl&_nc_ht=scontent.fhan5-6.fna&oh=00_AYAi8AJ7e1J2jGtJWprTM655p42__9AdcHlxjtoD1NWV1g&oe=667780D0',
       collection: 'summer',
       price: 1299000,
-      description: 'Hoa Diệu',
+      description: `Áo dài Hoa Diệu mang đậm vẻ đẹp trang nhã của hoa sen hồng, với họa tiết hoa sen được thêu tỉ mỉ trên nền lụa mềm mại, tôn lên vẻ thanh lịch và quý phái.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời)\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['FCDCF5'],
+      type: 'Hàng hot',
     },
   ],
   [
@@ -193,7 +291,16 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/448726009_988742056168157_426026929127772914_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFGJE1B7Igymcs0tMSjkg6OFCIdeNwHMDQUIh143AcwNClCHZXNzbaY8tecyXQH0Auw45YduscDAvOdvs_P_qTe&_nc_ohc=k_I0NV4pTvMQ7kNvgFrE-JB&_nc_ht=scontent.fhan5-8.fna&oh=00_AYBv3_PGGrScTNwHzCSz_iRbQHt2SSYdsuV1aNMYUYhC6A&oe=6677888E',
       collection: 'summer',
       price: 1299000,
-      description: 'Hồ Dĩnh',
+      description: `Áo dài Hồ Dĩnh là sự kết hợp tinh tế giữa gam màu nền xanh của biển cả và những họa tiết nổi bật, tượng trưng cho sự thanh nhã và sự tự do của biển cả bao la.\n
+
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#F2EDD3'],
     },
     {
@@ -207,22 +314,39 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/448657040_988742122834817_374112323713290343_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEFZXkywl2G2OtP0O7UBYD_VUSEda1IUHJVRIR1rUhQcjVbXIb6zFOLET86NaZlZI4AYx6Cpl-RnSe90Q9u2vl2&_nc_ohc=Q2kRuazsfacQ7kNvgHqZQKD&_nc_ht=scontent.fhan5-10.fna&oh=00_AYDiiImi7Jkz6FtAEVV22ilxv5BxxkfXAVZuxVh6nS9W-w&oe=66779F5B',
       collection: 'summer',
       price: 1299000,
-      description: 'Hội Phố',
+      description: `Áo dài Hội Phố là một sự pha trộn tinh tế giữa truyền thống và hiện đại, với những đường nét thiết kế đơn giản nhưng đầy uyển chuyển, phù hợp với nhịp sống năng động của thành phố.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#F2BFD8','#FCFBEA','#ADF2B9'],
     },
     {
       key: 15,
       name: 'Hương Hạ',
       linksWithAngle: [
-        'https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/448508421_988742342834795_5266304685124293648_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHr36jyLBmBaaFf_Hxhkh9LNQTu3Zcz8mQ1BO7dlzPyZLLlKs29PPwSycLDUaxLqIPvMpR3w231EzSIsR-dMawd&_nc_ohc=Bi_Y_7cftK8Q7kNvgFI8TYi&_nc_ht=scontent.fhan5-8.fna&oh=00_AYC-GHNIRUl5MgOY29pGUG9SWOyfEXRoIQsFZKh-2DgZfg&oe=6677953A',
-        'https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/448626656_988742392834790_2746311742547452293_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFzcWQcn-5pQoWiEYN79lxCsLJbAyAk3dawslsDICTd1iezrAYYSDxpNcZAydP47SGF6YgqcTHEKVPGcSY0zUHF&_nc_ohc=a1xnkDJj-ksQ7kNvgFI8nBu&_nc_ht=scontent.fhan5-2.fna&oh=00_AYAWmOEocOAcg6FY0mFnST7mr8nAGp5NQrmMpFrc_6SzoQ&oe=6677B090',
-        'https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/448437729_988742426168120_3849418442315386727_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGgBadXCMLdFoMx3H2AZj0q6z27G_RzcVPrPbsb9HNxUwIf34r0vcZWPRnUOTpHYsLmarmJxKcyCSj8qUsnf5bb&_nc_ohc=KRpx2_cQ664Q7kNvgEpiU3K&_nc_ht=scontent.fhan5-2.fna&oh=00_AYCWVkMKwVF8pimNA0n9wRFabXA4aKOdPyU1rOOQ9sOIGg&oe=6677B0D5',
-        'https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/448755546_988742466168116_4194105703888003235_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF7vzNYfHKwKAwRy55yh4e8KxT_lOzecGsrFP-U7N5wawg2uTqYBhRKGsGVkdRTdecszqBKH-mg2pFXUfhJa_pR&_nc_ohc=hVNciPgiT2IQ7kNvgFst5tH&_nc_ht=scontent.fhan5-10.fna&oh=00_AYCyoDOafcj-7Cbdf668sxe-M7zJ5rY7Vo8DJZKek0GxfQ&oe=6677BFA7',
+        'https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/448816069_893365589500735_2388222668003682751_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFd-KGlR_2xj_Snrgx-ClsuFc4sldOWxAMVziyV05bEA8V8ZbYYMq2i4h0gWCYZBuCT4AeAbQhp6WZsBMzyCk3w&_nc_ohc=V25CybFdDAwQ7kNvgE6e_Wg&_nc_ht=scontent.fhan14-3.fna&oh=00_AYBuHRocsWisOxcs9H6h5E2FS1NnaNjFp8VM4vbeTXWlvw&oe=667B1608',
+        'https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/448663585_893365609500733_5921225475614299385_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHLZJWTpVbY4SgFAO2FMglfZvUvZuWmMOlm9S9m5aYw6bkY9fnf94HMt1V17oUJyYwWoL_Fa357SXmsWx_94S3M&_nc_ohc=Anue-4ulDQsQ7kNvgE7Kt82&_nc_ht=scontent.fhan14-4.fna&oh=00_AYB4Cnga9K_6R8F-UVmgCRcYYB_XTfsp7KipJOfMdsI1bw&oe=667B31F0',
+        'https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/448665524_893365576167403_8844550169287897871_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGftnoN9y3HYbmTJ_9lqrzFWqwpRjM62WRarClGMzrZZJmrl8alDlBVceR2Momiip8IopEh43N4lRMnQwKQ4acp&_nc_ohc=E7ndIafHDioQ7kNvgFEt9sO&_nc_ht=scontent.fhan14-5.fna&oh=00_AYD5VBRhNzNz_UGrH4y4lWlB0B_rpzoQpXWUu5d1O0_xhg&oe=667B2C92',
+        'https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/448755254_893365599500734_7318025874389481543_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHhiOPJLLxVtCHjCuDXWKXmgKpiwkaLg9-AqmLCRouD32Fz6eWK0TkbJHBkdpGz2X3ir6L5ykabh_t4byXbRvNZ&_nc_ohc=GIwO4LcZ2CQQ7kNvgHVU76I&_nc_ht=scontent.fhan14-1.fna&oh=00_AYD4FMMwpBzO09mTIqd_Aufh69J6m2PdVb-pqMgHad6z8A&oe=667B07A1',
       ],
-      link: 'https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/448508421_988742342834795_5266304685124293648_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHr36jyLBmBaaFf_Hxhkh9LNQTu3Zcz8mQ1BO7dlzPyZLLlKs29PPwSycLDUaxLqIPvMpR3w231EzSIsR-dMawd&_nc_ohc=Bi_Y_7cftK8Q7kNvgFI8TYi&_nc_ht=scontent.fhan5-8.fna&oh=00_AYC-GHNIRUl5MgOY29pGUG9SWOyfEXRoIQsFZKh-2DgZfg&oe=6677953A',
+      link: 'https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/448816069_893365589500735_2388222668003682751_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFd-KGlR_2xj_Snrgx-ClsuFc4sldOWxAMVziyV05bEA8V8ZbYYMq2i4h0gWCYZBuCT4AeAbQhp6WZsBMzyCk3w&_nc_ohc=V25CybFdDAwQ7kNvgE6e_Wg&_nc_ht=scontent.fhan14-3.fna&oh=00_AYBuHRocsWisOxcs9H6h5E2FS1NnaNjFp8VM4vbeTXWlvw&oe=667B1608',
       collection: 'summer',
       price: 1399000,
-      description: 'Hương Hạ',
+      description: `Áo dài Hương Hạ mang đến vẻ đẹp dịu dàng như những cánh hoa nhài thơm ngát, với chất liệu lụa mềm mại và họa tiết hoa nhài tinh tế, phản ánh nét nữ tính và dịu dàng của người phụ nữ.\n
+
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời)\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#F7377E','#C0EFB9'],
     },
     {
@@ -238,7 +362,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/448779030_988742506168112_653063005969964069_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGQ5csP8wRD6QPOLpjXnooeLPHtGdU3Z6gs8e0Z1TdnqPc0aEeFERwJX7DAvrINhkht134KJHePGmn3AtUZWtj1&_nc_ohc=qx81ZxT0qPMQ7kNvgH2Mswi&_nc_ht=scontent.fhan5-9.fna&oh=00_AYDgCVKYC0OuCzmvM8Rj4vt7dMAaUWqoOWaAogA92qbEjA&oe=6677B90D',
       collection: 'summer',
       price: 1199000,
-      description: 'Sen Hạ',
+      description: `Áo dài Sen Hạ gợi lên hình ảnh của những cánh sen tươi mới nở, với màu sắc nhẹ nhàng và họa tiết sen được thêu nổi bật trên nền lụa mịn, tôn lên vẻ đẹp thuần khiết và thanh thoát.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#F7CDEC','#FDF6FB','#9EE5B5'],
     },
   ],
@@ -255,7 +387,17 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/448777749_988742702834759_1554470838978117934_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFOknv26fx7FQj4QbA0xUzEJM05sY7EbTAkzTmxjsRtMJ5C8DohmxsT00QoEYpmXsKBciC57Dot82Vf2RnMieln&_nc_ohc=hRYlGHqHN3AQ7kNvgHH7SHN&_nc_ht=scontent.fhan5-2.fna&oh=00_AYCvNcgRhJKuIT4YVsgN6zBj4t02bQVNIXcGYDfRBne_0w&oe=6677BE43',
       collection: 'summer',
       price: 999000,
-      description: 'Yếm Hồi',
+      description: `Áo dài Yếm Hôi là sự hòa quyện giữa sắc trắng tinh khôi của yếm và hồi, với những chi tiết thêu hoa vàng lấp lánh, mang đến vẻ đẹp sang trọng và thanh nhã.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+
+
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#D42929','#0F19A8'],
     },
     {
@@ -270,7 +412,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/448725957_988742892834740_555498867400063361_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHbbt0wzfKLO2MuhZCDPbgy9nOcCCY7mqz2c5wIJjuarGuNjXZbeLpu7mflm_CivUFDzwMvjfQagw27O5ghx5e7&_nc_ohc=wMwGnP7eRbYQ7kNvgFc9-06&_nc_ht=scontent.fhan5-10.fna&oh=00_AYBe3SX4WzTjhTTU3Wzxs-M0CTzRI_RfuquKrAVB15EU8A&oe=6677A800',
       collection: 'summer',
       price: 1390000,
-      description: 'Châu Diệp',
+      description: `Áo dài Châu Diệp với màu sắc rực rỡ như màu hoa diệp tươi thắm, kết hợp cùng họa tiết hoa diệp được thêu tỉ mỉ, tạo nên một vẻ đẹp quyến rũ và lôi cuốn.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời)\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#A21B1B','#F7D1F1'],
     },
     {
@@ -284,7 +434,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/448667202_988743036168059_8072448935412595821_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHbHlStjEKFu4e_QvmV2NX8P4OIxzZVYzY_g4jHNlVjNs9CCZcpP9xaKDovUGozBqxxkRPjYoJkHurZucA2ESN9&_nc_ohc=mTOVN_j5a8wQ7kNvgE1etcl&_nc_ht=scontent.fhan5-10.fna&oh=00_AYD95X45xSTwff0vywBqlV-qRTCgLoyWlKvxJemJkwbx4Q&oe=6677A0AC',
       collection: 'summer',
       price: 1299000,
-      description: 'Hoa Diệu',
+      description: `Áo dài Diệp Hồng là sự kết hợp hoàn hảo giữa màu hồng tươi thắm của hoa diệp và chất liệu lụa mềm mại, với họa tiết hoa diệp tinh tế, thích hợp cho những dịp trọng đại.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên\n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['FCDCF5'],
     },
     {
@@ -298,7 +456,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/448531764_988743139501382_6738418485799782949_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGkpl0b7ixTwLYribiYLhu_HIl43nSVafociXjedJVp-uuyLJ33-AtIgwr3WwD0Kth-TV5yOdN5sdPKJ2yBUvXw&_nc_ohc=5LNSMXApoFYQ7kNvgF3NJjf&_nc_ht=scontent.fhan5-11.fna&oh=00_AYAdTHCXu20WI6NXnib6cAakFpAizE3KKesQGRVrdTMNEg&oe=66779A68',
       collection: 'summer',
       price: 1299000,
-      description: 'Diệp Lan',
+      description: `Áo dài Diệp Lan mang đến vẻ đẹp thanh nhã của hoa lan, với màu xanh dịu dàng và họa tiết hoa lan được thêu trên nền lụa mịn, tạo nên một phong cách đằm thắm và tinh tế.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên\n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['FCDCF5'],
     },
   ],
@@ -313,7 +479,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/448755244_988770539498642_189629374858717201_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFvktkxabSdSi9FiO-Nz-oy5xrJ1Npt6IXnGsnU2m3ohczcQoWjXbQdRUIuz_cnIjArAJVmeopPrps7JXfzMJho&_nc_ohc=5nYY_WZ3Qn4Q7kNvgHvBd2K&_nc_ht=scontent.fhan5-8.fna&oh=00_AYCzgWemgVnwtBH7fXfvTAI6L_x4ceTvBBW2p8J6kAVlbw&oe=6677BE2B',
       collection: 'fall',
       price: 1150000,
-      description: 'Cam Thảo',
+      description: `Áo dài Cam Thảo là sự kết hợp tinh tế giữa màu cam tươi sáng và chất liệu lụa nhẹ nhàng, với những đường nét thiết kế đơn giản nhưng đầy sức sống và năng động.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#EB7542'],
     },
     {
@@ -326,7 +500,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/448739048_988770546165308_3316433178216866336_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEgUSzIuYcyf378qnNZNGrPgiWiYqBXCgOCJaJioFcKA07aiBWeHTAN9N5XjqwW6V1CsIWnUjDAEtTDhC7st5Bd&_nc_ohc=AAQBLE0_4FAQ7kNvgG5LF1L&_nc_ht=scontent.fhan5-2.fna&oh=00_AYB1rIs46NOdsiY2iXmA1ZLXWYZBxGntpiANgSbPdoMyQw&oe=6677BEC1',
       collection: 'fall',
       price: 999000,
-      description: 'Gió Thu',
+      description: `Áo dài Gió thu là biểu tượng của sự trầm lặng và thanh thoát của mùa thu, với gam màu vàng rực rỡ và họa tiết lá cây được thêu tỉ mỉ, tôn lên vẻ đẹp trang nhã và quyến rũ.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên\n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#C8EFB5'],
     },
     {
@@ -339,7 +521,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/448670740_988770619498634_5805450057241537614_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFsmj8ElocPAYesfOICRK5MGWEdE2RvQm0ZYR0TZG9CbSEpBgR_lUi6JsmOq7e3LXR6i4cCpZUK7yiIgQYJrnLU&_nc_ohc=2G67xoedSGoQ7kNvgEdL8l_&_nc_ht=scontent.fhan5-6.fna&oh=00_AYB2LSzOWjOeN9xBUR29vmKaAZNyhPrKS0P4F8m8l3RogA&oe=6677917A',
       collection: 'fall',
       price: 995000,
-      description: 'Hà Lan',
+      description: `Áo dài Hà Lan là sự kết hợp giữa màu sắc rực rỡ của hoa tulip và những đường nét thiết kế hiện đại, mang đến vẻ đẹp tươi mới và sự nổi bật đầy cuốn hút.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên\n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#F9D4EA'],
     },
     {
@@ -353,7 +543,16 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/448535256_988770689498627_8254618468064383354_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFDamFcShNlE6fHW3o6MSVKeNSkg_TIXcx41KSD9MhdzLpP24IwZjwLSxlHQzscgjhz_MQtxW1r7UmhKod2QOQA&_nc_ohc=iWrBITA-WK4Q7kNvgHswe39&_nc_ht=scontent.fhan5-9.fna&oh=00_AYCPiQuLHkRd5acn-GDdjeEVpbKCj3k3wxg5DfY8QoaqZw&oe=6677B621',
       collection: 'fall',
       price: 750000,
-      description: 'Hội An',
+      description: `Từ đôi bàn tay khéo léo, tỉ mỉ, chiếc áo dài đã được tạo nên bằng chất vải đũi tằm nhẹ mát, với sắc xanh cốm non tươi mới và màu vàng tơ dịu dàng.\n
+Áo dài Hội An mang đến từng cảm nhận mới mẻ như những ngày hạ sau mưa - mát lành và dễ chịu. Nếu cô hỏi Mây mong muốn dành tặng tới các cô điều gì trong những ngày đầu tháng 7, thì chính là tấm áo này đó ạ.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#FFD700','#3CB371'],
     },
   ],
@@ -369,7 +568,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/448504984_988771239498572_6710264695426703717_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF8duSK17nZfa5pEAc41zBG4Px9C-Hdd43g_H0L4d13jesaWBG4JEtwJJT-Q1gZqdLKrgOrGMOOjJCUma6GYwGy&_nc_ohc=cl7GyRNepl4Q7kNvgHZg_X-&_nc_ht=scontent.fhan5-11.fna&oh=00_AYBVR5uVJKXuzcVAvHbouAeeXhHROAWNot3TBK4rK7MFZQ&oe=6677C867',
       collection: 'fall',
       price: 999000,
-      description: 'Yếm Hồng',
+      description: `Áo dài Yếm Hồng là sự hòa quyện giữa màu hồng ngọt ngào của hoa yếm và sự thanh nhã của áo dài truyền thống, tạo nên một vẻ đẹp dịu dàng và quyến rũ.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên\n 
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#FFC0CB'],
     },
     {
@@ -382,7 +589,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/448587859_988770772831952_7720640139678144829_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFlH5FjZmxR3KKwolobJuU8LX2JETwydo8tfYkRPDJ2j_X01rG7n05TFk0FjGXS-Uh51hYJMou-C-oCmOBa16tj&_nc_ohc=stvx8EHzOGsQ7kNvgGgDpaB&_nc_ht=scontent.fhan5-6.fna&oh=00_AYCpLCHldgovfE9jqudjsRBhx0DN6ABZY9XApWMfpNQ4dw&oe=66779258',
       collection: 'fall',
       price: 899000,
-      description: 'Hương Thu',
+      description: `Áo dài Hương Thu là sự kết hợp tinh tế giữa màu sắc ấm áp của mùa thu và họa tiết lá cây được thêu tỉ mỉ, mang đến vẻ đẹp trầm lặng và sang trọng.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#87CEFA'],
     },
     {
@@ -396,7 +611,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/448594638_988770836165279_7314508680489008584_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEgXckjynrbDFRchlLV9IzFb_aIxaQoh9xv9ojFpCiH3EcUuGu7do6P_iJ-BfCLsN2fNI2823Mpm_OiVFyxjYHv&_nc_ohc=gbmV1fieBZcQ7kNvgEaNCIV&_nc_ht=scontent.fhan5-11.fna&oh=00_AYDDy_ZDuzLMEJZG5cHGq4I2DjykXuw2Rm7ksPAnZmPoAg&oe=6677B003',
       collection: 'fall',
       price: 999000,
-      description: 'Mộc Lan',
+      description: `Áo dài Mộc Lan thể hiện sự thanh cao và kiêu hãnh như hoa mộc lan, với màu tím thanh nhã và những chi tiết thêu hoa tinh tế, phản ánh nét đằm thắm và mạnh mẽ của phụ nữ Việt Nam.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên\n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['red'],
     },
     {
@@ -411,7 +634,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/448673499_988770916165271_7946605821474745585_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG7Vp9WF_XqPXfZbaxRuS3LLN-g-HWXNTws36D4dZc1PBWQVlFmGvxhf_3q01TsE2Sp-3gT1da5iiF3uKVl9o51&_nc_ohc=uP_3e9c8G_sQ7kNvgEZiqFx&_nc_ht=scontent.fhan5-2.fna&oh=00_AYCC9uUQrukJTl2MciY_4FmyGiLEaTSrM2ZKFr1jSKamDQ&oe=6677C119',
       collection: 'fall',
       price: 999000,
-      description: 'Mùa Sen',
+      description: `Áo dài Mùa Sen mang đến vẻ đẹp tinh khôi của hoa sen, với màu trắng trong và họa tiết sen được thêu tỉ mỉ, tạo nên một phong cách thanh nhã và trang nhã.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['	#FFFAFA','#C8F9C3'],
     },
   ],
@@ -426,7 +657,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/448625242_988771052831924_6876970935082292561_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHwYcguxl8i59Jog_oZeHAB4WEchww3-SvhYRyHDDf5K0_qJXQeONbS-oXvFrD3FLHeJdKhjmLNvPmM_byRG4rk&_nc_ohc=efOblip8L4kQ7kNvgFW4dan&_nc_ht=scontent.fhan5-11.fna&oh=00_AYCq7IWXK4Oe8h__5ZA1fDzuxafB_rTUlMKEll8dukAoiA&oe=6677AFD2',
       collection: 'fall',
       price: 799000,
-      description: 'Nắng Thu',
+      description: `Áo dài Nắng Thu là sự kết hợp giữa màu vàng ấm áp của nắng thu và chất liệu lụa mềm mại, với những đường nét thiết kế tinh tế, thích hợp cho những ngày thu trong lành.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#FFC0CB'],
     },
     {
@@ -440,7 +679,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/448578978_988771189498577_8269828047131625012_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFX_F-jJxRA7h4h1WauyYQ2Uwyg49xUNv1TDKDj3FQ2_WT47S9bTZeuaIGjnVLXO4EYqUYjgbbWiDHie_f9z4yX&_nc_ohc=Drulf5Qm3K0Q7kNvgGp45E_&_nc_ht=scontent.fhan5-10.fna&oh=00_AYBlJs52fm_aYoulKpBgATMKpjB7ZctecSMBcVLfg0lj1w&oe=6677B191',
       collection: 'fall',
       price: 750000,
-      description: 'Băng Đông',
+      description: `Áo dài Băng Đông lấy cảm hứng từ sắc trắng tinh khiết của băng tuyết, với những đường nét đơn giản nhưng đầy nghệ thuật, tạo nên một vẻ đẹp trong trẻo và thanh thoát.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#FFC0CB'],
     },
     {
@@ -454,7 +701,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/448506007_988771586165204_2963683013417972027_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF_GLDTnaj6sBnN8Ph2EuvhIkEPD-GM4egiQQ8P4Yzh6HzzrmbMnS_KJ_U3-AnutKc9NlaD2H2RoIRgdMsXWLZp&_nc_ohc=9AyMpdMWrbYQ7kNvgHJAHMD&_nc_ht=scontent.fhan5-6.fna&oh=00_AYDiN8ASJQAaI5umDbA9HtyiB4OfnDSVaUo75ksngjJ9Eg&oe=6677BE5D',
       collection: 'winter',
       price: 999000,
-      description: 'Diệp Phi',
+      description: `Áo dài Diệp Phi mang đến vẻ đẹp uyển chuyển của hoa diệp, với màu tím nhạt và họa tiết hoa diệp được thêu nổi bật, thể hiện sự sang trọng và quyến rũ.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['red'],
     },
     {
@@ -469,7 +724,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/448565106_988771706165192_2689644445542191287_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFWmLcTopCtEtpLHa0j5kZevVUcI8YA1Vu9VRwjxgDVW3bvNXvdaceMuZ0J3pffbYQBm3_kGx3aOiMNNqzql84E&_nc_ohc=2giUAZX_xGIQ7kNvgEkPcRK&_nc_ht=scontent.fhan5-9.fna&oh=00_AYDeTTrm2r0Zy4A2n0YDmWhqq8HSyZoVUxngVT1rZq-PVQ&oe=6677C748',
       collection: 'winter',
       price: 1199000,
-      description: 'Đông Đào Hoa',
+      description: `Áo dài Đông Đào Hoa là sự pha trộn giữa màu đỏ rực rỡ của hoa đào và vẻ đẹp thanh thoát của áo dài truyền thống, tạo nên một phong cách quý phái và lôi cuốn.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['red','blue'],
     },
   ],
@@ -481,12 +744,19 @@ export const PRODUCTS = [
         'https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/448755666_988772072831822_7589355905424662021_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHBC6e_a5LHECOfzk41sxvZco2wcLsXWC9yjbBwuxdYLxRd8ySmk1w0-nJdKIdR2cobm6Q9hi-xtPFwUtG4MXwr&_nc_ohc=Q1p0x53wfscQ7kNvgE18gCB&_nc_ht=scontent.fhan5-10.fna&oh=00_AYBwprZ1Eb8qTIGJipOJ4FbX4aX9p8clMhus7ZpzZdneDA&oe=6677974D',
         'https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/448610798_988772022831827_2491623210795688053_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHdDtW1vM4-RTl4d1uIIAHkWLBF9ENo8aZYsEX0Q2jxpmthNAoZVRypdRmx6YeJFvgK089iyMtpIOc4oCHGKttY&_nc_ohc=aAazzi-bJGsQ7kNvgFH2J7D&_nc_ht=scontent.fhan5-9.fna&oh=00_AYDaBZJi01tm67hlzWgGj0ppEhW3e_xu9LMRt-zhAuJ70w&oe=6677AB35',
         'https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/448593737_988772066165156_7730012956801365573_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGjXLhs0EdZDrVeGGwdwUC8rt6JZAqdXiKu3olkCp1eIrXr496EaZDw1YiIw0hcROfrxPoMgvvhZMNRM4TYiIej&_nc_ohc=0k7DT8_TvqEQ7kNvgFOXJcW&_nc_ht=scontent.fhan5-2.fna&oh=00_AYCBVmLR_Jwrsovz2kO6o_8VR-50vvu2i1pfcWpIyHQcaw&oe=6677A577',
-        '',
       ],
       link: 'https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/448755666_988772072831822_7589355905424662021_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHBC6e_a5LHECOfzk41sxvZco2wcLsXWC9yjbBwuxdYLxRd8ySmk1w0-nJdKIdR2cobm6Q9hi-xtPFwUtG4MXwr&_nc_ohc=Q1p0x53wfscQ7kNvgE18gCB&_nc_ht=scontent.fhan5-10.fna&oh=00_AYBwprZ1Eb8qTIGJipOJ4FbX4aX9p8clMhus7ZpzZdneDA&oe=6677974D',
       collection: 'winter',
       price: 999000,
-      description: 'Hoài Phố Hoa',
+      description: `Áo dài Hoài Phố Hoa gợi lên hình ảnh của những con phố rực rỡ hoa lá, với màu sắc tươi mới và họa tiết hoa lá được thêu tỉ mỉ, mang đến vẻ đẹp tươi vui và năng động.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#008080'],
     },
     {
@@ -501,7 +771,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/448462138_988772162831813_2810899601238352071_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFDSF9Uwsd1T9k4aQmJ768c-5IaS4UlaH77khpLhSVofq1AKzZZU6D2pXW1o3b0po1SdhV8XcrruyIUY6FtFrvi&_nc_ohc=GILw5HBlumMQ7kNvgE9dwmt&_nc_ht=scontent.fhan5-11.fna&oh=00_AYAKEkxfwkMdqODSKG95-xBKk7f1BFpPu6csqF55NbLOPA&oe=6677C857',
       collection: 'winter',
       price: 1999000,
-      description: 'Hoa Phố',
+      description: `Áo dài Hoa Phố là sự kết hợp giữa màu sắc rực rỡ của hoa phố và chất liệu lụa mềm mại, với những đường nét thiết kế đơn giản nhưng đầy cuốn hút và nữ tính.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#F5F5DC','red'],
     },
     {
@@ -514,7 +792,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-11.fna.fbcdn.net/v/t39.30808-6/448591306_988772316165131_6190965406580765375_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE0BuWaqicQKQfuf7CINnvV2VmFkq07ncnZWYWSrTudycReH1LbaY2szlCYTUIl3gg8jGDSm_hntamDRF0fCx8n&_nc_ohc=YsGB9ESUPi0Q7kNvgFOpaat&_nc_ht=scontent.fhan5-11.fna&oh=00_AYBnCsW4D00OoPpo5cFsI97YU3KxI4h-_8mmmZeLOtdczg&oe=6677A0DC',
       collection: 'winter',
       price: 999000,
-      description: 'Nắng Đông',
+      description: `Áo dài Nắng Đông thể hiện sự tương phản giữa ánh nắng rực rỡ và cái lạnh của mùa đông, với màu vàng ấm áp và họa tiết lá cây được thêu nổi bật, tạo nên một phong cách ấm áp và đầy sức sống.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['red'],
     },
     {
@@ -529,7 +815,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/448779854_988772429498453_839250750949044573_n.jpg?stp=cp6_dst-jpg&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFuguKwUQ_pXPK0FioT0nwg97awttGrRMP3trC20atEw4k4W0F2YsHkmNQeRfTqbjHER2ykbYHV0AJWQQvFrEiZ&_nc_ohc=SA1FK4Kex0IQ7kNvgET1F1u&_nc_ht=scontent.fhan5-6.fna&oh=00_AYDRT2z1u_n2Y5WTM9Xx4qbXrth2DvdFcQhEDPahbzCVIA&oe=6677CF14',
       collection: 'winter',
       price: 1199000,
-      description: 'Sương Sớm',
+      description: `Áo dài Sương Sớm là biểu tượng của sự tinh khiết và thanh thoát như sương mai, với màu xanh dịu dàng và những chi tiết thêu nhẹ nhàng, mang đến vẻ đẹp mộc mạc và đằm thắm.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#00008B','red'],
     },
   ],
@@ -547,7 +841,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/448505584_988772476165115_4719416707782153750_n.jpg?stp=cp6_dst-jpg&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFGXTJrvTYqt93og1WjywayLrgaoz2V6CcuuBqjPZXoJ12T6zSgKFGdLANMRNvlXJJ7iRcjNwfJxxXRs6eKyDq8&_nc_ohc=s0k0rky-NUYQ7kNvgFuKata&_nc_ht=scontent.fhan5-8.fna&oh=00_AYDBh7qGsrPJFC7clrEzlNMQGur9Nk0tvRNsajoB3seANw&oe=6677B680',
       collection: 'winter',
       price: 999000,
-      description: 'Thường Niên Hoa',
+      description: `Áo dài Thường Niên Hoa mang đến vẻ đẹp bền vững như hoa thường niên, với màu vàng nhạt và những họa tiết hoa được thêu tỉ mỉ, thể hiện sự kiên định và trang nhã.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['#689C62','#F2960C'],
     },
     {
@@ -563,7 +865,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-8.fna.fbcdn.net/v/t39.30808-6/448459892_988772696165093_8393146605176307923_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGdb22GP0-ZdYZiOszZ8rTtfRw-JhS9hzB9HD4mFL2HMP3X6T_c4n-B0rYOT4rvMiy7LBK2IlC3t0cFHkLK3kal&_nc_ohc=DTyy_pWU-QkQ7kNvgFoh0pp&_nc_ht=scontent.fhan5-8.fna&oh=00_AYBr0aOOKFGZQ5oWAmPdDe2QWYdtZGCNEauwR0qwYl9HYg&oe=6677C715',
       collection: 'winter',
       price: 899000,
-      description: 'Yên Minh',
+      description: `Áo dài Yên Minh là sự kết hợp giữa màu sắc tinh khôi của hoa mẫu đơn và chất liệu lụa mềm mại, với những đường nét thiết kế đơn giản nhưng đầy tinh tế và quý phái.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['red','#E2F6E4'],
     },
     {
@@ -576,7 +886,15 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/448440478_988771962831833_6715431451258711010_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFqvS6aKgYVLKPUBdyNl2pK6fl9Gw4wLaPp-X0bDjAto-4avVwDm5VGKd9i-wjoPBSmeodZMizEX0ddprEbv0sh&_nc_ohc=ppWqy9ZJGOYQ7kNvgFGXRPR&_nc_ht=scontent.fhan5-10.fna&oh=00_AYDz5et_VBlGYD7JRKl_Vl0dSUY_t7BI-Igt_sS8Lhb5oA&oe=6677B1FD',
       collection: 'winter',
       price: 1199000,
-      description: 'Đông Dịu',
+      description: `Áo dài Đông Dịu là sự giao thoa giữa màu xanh dịu mát của mùa đông và sự dịu dàng của áo dài truyền thống, tạo nên một vẻ đẹp thanh thoát và thu hút.\n
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên \n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['red'],
     },
     {
@@ -590,8 +908,75 @@ export const PRODUCTS = [
       link: 'https://scontent.fhan5-6.fna.fbcdn.net/v/t39.30808-6/448502709_988741936168169_5355974675536748654_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGn16vzg37u9IM6k_2T2_U-ayNQdTGjAQprI1B1MaMBCmSB8g9eWx3A9GoJnzkhoyb_TLtBGHH-SEg8FHZ8iH1q&_nc_ohc=1t0EkTH9tDwQ7kNvgFOBRsl&_nc_ht=scontent.fhan5-6.fna&oh=00_AYAi8AJ7e1J2jGtJWprTM655p42__9AdcHlxjtoD1NWV1g&oe=667780D0',
       collection: 'winter',
       price: 799000,
-      description: 'Hoa Diệu',
+      description: `Áo dài Hoa Diệu mang đến vẻ đẹp thướt tha như hoa diêu bông, với màu hồng nhạt và họa tiết hoa diêu được thêu tỉ mỉ, tạo nên một phong cách nữ tính và duyên dáng.\n
+
+Màu sắc thực của sản phẩm có thể đậm hơn/nhạt hơn so với ảnh do điều kiện ánh sáng (chụp trong nhà/ngoài trời).\n
+Bảo quản:
+- Giặt tay/giặt máy với túi giặt với nước lạnh
+- Không tẩy, không sấy
+- Phơi khô tự nhiên\n
+LƯU Ý: 
+Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.
+`,
       color: ['pink'],
     },
   ],
 ]
+
+export const BANNERSBYCOLLECTION = {
+  spring: [
+    {
+      links: 'http://localhost:3000/products?collection=spring',
+      img: "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/438238556_851834176987210_8036152608374543887_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHzimIF4BS4C-sX0HD6mvLpyYN3D_tZvR3Jg3cP-1m9HcWXUSVb7i-9yF-_lD7zk1ZJERQDpUfijJn-K55mlo-7&_nc_ohc=BbL8AxW5v0EQ7kNvgGslL5p&_nc_ht=scontent.fhan14-3.fna&oh=00_AYAvzDxWaoDqnrIxpho1ltDmfjxOlGShxvHoIGoO2Kz6xw&oe=667B1484"
+    
+    },
+    {
+      links: 'http://localhost:3000/products?collection=spring',
+      img: "https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/281212629_2388376661303441_9119045914626423258_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=LuyiVGKrgEYQ7kNvgEXK_an&_nc_ht=scontent.fhan14-2.fna&oh=00_AYCYU_3Ga7E9F45jN2pdH0-LjQB9x28zPUtTA-r36hgryA&oe=667B00E7"
+    }
+  ],
+  summer: [
+    {
+      links: 'http://localhost:3000/products?collection=summer',
+      img: "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/438238556_851834176987210_8036152608374543887_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHzimIF4BS4C-sX0HD6mvLpyYN3D_tZvR3Jg3cP-1m9HcWXUSVb7i-9yF-_lD7zk1ZJERQDpUfijJn-K55mlo-7&_nc_ohc=BbL8AxW5v0EQ7kNvgGslL5p&_nc_ht=scontent.fhan14-3.fna&oh=00_AYAvzDxWaoDqnrIxpho1ltDmfjxOlGShxvHoIGoO2Kz6xw&oe=667B1484"
+    
+    },
+    {
+      links: 'http://localhost:3000/products?collection=summer',
+      img: "https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/281212629_2388376661303441_9119045914626423258_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=LuyiVGKrgEYQ7kNvgEXK_an&_nc_ht=scontent.fhan14-2.fna&oh=00_AYCYU_3Ga7E9F45jN2pdH0-LjQB9x28zPUtTA-r36hgryA&oe=667B00E7"
+    }
+  ],
+  fall: [
+    {
+      links: 'http://localhost:3000/products?collection=fall',
+      img: "https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/301512369_2463566853784421_2554758374515184066_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEV099jMVRe1FEjgukyzHC-17a-gfKbEWnXtr6B8psRaVKAFavi9_lOZojpASvtvI5mjwkkIFT8DVdVYTlr4Gv9&_nc_ohc=qUtEsENZEJgQ7kNvgGNBDxr&_nc_ht=scontent.fhan14-2.fna&oh=00_AYBT60gw8a6r7b5CsfKAqOcbXIWGVnJgva7dB2g3SBVGZg&oe=667B1F24"
+    
+    },
+    {
+      links: 'http://localhost:3000/products?collection=fall',
+      img: "https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/281212629_2388376661303441_9119045914626423258_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=LuyiVGKrgEYQ7kNvgEXK_an&_nc_ht=scontent.fhan14-2.fna&oh=00_AYCYU_3Ga7E9F45jN2pdH0-LjQB9x28zPUtTA-r36hgryA&oe=667B00E7"
+    }
+  ],
+  winter: [
+    {
+      links: 'http://localhost:3000/products?collection=winter',
+      img: "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/438238556_851834176987210_8036152608374543887_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHzimIF4BS4C-sX0HD6mvLpyYN3D_tZvR3Jg3cP-1m9HcWXUSVb7i-9yF-_lD7zk1ZJERQDpUfijJn-K55mlo-7&_nc_ohc=BbL8AxW5v0EQ7kNvgGslL5p&_nc_ht=scontent.fhan14-3.fna&oh=00_AYAvzDxWaoDqnrIxpho1ltDmfjxOlGShxvHoIGoO2Kz6xw&oe=667B1484"
+    
+    },
+    {
+      links: 'http://localhost:3000/products?collection=winter',
+      img: "https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/281212629_2388376661303441_9119045914626423258_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=LuyiVGKrgEYQ7kNvgEXK_an&_nc_ht=scontent.fhan14-2.fna&oh=00_AYCYU_3Ga7E9F45jN2pdH0-LjQB9x28zPUtTA-r36hgryA&oe=667B00E7"
+    }
+  ],
+  default: [
+    {
+      links: 'http://localhost:3000/products',
+      img: "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/438238556_851834176987210_8036152608374543887_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHzimIF4BS4C-sX0HD6mvLpyYN3D_tZvR3Jg3cP-1m9HcWXUSVb7i-9yF-_lD7zk1ZJERQDpUfijJn-K55mlo-7&_nc_ohc=BbL8AxW5v0EQ7kNvgGslL5p&_nc_ht=scontent.fhan14-3.fna&oh=00_AYAvzDxWaoDqnrIxpho1ltDmfjxOlGShxvHoIGoO2Kz6xw&oe=667B1484"
+    
+    },
+    {
+      links: 'http://localhost:3000/products',
+      img: "https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/281212629_2388376661303441_9119045914626423258_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=LuyiVGKrgEYQ7kNvgEXK_an&_nc_ht=scontent.fhan14-2.fna&oh=00_AYCYU_3Ga7E9F45jN2pdH0-LjQB9x28zPUtTA-r36hgryA&oe=667B00E7"
+    }
+  ],
+}

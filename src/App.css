@@ -216,7 +216,7 @@ cursor: pointer;
 }
 
 .collections > a:hover {
-  color: blue;
+  color: rgb(75, 70, 70);
   background-color: rgb(248, 246, 243);
 }
 

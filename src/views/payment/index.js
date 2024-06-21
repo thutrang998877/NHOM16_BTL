@@ -14,7 +14,8 @@ function Payment() {
   const [productsInCart, setProductsInCart] = useState(currentPath === 'buy_now' ? JSON.parse(localStorage.getItem('buyNow')) : JSON.parse(localStorage.getItem('carts')))
   let initTotal = 0
   initTotal = productsInCart ? productsInCart.forEach(item => {
-    initTotal += item.price * item.quantity
+    const nextPrice = item.discount && item.discount > 0 ? item.price * item.quantity * (100 - (+item.discount)) / 100 : item.price * item.quantity
+    initTotal += nextPrice
   }) : 0
 
   const [total, setTotal] = useState(initTotal)
@@ -26,7 +27,8 @@ function Payment() {
     }
     let initTotal = 0
     productsInCart && productsInCart.forEach(item => {
-        initTotal += item.price * item.quantity
+      const nextPrice = item.discount && item.discount > 0 ? item.price * item.quantity * (100 - (+item.discount)) / 100 : item.price * item.quantity
+      initTotal += nextPrice
     })
 
     setTotal(initTotal)
@@ -73,7 +75,7 @@ function Payment() {
                         <div style={{fontWeight: '400', color: 'gray'}}>x{item.quantity}</div>
                     </div>
                   </div>
-                  <div style={{fontWeight: '400', color: 'red', marginBottom: '2rem'}}>{USDollar.format(item.quantity * item.price)}</div>
+                  <div style={{fontWeight: '400', color: 'red', marginBottom: '2rem'}}>{USDollar.format(item.discount && item.discount > 0 ? item.quantity * item.price * (100 - item.discount) / 100 : item.quantity * item.price)}</div>
                 </div>
               )
             })}

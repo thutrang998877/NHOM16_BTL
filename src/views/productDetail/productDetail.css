@@ -6,11 +6,13 @@
 .main-detail {
     display: flex;
     flex-direction: row;
+    margin-top: 1rem;
 }
 
 .side-preview-image-container {
     display: flex;
     flex-direction: column;
+    width: 20%;
 }
 
 .circle {
@@ -205,10 +207,14 @@ input[type=number].number-to-text {
 }
 
 .main-preview-img {
-    width: 35%;
+    width: 40%;
 }
 
 .individual-card:hover {
     border: 1px solid rgb(164, 193, 205);
     border-radius: 0.5rem;
+}
+
+div {
+    white-space: pre-line;
 }

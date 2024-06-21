@@ -45,7 +45,7 @@ function ProductDetail() {
 
     const currentCarts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts')) : null
     if (!currentCarts) {
-        localStorage.setItem('carts', JSON.stringify([{name: currentProduct.name, key: currentProduct.key, color: currentColor, quantity: +numOfProduct, link: currentProduct.link, price: currentProduct.price}]))
+        localStorage.setItem('carts', JSON.stringify([{name: currentProduct.name, key: currentProduct.key, color: currentColor, quantity: +numOfProduct, link: currentProduct.link, price: currentProduct.price, discount: currentProduct.discount}]))
     } else {
         const indexSameProductExisted = currentCarts.findIndex(item => item.key === currentProduct.key && item.color === currentColor)
         if (indexSameProductExisted !== -1) {
@@ -54,7 +54,7 @@ function ProductDetail() {
             window.alert('Đã thêm vào giỏ hàng!')
             return
         }
-        currentCarts.push({name: currentProduct.name, key: currentProduct.key, color: currentColor, quantity: +numOfProduct, link: currentProduct.link, price: currentProduct.price})
+        currentCarts.push({name: currentProduct.name, key: currentProduct.key, color: currentColor, quantity: +numOfProduct, link: currentProduct.link, price: currentProduct.price, discount: currentProduct.discount})
         localStorage.setItem('carts', JSON.stringify(currentCarts))
         window.alert('Đã thêm vào giỏ hàng!')
     }
@@ -66,7 +66,7 @@ function ProductDetail() {
         return
     }
 
-    localStorage.setItem('buyNow', JSON.stringify([{name: currentProduct.name, key: currentProduct.key, color: currentColor, quantity: +numOfProduct, link: currentProduct.link, price: currentProduct.price}]))
+    localStorage.setItem('buyNow', JSON.stringify([{name: currentProduct.name, key: currentProduct.key, color: currentColor, quantity: +numOfProduct, link: currentProduct.link, price: currentProduct.price, discount: currentProduct.discount}]))
     navigate('/carts/buy_now')
   }
 
@@ -79,12 +79,15 @@ function ProductDetail() {
                 })}
             </div>
             <div className='main-preview-img'>
-                <img src={previewingLink ? previewingLink : currentProduct.link} style={{marginLeft: '2rem', width: '100%', height: '35rem', objectFit: 'cover', borderRadius: '0.3rem'}}></img>
+                <img src={previewingLink ? previewingLink : currentProduct.link} style={{width: '100%', height: '35rem', objectFit: 'cover', borderRadius: '0.3rem'}}></img>
             </div>
-            <div style={{display: 'flex', flexGrow: 1, flexDirection: 'column', marginLeft: '3rem', marginRight: '3rem'}}>
-                <div style={{fontSize: '1.5rem', fontWeight: '500'}}>{currentProduct.name}</div>
-                <div style={{fontWeight: '400', color: 'gray'}}>Designed by: Mây</div>
-                <div style={{fontWeight: '400', color: 'red'}}>{USDollar.format(currentProduct.price)}</div>
+            <div style={{display: 'flex', width: '40%', flexDirection: 'column', marginLeft: '3rem'}}>
+                <div style={{fontSize: '1.8rem', fontWeight: '500'}}>{currentProduct.name}</div>
+                <div style={{fontWeight: '400', color: 'gray', marginTop: '0.5rem'}}>Designed by: Mây</div>
+                <div style={{fontWeight: '400', color: 'rgb(211, 116, 116)', marginTop: '0.5rem', display: 'flex'}}>
+                    {currentProduct.discount && currentProduct.discount > 0 && <div style={{textDecoration: 'line-through', color: 'black', marginRight: '0.5rem'}}>{USDollar.format(currentProduct.price)}</div>}
+                    {USDollar.format(currentProduct.discount && currentProduct.discount > 0 ? currentProduct.price * (100 - currentProduct.discount) /100 : currentProduct.price)}
+                </div>
                 <div className='color-container'>
                     {currentProduct.color.map(it => {
                         return (
@@ -98,20 +101,20 @@ function ProductDetail() {
                         <input type='number' className="number-to-text"  value={numOfProduct} min={1} max={99} onChange={handleChangeNumOfProduct}></input>
                         <div className='up-down' onClick={clickIncrease}>&#43;</div>
                     </div>
-                    <button className='add-to-cart-button' onClick={addToCart}>Thêm vào giỏ</button>
+                    <button className='add-to-cart-button' onClick={addToCart}>Thêm vào giỏ hàng</button>
                 </div>
                 <button className='buy-now-button' onClick={buyNow}>Mua ngay</button>
 
                 <div style={{fontSize: '1.5rem', marginTop: '1rem', fontWeight: 'bold'}}>
                     <div>Mô tả</div>
-                    <p style={{marginTop: '1rem', fontWeight: '300'}}>{currentProduct.description}</p>
+                    <p style={{marginTop: '1rem', fontWeight: '200', fontSize: '1rem'}}>{currentProduct.description}</p>
                 </div>
             </div>
         </div>
         <div className='quick-buy-container'>
             <div className='quick-detail'>
                 <img src={currentProduct.link} style={{marginLeft: '2rem', width: '5rem', height: '8rem', objectFit: 'cover'}}></img>
-                <div style={{fontWeight: '400', color: 'red', marginLeft: '1rem'}}>{USDollar.format(currentProduct.price)}</div>
+                <div style={{fontWeight: '400', color: 'rgb(211, 116, 116)', marginLeft: '1rem'}}>{USDollar.format(currentProduct.discount && currentProduct.discount > 0 ? currentProduct.price * (100 - currentProduct.discount) /100 : currentProduct.price)}</div>
             </div>
             <div className='add-to-cart-container'>
                 <div className='quick-color-container'>
@@ -126,11 +129,11 @@ function ProductDetail() {
                     <input type='number' className="number-to-text quick-number-to-text"  value={numOfProduct} min={1} max={99} onChange={handleChangeNumOfProduct}></input>
                     <div className='quick-up-down' onClick={clickIncrease}>&#43;</div>
                 </div>
-                <button className='quick-add-to-cart-button' onClick={addToCart}>Thêm vào giỏ</button>
+                <button className='quick-add-to-cart-button' onClick={addToCart}>Thêm vào giỏ hàng</button>
             </div>
         </div>
         <div className='same-collection-container'>
-            <h1>Có thể nàng sẽ thích</h1>
+            <h1>CÓ THỂ NÀNG SẼ THÍCH</h1>
             <div className='same-collection-cards'>
                 {sameProducts.length > 0 && sameProducts.map(it => {
                     return <div className='same-collection-card'>
@@ -138,7 +141,10 @@ function ProductDetail() {
                             <img src={it.link}></img>
                         </a>
                         <div className='card-product-name'>{it.name}</div>
-                        <div className='card-product-price'>{USDollar.format(it.price)}</div>
+                        <div style={{display: 'flex'}}>
+                            {it.discount && it.discount > 0 && <div style={{textDecoration: 'line-through', color: 'black', marginRight: '0.5rem'}}>{USDollar.format(it.price)}</div>}
+                            <div className='card-product-price'>{USDollar.format(it.discount && it.discount > 0 ? it.price * (100 - it.discount) /100 : it.price)}</div>
+                        </div>
                     </div>
                 })}
             </div>

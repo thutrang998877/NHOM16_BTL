@@ -13,7 +13,8 @@ function Cart() {
   })
   let initTotal = 0
   initTotal = productsInCart ? productsInCart.forEach(item => {
-    initTotal += item.price * item.quantity
+    const nextPrice = item.discount && item.discount > 0 ? item.price * item.quantity * (100 - (+item.discount)) / 100 : item.price * item.quantity
+    initTotal += nextPrice
   }) : 0
 
   const [total, setTotal] = useState(initTotal)
@@ -26,7 +27,7 @@ function Cart() {
     }
     let initTotal = 0
     productsInCart && productsInCart.forEach(item => {
-        initTotal += item.price * item.quantity
+        initTotal += item.discount && item.discount > 0 ? item.price * item.quantity * (100 - (+item.discount)) / 100 : item.price * item.quantity
     })
 
     setTotal(initTotal)
@@ -89,7 +90,7 @@ function Cart() {
                                     <img className='side-preview-img' style={{marginRight: '1rem', marginBottom: '1rem', width: '6rem', height: '9rem', objectFit: 'cover', borderRadius: '0.3rem'}} src={item.link}></img>
                                     <div style={{display: 'flex', flexDirection: 'column', height: '8rem', justifyContent: 'flex-start'}}>
                                         <div style={{fontWeight: '500', color: 'black'}}>{item.name}</div>
-                                        <div style={{fontWeight: '400', color: 'red'}}>{USDollar.format(item.price)}</div>
+                                        <div style={{fontWeight: '400', color: 'red'}}>{USDollar.format(item.discount && item.discount > 0 ? item.price * (100 - (+item.discount)) / 100 : item.price)}</div>
                                     </div>
                                 </div>
                             </div>
@@ -101,13 +102,13 @@ function Cart() {
                                     }}></input>
                                     <div className='up-down' onClick={() => {increaseToCartByKey(item.key, item.color)}}>&#43;</div>
                                 </div>
-                                <div style={{fontWeight: '400', color: 'red', marginBottom: '2rem'}}>Tổng: {USDollar.format(item.quantity * item.price)}</div>
+                                <div style={{fontWeight: '400', color: 'red', marginBottom: '2rem'}}>Tổng: {USDollar.format(item.discount && item.discount > 0 ? item.quantity * item.price * (100 - item.discount) / 100 : item.quantity * item.price)}</div>
                             </div>
                         </div>
                     )
                 })}
                 <div style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '1.5rem'}}>Tổng đơn hàng: <p style={{ color: 'red', display: 'inline', marginLeft: '0.5rem' }}>{USDollar.format(total)}</p></div>
-                <a className='buy-now-button' style={{ marginLeft: '2rem', marginRight: '2rem', width: 'calc(100% - 8rem)', fontSize: '1.5rem'}} href={`/payment/${currentPath === 'buy_now' ? 'buy_now' : ''}`}>Thanh toán</a>
+                <a className='buy-now-button' style={{ marginLeft: '2rem', marginRight: '2rem', width: 'calc(100% - 8rem)', fontSize: '1.5rem', marginBottom: '2rem'}} href={`/payment/${currentPath === 'buy_now' ? 'buy_now' : ''}`}>Thanh toán</a>
             </div>
             <div className='payment-container'>
                 <img className='img-thanks' src='https://scontent.fhan14-2.fna.fbcdn.net/v/t1.15752-9/448395849_445719281558106_7943776296268036452_n.png?stp=dst-png_p1080x2048&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=K31j71mUibEQ7kNvgE4nhD2&_nc_ht=scontent.fhan14-2.fna&oh=03_Q7cD1QHq3qgdZFCDA2sjKBwVVJ5esN2VuHFoFoRFU7t4pgCT4w&oe=669CC4CC'></img>

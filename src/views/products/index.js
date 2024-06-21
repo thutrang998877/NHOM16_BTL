@@ -2,7 +2,7 @@ import '../../App.css';
 import './index.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
-import { PRODUCTS } from '../../constants/product'
+import { BANNERSBYCOLLECTION, PRODUCTS } from '../../constants/product'
 import { useEffect, useState } from 'react';
 import { getProductsByCollection } from '../../helper/common';
 
@@ -64,24 +64,33 @@ const orderProductsByPrice = (products, chunkSize, isIncrease) => {
   return chunkedProducts;
 }
 
+const getBannerByCollection = (collection) => {
+  if (Object.keys(BANNERSBYCOLLECTION).includes(collection)) {
+    return BANNERSBYCOLLECTION[collection]
+  }
+
+  return BANNERSBYCOLLECTION.default
+}
+
+const getCollectionConvertToVN = (collection) => {
+  switch(collection) {
+    case 'spring':
+      return 'Mùa xuân'
+    case 'summer':
+      return 'Mùa hạ'
+    case 'fall':
+      return 'Mùa thu'
+    case 'winter':
+      return 'Mùa đông'
+    default: return ''
+  }
+}
+
 function Product() {
   const urlParams = new URLSearchParams(window.location.search);
   const nameQuery = urlParams.get('name')
   const collectionQuery = urlParams.get('collection')
-  const [banners, setBanner] = useState([
-    {
-      links: 'http://localhost:3000/products?collection=spring',
-      img: "https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/448803800_1868529236990505_6951073453796265223_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Ij2woMB_YZgQ7kNvgH8WXpe&_nc_ht=scontent.fhan14-2.fna&oh=00_AYB2eiUOZAZq-0sbyx6t37ioAgVj4FRzU6nWiGlFVlGDAg&oe=6678D8DD"
-    },
-    {
-      links: '',
-      img: "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/448544466_1868525816990847_645939291266345467_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=wDM6bEyP2L4Q7kNvgGVSMvV&_nc_ht=scontent.fhan14-3.fna&oh=00_AYAZQKttS46PoG5T1-cWVuaElICHw4JeikIgvtZ3o5Npnw&oe=6678EB80"
-    },
-    {
-      links: '',
-      img: "https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/448544468_1867978453712250_3422061733003838236_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=QeJClzD4hc0Q7kNvgHMTlFR&_nc_ht=scontent.fhan14-5.fna&oh=00_AYAZIPHIBNYZILoELHciINAYifv2U1s0MBI9oKL_uFLbJg&oe=6678EA3E"
-    },
-  ])
+  const [banners, setBanner] = useState(getBannerByCollection(collectionQuery))
   const [currentProduct, setCurrentProduct] = useState(collectionQuery ? filterAndReconstructProducts(PRODUCTS, collectionQuery, 4) : (nameQuery ? filterAndReconstructByNameProducts(PRODUCTS, nameQuery, 4) : PRODUCTS))
   const [sameProducts, setSameProducts] = useState(currentProduct[0].length ? getProductsByCollection(currentProduct[0][0].collection, 5) : [[]])
   const [showingItem, setShowingItem] = useState(currentProduct.length > 1 ? [currentProduct[0], currentProduct[1]] : [currentProduct[0]])
@@ -158,7 +167,7 @@ function Product() {
         </div>
         {currentProduct[0].length ? (
           <>
-            <h1 style={{display: 'flex', width: '100%', justifyContent: 'center', marginBottom: '0'}}>Tất cả sản phẩm</h1>
+            <h1 style={{display: 'flex', width: '100%', justifyContent: 'center', marginBottom: '0'}}>{collectionQuery ? `Bộ sưu tập ${getCollectionConvertToVN(collectionQuery)}` : 'Tất cả sản phẩm'}</h1>
             <div className='filter-zone'>
               <label for="orders" style={{marginRight: '0.5rem'}}>Sắp xếp:</label>
               <select id="orders" name="orders" onChange={handleSelectChange}>
@@ -175,6 +184,7 @@ function Product() {
                     return (
                       <div className='card individual-card' key={it.key}>
                         <a className='card-image' href={`/product_detail?id=${it.key}`}>
+                          {it.type && <div style={{position: 'absolute', right: '1rem', top: '0.3rem', border: '1px solid white', padding: '2px', color: 'white', borderRadius: '0.2rem'}}>{it.type}</div>}
                           <img src={it.link} style={{width: '100%', objectFit: 'cover'}}></img>
                         </a>
                         <div className='card-detail'>
@@ -182,8 +192,16 @@ function Product() {
                             {it.name} 
                           </div>
                           <div className='card-product-price'>
-                            {USDollar.format(it.price)}
+                            {USDollar.format(it.discount && it.discount > 0 ? it.price * (100 - it.discount) /100 : it.price)}
                           </div>
+                          {it.discount && it.discount > 0 && (
+                            <div className='card-product-discount-info'>
+                              <div style={{textDecoration: 'line-through'}}>{USDollar.format(it.price)}</div>
+                              <div style={{color: 'red', marginLeft: '0.5rem'}}>
+                                -{it.discount}%
+                              </div>
+                            </div>
+                          )}
                         </div>
                       </div>
                     )
@@ -213,7 +231,10 @@ function Product() {
                                 <img src={it.link}></img>
                             </a>
                             <div className='card-product-name'>{it.name}</div>
-                            <div className='card-product-price'>{USDollar.format(it.price)}</div>
+                            <div style={{display: 'flex'}}>
+                              {it.discount && it.discount > 0 && <div style={{textDecoration: 'line-through', color: 'black', marginRight: '0.5rem'}}>{USDollar.format(it.price)}</div>}
+                              <div className='card-product-price'>{USDollar.format(it.discount && it.discount > 0 ? it.price * (100 - it.discount) /100 : it.price)}</div>
+                            </div>
                         </div>
                     })}
                 </div>
