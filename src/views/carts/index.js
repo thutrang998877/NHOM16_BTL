@@ -77,7 +77,7 @@ function Cart() {
   
   return (
       <div className="body">
-        <div className='cart-title'>Giỏ hàng</div>
+        <h2 className='cart-title'>Giỏ hàng</h2>
         <div className='carts-container'>
             <div className='cart-body'>
                 {productsInCart && productsInCart.map(item => {
@@ -105,12 +105,12 @@ function Cart() {
                             </div>
                         </div>
                     )
-                })} 
+                })}
+                <div style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', fontSize: '1.5rem'}}>Tổng đơn hàng: <p style={{ color: 'red', display: 'inline', marginLeft: '0.5rem' }}>{USDollar.format(total)}</p></div>
+                <a className='buy-now-button' style={{ marginLeft: '2rem', marginRight: '2rem', width: 'calc(100% - 8rem)', fontSize: '1.5rem'}} href={`/payment/${currentPath === 'buy_now' ? 'buy_now' : ''}`}>Thanh toán</a>
             </div>
             <div className='payment-container'>
-                <div style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>Tổng đơn hàng: <p style={{ color: 'red', display: 'inline', marginLeft: '0.5rem' }}>{USDollar.format(total)}</p></div>
-                <a className='buy-now-button' style={{ marginLeft: '2rem', marginRight: '2rem', width: 'calc(100% - 8rem)'}} href={`/payment/${currentPath === 'buy_now' ? 'buy_now' : ''}`}>Thanh toán</a>
-                <img className='img-thanks' src='https://bizweb.dktcdn.net/100/326/676/files/401095303-1404334063791219-5668493901391269089-n.jpg?v=1703486158592'></img>
+                <img className='img-thanks' src='https://scontent.fhan14-2.fna.fbcdn.net/v/t1.15752-9/448395849_445719281558106_7943776296268036452_n.png?stp=dst-png_p1080x2048&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=K31j71mUibEQ7kNvgE4nhD2&_nc_ht=scontent.fhan14-2.fna&oh=03_Q7cD1QHq3qgdZFCDA2sjKBwVVJ5esN2VuHFoFoRFU7t4pgCT4w&oe=669CC4CC'></img>
             </div>
         </div>
       </div>

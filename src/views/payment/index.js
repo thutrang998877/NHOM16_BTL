@@ -45,19 +45,20 @@ function Payment() {
               window.alert('Vui lòng chọn kích cỡ!')
               return
             }
-            window.alert('Cảm ơn bạn đã mua hàng!')
+            window.alert('Cảm ơn nàng đã mua hàng!')
             clearStorage()
+            navigate('/home')
           }}>
             <input placeholder='Họ và tên' required></input>
             <input placeholder='Email' required></input>
             <input placeholder='Số điện thoại' type='number' required></input>
             <input placeholder='Địa chỉ' required></input>
             <div className='size-picker-container'>
-              <button className={`${currentSize === 'S' ? 'active' : ''}`} onClick={() => {setCurrentSize('S')}}>S</button>
-              <button className={`${currentSize === 'M' ? 'active' : ''}`} onClick={() => {setCurrentSize('M')}}>M</button>
-              <button className={`${currentSize === 'L' ? 'active' : ''}`} onClick={() => {setCurrentSize('L')}}>L</button>
-              <button className={`${currentSize === 'XL' ? 'active' : ''}`} onClick={() => {setCurrentSize('XL')}}>XL</button>
-              <button className={`${currentSize === 'XXL' ? 'active' : ''}`} onClick={() => {setCurrentSize('XXL')}}>XXL</button>
+              <button type='button' className={`${currentSize === 'S' ? 'active' : ''}`} onClick={() => {setCurrentSize('S')}}>S</button>
+              <button type='button' className={`${currentSize === 'M' ? 'active' : ''}`} onClick={() => {setCurrentSize('M')}}>M</button>
+              <button type='button' className={`${currentSize === 'L' ? 'active' : ''}`} onClick={() => {setCurrentSize('L')}}>L</button>
+              <button type='button' className={`${currentSize === 'XL' ? 'active' : ''}`} onClick={() => {setCurrentSize('XL')}}>XL</button>
+              <button type='button' className={`${currentSize === 'XXL' ? 'active' : ''}`} onClick={() => {setCurrentSize('XXL')}}>XXL</button>
             </div>
             <button className='confirm-payment' type='submit'>Hoàn tất đơn hàng</button>
           </form>

@@ -55,19 +55,19 @@ function Home() {
             <div className='home-collections'>
               <a className='collection' href='/products?collection=spring'>
                 <div className='collection-title'>Xuân Thì</div>
-                <img className='collection-image' src='https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/418942057_784689053701723_3765025805197650856_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFMQk_3OomzX4RQZz1XfPcnYOI5D-12BfVg4jkP7XYF9Ykg1y1XW7qNlm5ZOID-5a1YknVKRw4EcX2UzLwEdm1t&_nc_ohc=qr4FaqwHvk4Q7kNvgEjDdWm&_nc_ht=scontent.fhan5-10.fna&oh=00_AYAHxrig6CRsRtEEjHprgkebKtHq295NMA2RLi7jF2TxcQ&oe=6677B5DD'></img>
+                <img className='collection-image' style={{objectFit: 'cover'}} src='https://scontent.xx.fbcdn.net/v/t1.15752-9/448507635_1231534831548554_4084626871951113834_n.png?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=EJe3XlcbmYAQ7kNvgGY7njf&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHzSPXd5tiAtMTLeiIG8yo_u_YngwdkYYdMss0foGCcAg&oe=669C9D5F'></img>
               </a>
               <a className='collection' href='/products?collection=summer'>
                 <div className='collection-title'>Vào Hạ </div>
-                <img className='collection-image' src='https://scontent.xx.fbcdn.net/v/t1.15752-9/448436973_1506153063628520_5274512159206345262_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHiaMZpf4jFfcLOULXGk6qNVlKcD1ySyClWUpwPXJLIKRlZK7lpqffr3fTTZKA0GYLAKNzkQmi7I8wjgs-XRrjP&_nc_ohc=azHKEmRFmCAQ7kNvgHPXI2k&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEaFSM1edtHBsKLKOC-YjQ199wCNAOzJlGBAzNrpq5CWw&oe=6699570D'></img>
+                <img className='collection-image' style={{objectFit: 'cover'}} src='https://scontent.xx.fbcdn.net/v/t1.15752-9/448436973_1506153063628520_5274512159206345262_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHiaMZpf4jFfcLOULXGk6qNVlKcD1ySyClWUpwPXJLIKRlZK7lpqffr3fTTZKA0GYLAKNzkQmi7I8wjgs-XRrjP&_nc_ohc=azHKEmRFmCAQ7kNvgHPXI2k&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEaFSM1edtHBsKLKOC-YjQ199wCNAOzJlGBAzNrpq5CWw&oe=6699570D'></img>
               </a>
               <a className='collection' href='/products?collection=fall'>
                 <div className='collection-title'>Sang Thu</div>
-                <img className='collection-image' src='https://scontent.xx.fbcdn.net/v/t1.15752-9/287702903_816035549379768_539584647129522492_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGYy5bkM-Jqsg7wTJLiXvA9GfMR9oAW27IZ8xH2gBbbshwHOYWpkOLWhKmRqlDkHIA8WlRDJiHIuwZCPWbzPtwE&_nc_ohc=D5thnjyMTaoQ7kNvgFtUleX&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHfW0UZldpQcDtdGylaDa7O40zepBq-O1yvDL-e3eHIdg&oe=66992D12'></img>
+                <img className='collection-image' style={{objectFit: 'cover'}} src='https://scontent.xx.fbcdn.net/v/t1.15752-9/287702903_816035549379768_539584647129522492_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGYy5bkM-Jqsg7wTJLiXvA9GfMR9oAW27IZ8xH2gBbbshwHOYWpkOLWhKmRqlDkHIA8WlRDJiHIuwZCPWbzPtwE&_nc_ohc=D5thnjyMTaoQ7kNvgFtUleX&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHfW0UZldpQcDtdGylaDa7O40zepBq-O1yvDL-e3eHIdg&oe=66992D12'></img>
               </a>
               <a className='collection' href='/products?collection=winter'>
                 <div className='collection-title'>Lập Đông</div>
-                <img className='collection-image' src='https://scontent.xx.fbcdn.net/v/t1.15752-9/411464460_946199260426134_5434351112641677543_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGTbIkbi7jX7pTmhR5Q7r8M9SG_eHGHHv71Ib94cYce_r2Uao5kqLSndorvVXGnMM3P1KJrtPyky8hVNzi7_zZE&_nc_ohc=wmrcwocS1cUQ7kNvgErBbQy&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEQWffB5hEhQzzv80iwcnivbHGVAaZZj8QO83G4exJSVA&oe=66994211'></img>
+                <img className='collection-image' style={{objectFit: 'cover'}} src='https://scontent.xx.fbcdn.net/v/t1.15752-9/411464460_946199260426134_5434351112641677543_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGTbIkbi7jX7pTmhR5Q7r8M9SG_eHGHHv71Ib94cYce_r2Uao5kqLSndorvVXGnMM3P1KJrtPyky8hVNzi7_zZE&_nc_ohc=wmrcwocS1cUQ7kNvgErBbQy&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEQWffB5hEhQzzv80iwcnivbHGVAaZZj8QO83G4exJSVA&oe=66994211'></img>
               </a>
             </div>
           </div>

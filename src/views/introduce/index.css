@@ -2,3 +2,38 @@
     -webkit-transform: scale(1.05);
 	transform: scale(1.05);
 }
+
+.intro-card {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    height: 20rem;
+    object-fit: cover;
+}
+
+.letter-container {
+    background-color: #ffe1e1;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    border-radius: 0.5rem;
+}
+
+.letter-container > input {
+    background-color: #ffe1e1;
+    border-color: rgb(178, 184, 188);
+}
+
+.letter-container > textarea {
+    background-color: #ffe1e1;
+    border-color: rgb(178, 184, 188);
+}
+
+.letter-container > button {
+    margin-top: 3rem;
+    height: 2rem;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 0.2rem;
+    background-color: #9bd49b;
+}

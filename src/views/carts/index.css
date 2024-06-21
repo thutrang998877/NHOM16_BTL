@@ -49,6 +49,7 @@
 
 .number-to-text {
     width: 4rem;
+    margin-right: 0;
 }
 
 .column {
@@ -70,7 +71,6 @@
 
 .payment-container {
     flex-grow: 1;
-    background-color: rgb(235, 235, 235);
     margin-right: 5rem;
     margin-bottom: 5rem;
     display: flex;
@@ -81,11 +81,13 @@
 
 .img-thanks {
     width: calc(100% - 8rem);
-    margin-bottom: 2rem;
-    margin-top: 2rem;
 }
 
 .remove:hover {
     cursor: pointer;
     scale: 1.2;
+}
+
+.cart-title {
+    margin-left: 5rem;
 }

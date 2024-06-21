@@ -4,6 +4,7 @@ import { USERS } from '../../constants/account'
 import { useNavigate } from "react-router-dom";
 
 function Login(props) {
+  const [forgetPassMessage, setForgetPassMessage] = useState('Quên mật khẩu')
   const currentPath = window.location.pathname.replace('/', '')
   const currentUsers = JSON.parse(localStorage.getItem('users'))
   if (!currentUsers) {
@@ -13,6 +14,10 @@ function Login(props) {
   const [account, setAccount] = useState('')
   const [password, setPassword] = useState('')
   const [isLogin, setIsLogin] = useState(currentPath === 'login')
+
+  const handleForgetPass = () => {
+    setForgetPassMessage('Quên thì mất ha ha!')
+  }
 
   const handleLogin = () => {
     if (isLogin) {
@@ -91,7 +96,7 @@ function Login(props) {
           <input type='text' placeholder='Tài khoản' value={account} onChange={(e) => {setAccount(e.target.value)}}/>
           <input type='password' placeholder='Mật khẩu' value={password} onChange={(e) => {setPassword(e.target.value)}}/>
         </div>
-        <a className='forget-password'>Quên mật khẩu</a>
+        {isLogin && <a className='forget-password' onClick={handleForgetPass}>{forgetPassMessage}</a>}
         <button className='login-button' onClick={handleLogin}>
           {isLogin ? 'Đăng nhập' : 'Đăng ký'}
         </button>

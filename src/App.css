@@ -1,3 +1,7 @@
+body {
+  font-family: Cambria;
+} 
+
 .App {
   display: flex;
   flex-direction: column;
@@ -10,7 +14,7 @@
   width: 100vw;
   height: 3.5rem;
   align-items: center;
-  background-color:#FFFF;
+  background-color:#ffe9eb;
   justify-content: space-between;
   position: sticky;
   top: 0;
@@ -30,17 +34,20 @@
   max-width: 50%;
   flex-grow: 1;
   justify-content: space-around;
+  font-size: large;
 }
 
-.menu > div:hover {
-  cursor: pointer;
+.menu > a:hover {
+  color: rgb(155, 111, 111);
 }
 
 .footer {
-  background-color:	black;
+  background-color:	#ffe9eb;
   display: flex;
   flex-direction: column;
   min-height: 10rem;
+  font-family: Cambria;
+  font-size: large;
 }
 
 .link-items-container {
@@ -48,7 +55,7 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .about-image {
@@ -172,7 +179,7 @@ cursor: pointer;
 }
 
 .introduce-options > a:hover {
-  background-color: rgb(248, 246, 243);
+  background-color: rgb(2, 16, 144);
 }
 
 .image-cards {
@@ -214,16 +221,16 @@ cursor: pointer;
 }
 
 .footer-link {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .footer-link:hover {
-  color: wheat;
+  color: rgb(12, 130, 189);
 }
 
 .links:hover {
   cursor: pointer;
-  color: wheat;
+  color: rgb(12, 130, 189);
 }
 
 .ant-input-outlined {
