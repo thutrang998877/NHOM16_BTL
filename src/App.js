@@ -11,19 +11,27 @@ import ProductDetail from './views/productDetail'
 import Cart from './views/carts'
 import Payment from './views/payment'
 import Introduce from './views/introduce'
-import { SearchOutlined } from '@ant-design/icons'
+import { SearchOutlined, LoginOutlined, LogoutOutlined } from '@ant-design/icons'
 import { Button, Tooltip } from 'antd';
 import Story from './views/story'
 import About from './views/about'
 import Policy from './views/policy'
+import Login from './views/login'
+import { Input } from "antd";
 
-const AppRoutes = () => {
+const AppRoutes = ({handleLogin}) => {
   return (
     <Routes>
       <Route path="/home" element={(
         <Home />
         )} />
-      <Route path="/products/*" element={(
+      <Route path="/login" element={(
+        <Login handleLogin={handleLogin}/>
+      )} />
+      <Route path="/signup" element={(
+        <Login handleLogin={handleLogin}/>
+      )} />
+      <Route path="/products" element={(
         <Product />
         )} />
       <Route path="/product_detail/*" element={(
@@ -52,6 +60,8 @@ const AppRoutes = () => {
   )
 }
 
+const { Search } = Input
+
 const springCollectionPath = [
   'https://scontent.fhan5-10.fna.fbcdn.net/v/t39.30808-6/448713953_988669492842080_359556795315329850_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE0NWmhnOseXMItgbv6gOS6iNgQp_yCkWCI2BCn_IKRYFXaqzig9HwiGlDvAyiEnxYNDeI6uH2zw3N3ef4GGmKI&_nc_ohc=qqIqK8NRKScQ7kNvgEFo0gU&_nc_ht=scontent.fhan5-10.fna&oh=00_AYDDz3WXZGMm-FbYc1_oZzVnAzu6qf9VIF_F95tWAM-uBw&oe=6677A785',
   'https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/448715900_988668739508822_3663831415344971151_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHtdW7rkmuhs9-SgaTJRR_XeNWjOw5EWi541aM7DkRaLorVvzd_9zR5PEwTckirCcb0qMBtnSeXA3-qhdNTRmaN&_nc_ohc=Fgjm4N_4fKUQ7kNvgFxR_M_&_nc_ht=scontent.fhan14-5.fna&oh=00_AYDQh7m9_QsWhf0kR4pcSfreMT4f5OpWn9Bvkulf7sulng&oe=6678DAB8'
@@ -73,12 +83,32 @@ const winterCollectionPath = [
 ]
 
 function App() {
+  const [currentUser, setCurrentUser] = useState('')
   const [isShowingCollection, setIsShowingCollection] = useState(false)
   const [isShowingIntroduce, setIsShowingIntroduce] = useState(false)
   const [collectionPaths, setCollectionPaths] = useState([
   'https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/448506007_988771586165204_2963683013417972027_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeF_GLDTnaj6sBnN8Ph2EuvhIkEPD-GM4egiQQ8P4Yzh6HzzrmbMnS_KJ_U3-AnutKc9NlaD2H2RoIRgdMsXWLZp&_nc_ohc=XptmSTZyRtMQ7kNvgEro6GQ&_nc_ht=scontent.fhan14-1.fna&oh=00_AYBhVrCi8DFGgTy6bJuguxXAH6Quldl-_DL2f7BGjf_qiQ&oe=6678D79D',
   'https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-6/448629089_988772196165143_7726208503917413772_n.jpg?stp=cp6_dst-jpg&_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGiYSk1XNJ52KEqh0KuhzWeoipu1-_tIl-iKm7X7-0iX7jndsOPFVWie92XMAGGcFbQr59Vyg7F4mknWgYbPaUw&_nc_ohc=BMyKlhNeAP0Q7kNvgHY7v5m&_nc_ht=scontent.fhan14-4.fna&oh=00_AYCTMn2YFt5sm9yYgaclD7mmeED73lJ7wAi_Xx8PKwOqyg&oe=6678ECEA',
   ])
+
+  const handleUserChange = (user) => {
+    setCurrentUser(user)
+  }
+
+  const handleAuth = () => {
+    setCurrentUser('')
+    window.location.replace('login')
+  }
+
+  const onSearch = (value, _e) => {
+    if (!value) {
+      window.alert('Vui lòng nhập thông tin tìm kiếm!')
+      return
+    }
+
+    window.location.replace(`/products?name=${value}`)
+  };
+
   return (
     <Router>
       <div className='App'>
@@ -104,16 +134,16 @@ function App() {
                     </div>
                   </div>
                   <div className='collections'>
-                    <a href='/products/spring'
+                    <a href='/products?collection=spring'
                       onMouseEnter={() => setCollectionPaths(springCollectionPath)}
                     >Xuân Thì</a>
-                    <a href='/products/summer'
+                    <a href='/products?collection=summer'
                       onMouseEnter={() => setCollectionPaths(summerCollectionPath)}
                     >Vào Hạ</a>
-                    <a href='/products/fall'
+                    <a href='/products?collection=fall'
                       onMouseEnter={() => setCollectionPaths(fallCollectionPath)}
                     >Sang Thu</a>
-                    <a href='/products/winter'
+                    <a href='/products?collection=winter'
                       onMouseEnter={() => setCollectionPaths(winterCollectionPath)}
                     >Lập Đông</a>
                   </div>
@@ -137,13 +167,19 @@ function App() {
               }
             </a>
           </div>
+          {currentUser && <div>Xin chào {currentUser}</div>}
           <div className='action'>
-            <Button type="dashed" icon={<SearchOutlined />}>
-              Tìm kiếm
+            <Search
+              placeholder="Tìm sản phẩm"
+              allowClear
+              onSearch={onSearch}
+              style={{ width: 304, marginRight: '1rem', marginLeft: '1rem' }}
+            />
+            <Button icon={currentUser ? <LogoutOutlined /> : <LoginOutlined />} onClick={handleAuth}>
             </Button>
           </div>
         </div>
-        <AppRoutes />
+        <AppRoutes handleLogin={handleUserChange}/>
         <div className="footer">
           <div className="link-items-container">
             <div className="link-items">

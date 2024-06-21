@@ -19,6 +19,19 @@ const filterAndReconstructProducts = (products, targetCollection, chunkSize) => 
   return chunkedProducts;
 };
 
+const filterAndReconstructByNameProducts = (products, name, chunkSize) => {
+  const flattenedProducts = products.flat();
+
+  const filteredProducts = flattenedProducts.filter(product => product.name.toUpperCase().includes(name.toUpperCase()));
+
+  const chunkedProducts = [];
+  for (let i = 0; i < filteredProducts.length; i += chunkSize) {
+    chunkedProducts.push(filteredProducts.slice(i, i + chunkSize));
+  }
+
+  return chunkedProducts;
+};
+
 const orderProductsByName = (products, chunkSize, isIncrease) => {
   const orderFlag = isIncrease ? 1 : -1
   const flattenedProducts = products.flat();
@@ -48,10 +61,12 @@ const orderProductsByPrice = (products, chunkSize, isIncrease) => {
 }
 
 function Product() {
-  const currentPath = window.location.pathname.replace('/products/', '')
+  const urlParams = new URLSearchParams(window.location.search);
+  const nameQuery = urlParams.get('name')
+  const collectionQuery = urlParams.get('collection')
   const [banners, setBanner] = useState([
     {
-      links: 'http://localhost:3000/products/spring',
+      links: 'http://localhost:3000/products?collection=spring',
       img: "https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/448803800_1868529236990505_6951073453796265223_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Ij2woMB_YZgQ7kNvgH8WXpe&_nc_ht=scontent.fhan14-2.fna&oh=00_AYB2eiUOZAZq-0sbyx6t37ioAgVj4FRzU6nWiGlFVlGDAg&oe=6678D8DD"
     },
     {
@@ -63,7 +78,7 @@ function Product() {
       img: "https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/448544468_1867978453712250_3422061733003838236_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=QeJClzD4hc0Q7kNvgHMTlFR&_nc_ht=scontent.fhan14-5.fna&oh=00_AYAZIPHIBNYZILoELHciINAYifv2U1s0MBI9oKL_uFLbJg&oe=6678EA3E"
     },
   ])
-  const [currentProduct, setCurrentProduct] = useState(!currentPath.includes('products') ? filterAndReconstructProducts(PRODUCTS, currentPath, 4) : PRODUCTS)
+  const [currentProduct, setCurrentProduct] = useState(collectionQuery ? filterAndReconstructProducts(PRODUCTS, collectionQuery, 4) : (nameQuery ? filterAndReconstructByNameProducts(PRODUCTS, nameQuery, 4) : PRODUCTS))
   const [sameProducts, setSameProducts] = useState(getProductsByCollection(currentProduct[0][0].collection, 5))
   const [showingItem, setShowingItem] = useState(currentProduct.length > 1 ? [currentProduct[0], currentProduct[1]] : [currentProduct[0]])
   const numOfPage = currentProduct ? Math.ceil(currentProduct.length / 2) : 0

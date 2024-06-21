@@ -1,19 +1,13 @@
-body {
-  width: 100vw;
-  padding: 0;
-  margin: 0;
-}
-
 .App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
 .header {
   display: flex;
-  width: 100%;
+  width: 100vw;
   height: 3.5rem;
   align-items: center;
   background-color:#FFFF;
@@ -230,4 +224,12 @@ cursor: pointer;
 .links:hover {
   cursor: pointer;
   color: wheat;
+}
+
+.ant-input-outlined {
+  padding: 0;
+}
+
+.ant-input {
+  text-indent: 0.5rem;
 }
