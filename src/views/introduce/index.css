@@ -8,7 +8,7 @@
     flex-direction: column;
 }
 
-img {
+.intro-card > a > img {
     height: 20rem;
     object-fit: cover;
 }

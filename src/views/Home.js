@@ -86,7 +86,7 @@ function Home() {
           <div className='sales'>
             <div className='sale-item'>
               <div className='sale-image'>
-                <img width={40} height={40} src='https://theme.hstatic.net/200000623993/1001008164/14/policies_icon_1.png?v=1395'></img>
+                <img width={20} height={20} src='https://theme.hstatic.net/200000623993/1001008164/14/policies_icon_1.png?v=1395'></img>
               </div>
               <div className='sale-content'>
                 <div className='sale-item-title'>
@@ -102,7 +102,7 @@ function Home() {
             </div>
             <div className='sale-item'>
             <div className='sale-image'>
-              <img width={40} height={40} src='https://theme.hstatic.net/200000623993/1001008164/14/policies_icon_2.png?v=1395'></img>
+              <img width={20} height={20} src='https://theme.hstatic.net/200000623993/1001008164/14/policies_icon_2.png?v=1395'></img>
               </div>
               <div className='sale-content'>
                 <div className='sale-item-title'>
@@ -115,7 +115,7 @@ function Home() {
             </div>
             <div className='sale-item'>
               <div className='sale-image'>
-                <img width={40} height={40} src='https://theme.hstatic.net/200000623993/1001008164/14/policies_icon_4.png?v=1395'></img>
+                <img style={{objectFit: 'cover'}} width={20} height={20} src='https://theme.hstatic.net/200000623993/1001008164/14/policies_icon_4.png?v=1395'></img>
               </div>
               <div className='sale-content'>
                 <div className='sale-item-title'>
@@ -130,7 +130,7 @@ function Home() {
 
           <div className='same-collection-container'>
                 <h1>Có thể nàng sẽ thích</h1>
-                <div className='same-collection-cards'>
+                <div className='home-same-collection-cards'>
                     {youMayLike.map(it => {
                         return <div className='same-collection-card'>
                             <a className='card-image-detail' href={`/product_detail?id=${it.key}`}>
