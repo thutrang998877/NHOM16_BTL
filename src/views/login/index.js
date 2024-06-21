@@ -74,7 +74,7 @@ function Login(props) {
     <div className='login-body'>
       <div className='login-form-container'>
         <div className='login-form-title'>
-          Đăng nhập
+          {isLogin ? 'Đăng nhập' : 'Đăng ký'}
         </div>
         <div className='signin-signout-switcher'>
           <button id={`${isLogin ? 'button-switcher-active' : ''}`} onClick={() => {
