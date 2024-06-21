@@ -31,7 +31,7 @@ function About() {
           </div>
           <div className='profile'>
             <div className='profile-image'>
-              <img style={{width: '80%'}} src='https://www.tunhamay.vn/content/images/size/w1600/2024/04/_LEK1051-1.jpeg'></img>
+              <img style={{width: '80%'}} src='https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/440172800_845386970964017_8207182034188464382_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeErsdjpKEACfNUq--uraxxT0t1U4QUqylbS3VThBSrKViG5rPxx-sBOFJ3KIT2QaleCoe1Pd0olSyeIMJAZ2YOm&_nc_ohc=dGWslSBwOGQQ7kNvgHNtcUp&_nc_ht=scontent.fhan17-1.fna&oh=00_AYAQjUw-HbbEhycf2ojqfMC87ps74vqsUzwBHU5cay798A&oe=667AE03B'></img>
             </div>
             <div className='profile-detail-left'>
               <div className='position'>
@@ -52,12 +52,12 @@ function About() {
               </div>
             </div>
             <div className='profile-image'>
-              <img style={{width: '80%'}} src='https://www.tunhamay.vn/content/images/size/w1600/2024/04/_LEK1051-1.jpeg'></img>
+              <img style={{width: '80%'}} src='https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/434567156_830848639084517_2348690220966086637_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHk0y_Z5ydZW2k5Ej-ug-Shn_pbemiWgOuf-lt6aJaA6xkwOtiftIKzahgXmRJAThU9AdB3UJWKF1C6ghvbQtpl&_nc_ohc=FppDUEc2avcQ7kNvgHzc9N7&_nc_ht=scontent.fhan17-1.fna&oh=00_AYDvC2vvR1GEUUZM9r3INEAmLNEcQpzkZQ20yKIY_G5aeQ&oe=667ACCDB'></img>
             </div>
           </div>
           <div className='profile'>
             <div className='profile-image'>
-              <img style={{width: '80%'}} src='https://www.tunhamay.vn/content/images/size/w1600/2024/04/_LEK1051-1.jpeg'></img>
+              <img style={{width: '80%'}} src='https://scontent.fhan17-1.fna.fbcdn.net/v/t39.30808-6/428711778_814395107396537_5354025544328215434_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE1AGul4LCFtgpvz4rBUV2a3UdZFrvxRHndR1kWu_FEeaFSSPaM6JEwCm3EzSWedSPw7zXn_V42dDVlTxCoDL-J&_nc_ohc=sqO-8lqJLb8Q7kNvgFJ7bHH&_nc_ht=scontent.fhan17-1.fna&oh=00_AYBiH2hUbD5B8J8qMXX-16D69NQ_dxUVZf9YNJbYK1mUSg&oe=667AF96F'></img>
             </div>
             <div className='profile-detail-left'>
               <div className='position'>
