@@ -16,6 +16,7 @@ function Login(props) {
   const [isLogin, setIsLogin] = useState(currentPath === 'login')
 
   const handleForgetPass = () => {
+    // Đổi message
     setForgetPassMessage('Quên thì mất ha ha!')
   }
 
@@ -30,17 +31,20 @@ function Login(props) {
         window.alert('Vui lòng nhập mật khẩu!')
         return
       }
-  
+// Lấy tất cả users ở localStorage
       const users = JSON.parse(localStorage.getItem('users'))
+// kiểm tra xem có tồn tại tên tài khoản không
       const user = users.find(it => it.username === account)
-  
+// Báo lỗi nếu thông tin đăng nhập sai
       if (!user || user.password !== password) {
         window.alert('Thông tin đăng nhập không hợp lệ!')
         return
       }
+// Thực hiện login
       props.handleLogin(account)
       navigate('/home')
     } else {
+      // kiểm tra input
       if (account === '') {
         window.alert('Vui lòng nhập tài khoản!')
         return
@@ -50,19 +54,21 @@ function Login(props) {
         window.alert('Vui lòng nhập mật khẩu!')
         return
       }
-  
+      // lấy tất cả users
       const users = JSON.parse(localStorage.getItem('users'))
       const user = users.find(it => it.username === account)
 
+      // Trùng username -> Báo lỗi
       if (user) {
         window.alert('Tài khoản này đã tồn tại!')
         return
       }
-
+// Thêm account vào users
       users.push({
         username: account,
         password: password
       })
+// lưu users vào localStorage
       localStorage.setItem('users', JSON.stringify(users))
       props.handleLogin(account)
       window.alert('Đăng ký thành công!')

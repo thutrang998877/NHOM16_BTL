@@ -10,9 +10,12 @@ function Payment() {
     currency: 'VND',
   })
   const [currentSize, setCurrentSize] = useState('')
+  // check xem đang mua ngay hay mua theo giỏ
   const currentPath = window.location.pathname.replace('/payment/', '')
+  // Get dữ liệu productInCart
   const [productsInCart, setProductsInCart] = useState(currentPath === 'buy_now' ? JSON.parse(localStorage.getItem('buyNow')) : JSON.parse(localStorage.getItem('carts')))
   let initTotal = 0
+  // Tính tổng
   initTotal = productsInCart ? productsInCart.forEach(item => {
     const nextPrice = item.discount && item.discount > 0 ? item.price * item.quantity * (100 - (+item.discount)) / 100 : item.price * item.quantity
     initTotal += nextPrice
@@ -34,6 +37,7 @@ function Payment() {
     setTotal(initTotal)
   }, [productsInCart])
 
+  // xóa giữ liệu trong giỏ khi đã mua thành công
   const clearStorage = () => {
     currentPath === 'buy_now' ? localStorage.setItem('buyNow', null) : localStorage.setItem('carts', null)
   }

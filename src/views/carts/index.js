@@ -12,8 +12,11 @@ function Cart() {
     currency: 'VND',
   })
   let initTotal = 0
+  // tính tổng giá tiền
   initTotal = productsInCart ? productsInCart.forEach(item => {
+    // next price -> Giá mỗi loại sản phẩm = số lượng * đơn giá * discount (nếu có)
     const nextPrice = item.discount && item.discount > 0 ? item.price * item.quantity * (100 - (+item.discount)) / 100 : item.price * item.quantity
+    // Mỗi lần tìm được giá mỗi loại sản phẩm thì + thêm vào tổng
     initTotal += nextPrice
   }) : 0
 
@@ -33,14 +36,19 @@ function Cart() {
     setTotal(initTotal)
   }, [productsInCart])
 
+  // Tăng số lượng 1 loại sản phẩm lên
   const increaseToCartByKey = (key, color) => {
     const nextProductsInCart = [...productsInCart]
+    // tim xem đang tăng số lượng sản phẩm nào
     nextProductsInCart.forEach(element => {
         if (element.key === key && element.color === color) {
+            // tăng số lượng lên 1
             element.quantity = element.quantity + 1
         }
     });
+    // set lại productInCart
     setProductsInCart(nextProductsInCart)
+    // set lại localStorage
     localStorage.setItem(`${currentPath === 'buy_now' ? 'buy_now' : 'carts'}`, JSON.stringify(nextProductsInCart))
   }
 
@@ -55,6 +63,7 @@ function Cart() {
     localStorage.setItem(`${currentPath === 'buy_now' ? 'buy_now' : 'carts'}`, JSON.stringify(nextProductsInCart))
   }
 
+  // set value vào sản phẩm 
   const setToCartByKey = (key, color, e) => {
     const nextValue = e.target.value
     const nextProductsInCart = [...productsInCart]
@@ -69,9 +78,11 @@ function Cart() {
 
   const removeItem = (key, color) => {
     let nextProductsInCart = [...productsInCart]
+    // Lọc sản phẩm bị xóa ra khỏi productInCart
     nextProductsInCart = nextProductsInCart.filter(element => {
         return element.key !== key || element.color !== color
     });
+    // set lại product
     setProductsInCart(nextProductsInCart)
     localStorage.setItem(`${currentPath === 'buy_now' ? 'buy_now' : 'carts'}`, JSON.stringify(nextProductsInCart))
   }

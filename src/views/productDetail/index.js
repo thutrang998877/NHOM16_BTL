@@ -16,6 +16,8 @@ function ProductDetail() {
   if (!productId) {
     navigate('/home')
   }
+
+  // link with angle -> Ảnh ở side preview
   const [currentProduct, setCurrentProduct] = useState(getProductById(productId))
   const [sameProducts, setSameProducts] = useState(getProductsByCollection(currentProduct.collection, 5))
   const [numOfProduct, setNumOfProduct] = useState(1)
@@ -28,32 +30,40 @@ function ProductDetail() {
     setCurrentColor(color)
   }
 
+  // tang giá trị của numOfProduct (so san pham muốn mua) lên 1
   const clickIncrease = () => {
     setNumOfProduct(numOfProduct + 1)
   }
 
+  // Giam giá trị của numOfProduct (so san pham muốn mua) lên 1
   const clickDecrease = () => {
     if (numOfProduct === 1) return
     setNumOfProduct(numOfProduct - 1)
   }
 
   const addToCart = () => {
+    // Bat user chọn màu
     if (currentColor === '') {
         window.alert('Vui lòng chọn màu!')
         return
     }
 
+    // get carts từ trong localStorage
     const currentCarts = localStorage.getItem('carts') ? JSON.parse(localStorage.getItem('carts')) : null
+// chua co gi trong giỏ -> Add sản phẩm mới vào localStorage
     if (!currentCarts) {
         localStorage.setItem('carts', JSON.stringify([{name: currentProduct.name, key: currentProduct.key, color: currentColor, quantity: +numOfProduct, link: currentProduct.link, price: currentProduct.price, discount: currentProduct.discount}]))
     } else {
+// Kiểm tra xem trong giỏ có hàng không?
         const indexSameProductExisted = currentCarts.findIndex(item => item.key === currentProduct.key && item.color === currentColor)
+// Tìm được sản phẩm giống hệt trong giỏ -> Cộng thêm số lượng vào giỏ
         if (indexSameProductExisted !== -1) {
             currentCarts[indexSameProductExisted].quantity = currentCarts[indexSameProductExisted].quantity + +numOfProduct
             localStorage.setItem('carts', JSON.stringify(currentCarts))
             window.alert('Đã thêm vào giỏ hàng!')
             return
         }
+// Trong giỏ chưa có sản phẩm giống sp hiện tại
         currentCarts.push({name: currentProduct.name, key: currentProduct.key, color: currentColor, quantity: +numOfProduct, link: currentProduct.link, price: currentProduct.price, discount: currentProduct.discount})
         localStorage.setItem('carts', JSON.stringify(currentCarts))
         window.alert('Đã thêm vào giỏ hàng!')

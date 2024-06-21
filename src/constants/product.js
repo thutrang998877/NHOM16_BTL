@@ -19,6 +19,7 @@ export const PRODUCTS = [
                     LƯU Ý: 
                     Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏng, lỗi vải, đường may bị rách) hoặc giao không đúng mẫu. Mây nhận đổi size trong trường hợp Mây còn có sẵn size chị muốn đổi. Chị vui lòng giữ nguyên tem mác, đảm bảo hàng chưa mặc chưa giặt, không sử dụng ạ. Hàng được đổi trả trong vòng 03 ngày đối với đơn ngoại thành và 24h với nội thành Hà Nội kể từ ngày nhận được hàng, mong chị lưu ý giúp Mây nha! Cảm ơn chị đã luôn ủng hộ và đồng hành cùng Mây.`,
       color: ['#008B8B'],
+      // discount de xac dinh gia tri gia duoc giam
       discount: 20,
     },
     {

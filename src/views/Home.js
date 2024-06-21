@@ -6,17 +6,17 @@ import { PRODUCTS } from '../constants/product';
 import { Modal } from 'antd';
 //Trang chu
 function Home() {
+  // bien kiem soat viec dong mở modal
   const [isModalOpen, setIsModalOpen] = useState(true);
-  const showModal = () => {
-    setIsModalOpen(true);
-  };
   const handleOk = () => {
     setIsModalOpen(false);
   };
   const handleCancel = () => {
     setIsModalOpen(false);
   };
+  // so san pham nang se thich
   const youMayLike = [PRODUCTS[0][0], PRODUCTS[0][1], PRODUCTS[0][2], PRODUCTS[0][3], PRODUCTS[1][0]]
+  // format lai don vi tien
   const USDollar = new Intl.NumberFormat('vi-VI', {
     style: 'currency',
     currency: 'VND',
