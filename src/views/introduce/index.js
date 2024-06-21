@@ -11,22 +11,22 @@ function Introduce() {
                 <a href='https://www.tunhamay.vn/magazine/11-hang-gai/'>
                 <img style={{borderRadius: '0.5rem'}} src='https://www.tunhamay.vn/content/images/size/w1600/2024/03/IMG_2215.jpeg'></img>
                 </a>
-                <div style={{fontSize: '1.1rem', fontWeight: '400', fontFamily: 'fantasy'}}>11 Hàng Gai</div>
+                <div style={{fontSize: '1.1rem', fontWeight: '400'}}>11 Hàng Gai</div>
                 <div>Tháng 3 01, 2024 — STYLE & STORIES</div>
             </div>
             <div className='intro-card' style={{width: '30%'}}>
                 <a href='https://www.tunhamay.vn/magazine/noi-nang-ve/'>
                     <img style={{borderRadius: '0.5rem'}} src='https://www.tunhamay.vn/content/images/size/w1200/2023/09/IMG_4217.jpeg'></img>
                 </a>
-                <div style={{fontSize: '1.1rem', fontWeight: '400', fontFamily: 'fantasy'}}>11 Hàng Gai</div>
-                <div>Tháng 3 01, 2024 — STYLE & STORIES</div>
+                <div style={{fontSize: '1.1rem', fontWeight: '400'}}>Nơi nắng về</div>
+                <div>Tháng 9 28, 2023 — NICE THINGS</div>
             </div>
             <div className='intro-card' style={{width: '30%'}}>
                 <a href='https://www.tunhamay.vn/magazine/viet-ve-ao-dai-ha-noi/'>
                     <img style={{borderRadius: '0.5rem'}} src='https://www.tunhamay.vn/content/images/size/w1600/2023/09/IMG_4215.jpeg'></img>
                 </a>
-                <div style={{fontSize: '1.1rem', fontWeight: '400', fontFamily: 'fantasy'}}>11 Hàng Gai</div>
-                <div>Tháng 3 01, 2024 — STYLE & STORIES</div>
+                <div style={{fontSize: '1.1rem', fontWeight: '400'}}>Viết về Áo Dài Hà Nội</div>
+                <div>Tháng 9 28, 2023 — NICE THINGS</div>
             </div>
         </div>
         <div className='row' style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginBottom: '3rem', width: '100%'}}>
@@ -34,22 +34,22 @@ function Introduce() {
                 <a href='https://www.tunhamay.vn/magazine/ao-dai-tu-hoa/'>
                     <img style={{borderRadius: '0.5rem'}} src='https://www.tunhamay.vn/content/images/size/w1600/2023/09/IMG_4213.jpeg'></img>
                 </a>
-                <div style={{fontSize: '1.1rem', fontWeight: '400', fontFamily: 'fantasy'}}>11 Hàng Gai</div>
-                <div>Tháng 3 01, 2024 — STYLE & STORIES</div>
+                <div style={{fontSize: '1.1rem', fontWeight: '400'}}>Áo Dài Từ Hoa</div>
+                <div>Tháng 9 28, 2023 — NICE THINGS</div>
             </div>
             <div className='intro-card' style={{width: '30%'}}>
                 <a href='https://www.tunhamay.vn/magazine/sen-trang-hoi-an/'>
                     <img style={{borderRadius: '0.5rem'}} src='https://www.tunhamay.vn/content/images/size/w1600/2023/09/DSCF4080-1-1.jpeg'></img>
                 </a>
-                <div style={{fontSize: '1.1rem', fontWeight: '400', fontFamily: 'fantasy'}}>11 Hàng Gai</div>
-                <div>Tháng 3 01, 2024 — STYLE & STORIES</div>
+                <div style={{fontSize: '1.1rem', fontWeight: '400'}}>Sen Trắng (HỘI AN)</div>
+                <div>Tháng 9 25, 2023 — STYLE & STORIES</div>
             </div>
             <div className='intro-card' style={{width: '30%'}}>
                 <a href='https://www.tunhamay.vn/magazine/don-tet-trung-thu/'>
                     <img style={{borderRadius: '0.5rem'}} src='https://www.tunhamay.vn/content/images/size/w1600/2023/09/dscf7007-1.jpeg'></img>
                 </a>
-                <div style={{fontSize: '1.1rem', fontWeight: '400', fontFamily: 'fantasy'}}>11 Hàng Gai</div>
-                <div>Tháng 3 01, 2024 — STYLE & STORIES</div>
+                <div style={{fontSize: '1.1rem', fontWeight: '400'}}>Tết Trung Thu Hà Nội</div>
+                <div>Tháng 9 25, 2023 — STYLE & STORIES</div>
             </div>
         </div>
         <div style={{display: 'flex', justifyContent: 'space-around', width: '100%'}}>
