@@ -933,35 +933,35 @@ Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏ
 export const BANNERSBYCOLLECTION = {
   spring: [
     {
-      links: 'http://localhost:3000/products?collection=spring',
+      links: '/products?collection=spring',
       img: "https://scontent.fhan14-1.fna.fbcdn.net/v/t1.6435-9/79790246_1607136076094174_1557335212881346560_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHDssgC_0bPP-lXN1vBq7m2jafGR0wI1zONp8ZHTAjXM77pjPt1qD2yZ6X8tpdrvN4YRRA4l3u8QAQx_46fKVhz&_nc_ohc=DSa1RACofHAQ7kNvgEGCHvp&_nc_ht=scontent.fhan14-1.fna&oh=00_AYBNGG51SMxDaaxPWD7KJvjP9f1UG9Nv6F9ckkhnrHrchA&oe=669CE3F8"
     
     }
   ],
   summer: [
     {
-      links: 'http://localhost:3000/products?collection=summer',
+      links: '/products?collection=summer',
       img: "https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/438238556_851834176987210_8036152608374543887_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHzimIF4BS4C-sX0HD6mvLpyYN3D_tZvR3Jg3cP-1m9HcWXUSVb7i-9yF-_lD7zk1ZJERQDpUfijJn-K55mlo-7&_nc_ohc=BbL8AxW5v0EQ7kNvgGslL5p&_nc_ht=scontent.fhan14-1.fna&oh=00_AYASewTQpcyQy-3zX7pVHa0-BirkHP4q177hQDloYUYqPg&oe=667B4CC4"
     
     }
   ],
   fall: [
     {
-      links: 'http://localhost:3000/products?collection=fall',
+      links: '/products?collection=fall',
       img: "https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/301512369_2463566853784421_2554758374515184066_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEV099jMVRe1FEjgukyzHC-17a-gfKbEWnXtr6B8psRaVKAFavi9_lOZojpASvtvI5mjwkkIFT8DVdVYTlr4Gv9&_nc_ohc=qUtEsENZEJgQ7kNvgGNBDxr&_nc_ht=scontent.fhan14-2.fna&oh=00_AYBT60gw8a6r7b5CsfKAqOcbXIWGVnJgva7dB2g3SBVGZg&oe=667B1F24"
     
     }
   ],
   winter: [
     {
-      links: 'http://localhost:3000/products?collection=winter',
+      links: '/products?collection=winter',
       img: "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/415867155_777586237745338_3500213278526344417_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFhEy8mYmZpYxt1YG3VTidBKdyOFssiIyAp3I4WyyIjIHw0t2cZhXlqNfR8tU_wz9Y4W7yuXSrNeQTNfCpwya1G&_nc_ohc=tL0H9ict2mgQ7kNvgFIy76e&_nc_ht=scontent.fhan14-3.fna&oh=00_AYAl7ztFACHUqlmONp5rr9a1jNzNxBfpqSO2arB2Hk-o0w&oe=667B59A1"
     
     }
   ],
   default: [
     {
-      links: 'http://localhost:3000/products',
+      links: '/products',
       img: "https://scontent.xx.fbcdn.net/v/t1.15752-9/448346187_836356471717282_4962309950707433388_n.png?stp=dst-png_p403x403&_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE5d7MaURuYE9BcyL8KGNKLCOoxVeYXu98I6jFV5he73-kMhpyFTYcwCn32V8ayic5HpaoYeagNs99-7oVR0cNz&_nc_ohc=hsgNPvs7YR4Q7kNvgGDXEgx&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHIr4RJjgll8Dz9XKqY2gqmCJb9iTT5uPGjjz5NG8kArg&oe=669D1349"
     
     }

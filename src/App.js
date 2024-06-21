@@ -193,16 +193,16 @@ function App() {
               <div className="links">Số điện thoại: 039 972 5203</div>
               <div className="links">Email: cskh@tunhamay.com</div>
             </div>
-            <div className="link-items">
-              <div className="links">CHÍNH SÁCH</div>
-              <div className="links">Chính sách thanh toán</div>
-              <div className="links">Chính sách đổi và trả hàng</div>
-              <div className="links">Chính sách vận chuyển</div>
+            <div className="link-items" style={{display: 'flex', flexDirection: 'column'}}>
+              <a className="links" href='/policy'>CHÍNH SÁCH</a>
+              <a className="links" href='/policy'>Chính sách thanh toán</a>
+              <a className="links" href='/policy'>Chính sách đổi và trả hàng</a>
+              <a className="links" href='/policy'>Chính sách vận chuyển</a>
             </div>
-            <div className="link-items">
+            <div className="link-items" style={{display: 'flex', flexDirection: 'column'}}>
               <div className="links">HỖ TRỢ KHÁCH HÀNG</div>
-              <div className="links">Đội ngũ</div>
-              <div className="links">Liên hệ</div>
+              <a className="links" href='/about'>Đội ngũ</a>
+              <a className="links" href='/introduce'>Liên hệ</a>
               <div style={{display: 'flex'}}>
                 <div className='links' style={{width: '2rem', marginRight: '1rem'}}>
                 <a class="facebook link" href="https://www.facebook.com/TuNhaMay" target="_blank" title="Theo dõi Facebook Tủ nhà Mây">
