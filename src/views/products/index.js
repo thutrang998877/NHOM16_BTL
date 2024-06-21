@@ -28,6 +28,10 @@ const filterAndReconstructByNameProducts = (products, name, chunkSize) => {
   for (let i = 0; i < filteredProducts.length; i += chunkSize) {
     chunkedProducts.push(filteredProducts.slice(i, i + chunkSize));
   }
+  
+  if (chunkedProducts.length === 0) {
+    return [[]]
+  }
 
   return chunkedProducts;
 };
@@ -79,7 +83,7 @@ function Product() {
     },
   ])
   const [currentProduct, setCurrentProduct] = useState(collectionQuery ? filterAndReconstructProducts(PRODUCTS, collectionQuery, 4) : (nameQuery ? filterAndReconstructByNameProducts(PRODUCTS, nameQuery, 4) : PRODUCTS))
-  const [sameProducts, setSameProducts] = useState(getProductsByCollection(currentProduct[0][0].collection, 5))
+  const [sameProducts, setSameProducts] = useState(currentProduct[0].length ? getProductsByCollection(currentProduct[0][0].collection, 5) : [[]])
   const [showingItem, setShowingItem] = useState(currentProduct.length > 1 ? [currentProduct[0], currentProduct[1]] : [currentProduct[0]])
   const numOfPage = currentProduct ? Math.ceil(currentProduct.length / 2) : 0
   const [pages, setPages] = useState(Array.from(Array(numOfPage).keys()))
@@ -152,66 +156,70 @@ function Product() {
               })}
             </Swiper>
         </div>
-        <h1 style={{display: 'flex', width: '100%', justifyContent: 'center', marginBottom: '0'}}>Tất cả sản phẩm</h1>
-        <div className='filter-zone'>
-          <label for="orders" style={{marginRight: '0.5rem'}}>Sắp xếp:</label>
-          <select id="orders" name="orders" onChange={handleSelectChange}>
-            <option value="AZ">A - Z</option>
-            <option value="ZA">Z - A</option>
-            <option value="increase">Giá tăng dần</option>
-            <option value="decrease">Giá giảm dần</option>
-          </select>
-        </div>
-        {showingItem.map(item => {
-          return (
-            <div className='card-container'>
-              {item.map(it => {
-                return (
-                  <div className='card individual-card' key={it.key}>
-                    <a className='card-image' href={`/product_detail?id=${it.key}`}>
-                      <img src={it.link} style={{width: '100%', objectFit: 'cover'}}></img>
-                    </a>
-                    <div className='card-detail'>
-                      <div className='card-product-name'>
-                        {it.name} 
+        {currentProduct[0].length ? (
+          <>
+            <h1 style={{display: 'flex', width: '100%', justifyContent: 'center', marginBottom: '0'}}>Tất cả sản phẩm</h1>
+            <div className='filter-zone'>
+              <label for="orders" style={{marginRight: '0.5rem'}}>Sắp xếp:</label>
+              <select id="orders" name="orders" onChange={handleSelectChange}>
+                <option value="AZ">A - Z</option>
+                <option value="ZA">Z - A</option>
+                <option value="increase">Giá tăng dần</option>
+                <option value="decrease">Giá giảm dần</option>
+              </select>
+            </div>
+            {showingItem.map(item => {
+              return (
+                <div className='card-container'>
+                  {item.map(it => {
+                    return (
+                      <div className='card individual-card' key={it.key}>
+                        <a className='card-image' href={`/product_detail?id=${it.key}`}>
+                          <img src={it.link} style={{width: '100%', objectFit: 'cover'}}></img>
+                        </a>
+                        <div className='card-detail'>
+                          <div className='card-product-name'>
+                            {it.name} 
+                          </div>
+                          <div className='card-product-price'>
+                            {USDollar.format(it.price)}
+                          </div>
+                        </div>
                       </div>
-                      <div className='card-product-price'>
-                        {USDollar.format(it.price)}
-                      </div>
-                    </div>
-                  </div>
-                )
+                    )
+                  })}
+                </div>
+              )
+            })}
+
+            <div style={{width: 'calc(100% - 3rem)', display: 'flex', marginBottom: '2rem', marginTop: '1rem', justifyContent: 'center', marginRight: '3rem'}}>
+              {pages.map(item => {
+                return <button style={{marginRight: '0.5rem'}} onClick={() => {
+                  if ((item + 1) * 2 > currentProduct.length) {
+                    setShowingItem([currentProduct[(item + 1) * 2 - 2]])
+                    return
+                  }
+                  setShowingItem([currentProduct[(item + 1) * 2 - 2], currentProduct[(item + 1) * 2 - 1]])
+                }}>{item + 1}</button>
               })}
             </div>
-          )
-        })}
 
-        <div style={{width: 'calc(100% - 3rem)', display: 'flex', marginBottom: '2rem', marginTop: '1rem', justifyContent: 'center', marginRight: '3rem'}}>
-          {pages.map(item => {
-            return <button style={{marginRight: '0.5rem'}} onClick={() => {
-              if ((item + 1) * 2 > currentProduct.length) {
-                setShowingItem([currentProduct[(item + 1) * 2 - 2]])
-                return
-              }
-              setShowingItem([currentProduct[(item + 1) * 2 - 2], currentProduct[(item + 1) * 2 - 1]])
-            }}>{item + 1}</button>
-          })}
-        </div>
-
-        <div className='same-collection-container'>
-            <h1>Có thể nàng sẽ thích</h1>
-            <div className='same-collection-cards'>
-                {sameProducts.length > 0 && sameProducts.map(it => {
-                    return <div className='same-collection-card'>
-                        <a className='card-image-detail' href={`/product_detail?id=${it.key}`}>
-                            <img src={it.link}></img>
-                        </a>
-                        <div className='card-product-name'>{it.name}</div>
-                        <div className='card-product-price'>{USDollar.format(it.price)}</div>
-                    </div>
-                })}
+            <div className='same-collection-container'>
+                <h1>Có thể nàng sẽ thích</h1>
+                <div className='same-collection-cards'>
+                    {sameProducts.length > 0 && sameProducts.map(it => {
+                        return <div className='same-collection-card'>
+                            <a className='card-image-detail' href={`/product_detail?id=${it.key}`}>
+                                <img src={it.link}></img>
+                            </a>
+                            <div className='card-product-name'>{it.name}</div>
+                            <div className='card-product-price'>{USDollar.format(it.price)}</div>
+                        </div>
+                    })}
+                </div>
             </div>
-        </div>
+          </>
+        ) : <h3 style={{width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '2rem'}}>Chưa có sản phẩm</h3>}
       </div>
   );
 }

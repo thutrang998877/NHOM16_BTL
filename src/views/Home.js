@@ -2,8 +2,14 @@ import '../App.css';
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 import { useState } from 'react';
+import { PRODUCTS } from '../constants/product';
 //Trang chu
 function Home() {
+  const youMayLike = [PRODUCTS[0][0], PRODUCTS[0][1], PRODUCTS[0][2], PRODUCTS[0][3], PRODUCTS[1][0]]
+  const USDollar = new Intl.NumberFormat('vi-VI', {
+    style: 'currency',
+    currency: 'VND',
+  })
   const [banners, setBanner] = useState([
     {
       links: 'http://localhost:3000/products?collection=spring',
@@ -120,6 +126,21 @@ function Home() {
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className='same-collection-container'>
+                <h1>Có thể nàng sẽ thích</h1>
+                <div className='same-collection-cards'>
+                    {youMayLike.map(it => {
+                        return <div className='same-collection-card'>
+                            <a className='card-image-detail' href={`/product_detail?id=${it.key}`}>
+                                <img src={it.link}></img>
+                            </a>
+                            <div className='card-product-name'>{it.name}</div>
+                            <div className='card-product-price'>{USDollar.format(it.price)}</div>
+                        </div>
+                    })}
+                </div>
           </div>
       </div>
   );
