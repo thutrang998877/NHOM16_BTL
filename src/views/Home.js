@@ -127,14 +127,14 @@ function Home() {
               </div>
             </div>
           </div>
-
+          
           <div className='same-collection-container'>
-                <h1>Có thể nàng sẽ thích</h1>
+                <h1>CÓ THỂ NÀNG SẼ THÍCH</h1>
                 <div className='home-same-collection-cards'>
                     {youMayLike.map(it => {
                         return <div className='same-collection-card'>
                             <a className='card-image-detail' href={`/product_detail?id=${it.key}`}>
-                                <img src={it.link}></img>
+                                <img class='home-card-image' src={it.link}></img>
                             </a>
                             <div className='card-product-name'>{it.name}</div>
                             <div style={{display: 'flex'}}>
