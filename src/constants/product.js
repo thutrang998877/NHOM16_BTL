@@ -142,11 +142,11 @@ Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏ
       key: 7,
       name: 'Tất Niên',
       linksWithAngle: [
+        'https://i.ibb.co/hB4x1nX/tat-Nien-do03.jpg',
         'https://i.ibb.co/wB9VXG5/tat-Nien-do01.jpg',
         'https://i.ibb.co/pK05ZzB/tat-Nien-do02.jpg',
-        'https://i.ibb.co/hB4x1nX/tat-Nien-do03.jpg',
       ],
-      link: 'https://i.ibb.co/wB9VXG5/tat-Nien-do01.jpg',
+      link: 'https://i.ibb.co/hB4x1nX/tat-Nien-do03.jpg',
       collection: 'spring',
       price: 1199000,
       description: `Kết hợp 2 chất liệu lụa gẫy và tằm, Áo Dài Tất niên mang tới bạn vẻ ngoài nhớ thương như những ngày cuối năm mưa dịu.\n
