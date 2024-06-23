@@ -122,7 +122,7 @@ function Cart() {
                 <a className='buy-now-button' style={{ marginLeft: '2rem', marginRight: '2rem', width: 'calc(100% - 8rem)', fontSize: '1.5rem', marginBottom: '2rem'}} href={`/payment/${currentPath === 'buy_now' ? 'buy_now' : ''}`}>Thanh toán</a>
             </div>
             <div className='payment-container'>
-                <img className='img-thanks' src='https://scontent.fhan14-2.fna.fbcdn.net/v/t1.15752-9/448395849_445719281558106_7943776296268036452_n.png?stp=dst-png_p1080x2048&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=K31j71mUibEQ7kNvgE4nhD2&_nc_ht=scontent.fhan14-2.fna&oh=03_Q7cD1QHq3qgdZFCDA2sjKBwVVJ5esN2VuHFoFoRFU7t4pgCT4w&oe=669CC4CC'></img>
+                <img className='img-thanks' src='https://i.ibb.co/vdzB48C/thanhtoan.png'></img>
             </div>
         </div>
       </div>

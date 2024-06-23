@@ -24,33 +24,33 @@ function Home() {
   const [banners, setBanner] = useState([
     {
       links: 'http://localhost:3000/products?collection=spring',
-      img: "https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/448803800_1868529236990505_6951073453796265223_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Ij2woMB_YZgQ7kNvgH8WXpe&_nc_ht=scontent.fhan14-2.fna&oh=00_AYB2eiUOZAZq-0sbyx6t37ioAgVj4FRzU6nWiGlFVlGDAg&oe=6678D8DD"
+      img: "https://i.ibb.co/f44qvYG/3.png"
     },
     {
       links: '',
-      img: "https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/448544466_1868525816990847_645939291266345467_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=wDM6bEyP2L4Q7kNvgGVSMvV&_nc_ht=scontent.fhan14-3.fna&oh=00_AYAZQKttS46PoG5T1-cWVuaElICHw4JeikIgvtZ3o5Npnw&oe=6678EB80"
+      img: "https://i.ibb.co/99xBX7z/4.png"
     },
     {
       links: '',
-      img: "https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/448544468_1867978453712250_3422061733003838236_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=QeJClzD4hc0Q7kNvgHMTlFR&_nc_ht=scontent.fhan14-5.fna&oh=00_AYAZIPHIBNYZILoELHciINAYifv2U1s0MBI9oKL_uFLbJg&oe=6678EA3E"
+      img: "https://i.ibb.co/bHLzPrK/tc3.jpg"
     },
   ])
 
   const [bannerMid, setBannerMid] = useState([
     {
       links: '',
-      img: "https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/448802593_1867978577045571_5948691714116349292_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Wwj3V4_vdtcQ7kNvgGT6TBC&_nc_ht=scontent.fhan14-5.fna&oh=00_AYCYrkUN5Ynm8K9d_63ah6qskevQ0X3Bps8a7_tqCxcYSg&oe=6678DC8A"
+      img: "https://i.ibb.co/bdnWSgf/banner-mid-1.png"
     },
     {
       links: '',
-      img: "https://scontent.fhan14-2.fna.fbcdn.net/v/t1.15752-9/448366044_989013755995710_5114842244543166636_n.png?stp=dst-png_s2048x2048&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=bmSgOqezZAwQ7kNvgH554lb&_nc_ht=scontent.fhan14-2.fna&oh=03_Q7cD1QGxnmnjiHNx5Q1MGk0y8gnsisZUj5ZSRWbhp0SsQOIu3A&oe=669CD8D2"
+      img: "https://i.ibb.co/c3ZtVtB/banner-mid-2.png"
     },
   ])
 
   return (
       <div className="body">
         <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-          <img src='https://scontent.fhan14-1.fna.fbcdn.net/v/t1.15752-9/448611087_7752956641461106_1125639994277575104_n.png?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=h4n192ku0xIQ7kNvgEnXZg-&_nc_ht=scontent.fhan14-1.fna&oh=03_Q7cD1QEenG0Mhg9ynMgm6laUi7oCn7I7EUo3ikE3jltWFz5dPw&oe=669CDE1F'></img>
+          <img src='https://i.ibb.co/7vttdsd/popup.png'></img>
         </Modal>
         <div style={{width: '100%', overflow: 'hidden'}}>
           <Swiper
@@ -69,19 +69,19 @@ function Home() {
             <div className='home-collections'>
               <a className='collection' href='/products?collection=spring'>
                 <div className='collection-title'>Xuân Thì</div>
-                <img className='collection-image' style={{objectFit: 'cover'}} src='https://scontent.xx.fbcdn.net/v/t1.15752-9/448507635_1231534831548554_4084626871951113834_n.png?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=EJe3XlcbmYAQ7kNvgGY7njf&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHzSPXd5tiAtMTLeiIG8yo_u_YngwdkYYdMss0foGCcAg&oe=669C9D5F'></img>
+                <img className='collection-image' style={{objectFit: 'cover'}} src='https://i.ibb.co/0jVZH78/hoa-Pho-Tet-hong01.jpg'></img>
               </a>
               <a className='collection' href='/products?collection=summer'>
                 <div className='collection-title'>Vào Hạ </div>
-                <img className='collection-image' style={{objectFit: 'cover'}} src='https://scontent.fhan14-5.fna.fbcdn.net/v/t39.30808-6/434868215_845094874327807_4619389078416872442_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFoT5SGtpClcxmJ_rIvJcM2RBOsyWCQPbtEE6zJYJA9u-BfPSXIwJ3YJIzjek4yKQosajxpR-WrQSpqelBis-sC&_nc_ohc=3hXn_taTMD4Q7kNvgFivbiB&_nc_ht=scontent.fhan14-5.fna&oh=00_AYBEiYfi3TbBRi7GkYEFqTlIvX2zvhdgIb8-eGdbs6pKMQ&oe=667B58D2'></img>
+                <img className='collection-image' style={{objectFit: 'cover'}} src='https://i.ibb.co/yhcMyR5/dong-Dao-Ha-xanh02.jpg'></img>
               </a>
               <a className='collection' href='/products?collection=fall'>
                 <div className='collection-title'>Sang Thu</div>
-                <img className='collection-image' style={{objectFit: 'cover'}} src='https://scontent.xx.fbcdn.net/v/t1.15752-9/287702903_816035549379768_539584647129522492_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGYy5bkM-Jqsg7wTJLiXvA9GfMR9oAW27IZ8xH2gBbbshwHOYWpkOLWhKmRqlDkHIA8WlRDJiHIuwZCPWbzPtwE&_nc_ohc=D5thnjyMTaoQ7kNvgFtUleX&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHfW0UZldpQcDtdGylaDa7O40zepBq-O1yvDL-e3eHIdg&oe=66992D12'></img>
+                <img className='collection-image' style={{objectFit: 'cover'}} src='https://i.ibb.co/k8k533h/mua-Sen-trang01.jpg'></img>
               </a>
               <a className='collection' href='/products?collection=winter'>
                 <div className='collection-title'>Lập Đông</div>
-                <img className='collection-image' style={{objectFit: 'cover'}} src='https://scontent.xx.fbcdn.net/v/t1.15752-9/411464460_946199260426134_5434351112641677543_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGTbIkbi7jX7pTmhR5Q7r8M9SG_eHGHHv71Ib94cYce_r2Uao5kqLSndorvVXGnMM3P1KJrtPyky8hVNzi7_zZE&_nc_ohc=wmrcwocS1cUQ7kNvgErBbQy&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEQWffB5hEhQzzv80iwcnivbHGVAaZZj8QO83G4exJSVA&oe=66994211'></img>
+                <img className='collection-image' style={{objectFit: 'cover'}} src='https://i.ibb.co/6H45gwR/dong-Daohoa-cam02.jpg'></img>
               </a>
             </div>
           </div>
