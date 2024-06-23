@@ -23,7 +23,7 @@ function Home() {
   })
   const [banners, setBanner] = useState([
     {
-      links: 'http://localhost:3000/products?collection=spring',
+      links: '/products?collection=spring',
       img: "https://i.ibb.co/f44qvYG/3.png"
     },
     {
