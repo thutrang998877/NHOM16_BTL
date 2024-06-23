@@ -32,7 +32,7 @@ function Story() {
                 </p>
             </div>
             <div className='image-right'>
-                <img style={{height: '100%', width: '100%'}} src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/448816069_893365589500735_2388222668003682751_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEUETMaNMACEVa0HaNod8zSFc4sldOWxAMVziyV05bEA99j6sY5dtkex1XrUb1tcpkrMb1_5aRYkBUjGx9RNim9&_nc_ohc=V25CybFdDAwQ7kNvgE6e_Wg&_nc_ht=scontent.fhan14-3.fna&oh=00_AYARHj8r1GoF7bF0eH1wochpA2OlS4aYkR-sSCZcQqSvTQ&oe=66791BC8"></img>
+                <img style={{height: '100%', width: '100%'}} src="https://i.ibb.co/sWfgSqP/huongHa.jpg"></img>
             </div>
         </div>
       </div>

@@ -5,8 +5,8 @@ import 'swiper/css'
 import { BANNERSBYCOLLECTION, PRODUCTS } from '../../constants/product'
 import { useEffect, useState } from 'react';
 import { getProductsByCollection } from '../../helper/common';
-//Lọc sản phẩm theo collectiom
-const filterAndReconstructProducts = (products, targetCollection, chunkSize) => {
+//Lọc sản phẩm theo collection
+const filterProductsByCollection = (products, targetCollection, chunkSize) => {
   //Làm phẳng mảng 2 chiều thành mảng 1 chiều
   const flattenedProducts = products.flat();
 
@@ -20,7 +20,7 @@ const filterAndReconstructProducts = (products, targetCollection, chunkSize) => 
   return chunkedProducts;
 };
 
-const filterAndReconstructByNameProducts = (products, name, chunkSize) => {
+const filterProductsByName = (products, name, chunkSize) => {
   const flattenedProducts = products.flat();
 
   const filteredProducts = flattenedProducts.filter(product => product.name.toUpperCase().includes(name.toUpperCase()));
@@ -43,7 +43,7 @@ const orderProductsByName = (products, chunkSize, isIncrease) => {
   const flattenedProducts = products.flat();
 
   //so sánh tên a, b
-  const orderedProducts = flattenedProducts.sort((a, b) => orderFlag * a.name.localeCompare(b.name));
+  const orderedProducts = flattenedProducts.sort((a, b) => orderFlag * (a.name - b.name));
 
   const chunkedProducts = [];
   for (let i = 0; i < orderedProducts.length; i += chunkSize) {
@@ -95,7 +95,7 @@ function Product() {
   const nameQuery = urlParams.get('name')
   const collectionQuery = urlParams.get('collection')
   const [banners, setBanner] = useState(getBannerByCollection(collectionQuery))
-  const [currentProduct, setCurrentProduct] = useState(collectionQuery ? filterAndReconstructProducts(PRODUCTS, collectionQuery, 4) : (nameQuery ? filterAndReconstructByNameProducts(PRODUCTS, nameQuery, 4) : PRODUCTS))  
+  const [currentProduct, setCurrentProduct] = useState(collectionQuery ? filterProductsByCollection(PRODUCTS, collectionQuery, 4) : (nameQuery ? filterProductsByName(PRODUCTS, nameQuery, 4) : PRODUCTS))  
   const [sameProducts, setSameProducts] = useState(currentProduct[0].length ? getProductsByCollection(currentProduct[0][0].collection, 5) : [[]])
   const [showingItem, setShowingItem] = useState(currentProduct.length > 1 ? [currentProduct[0], currentProduct[1]] : [currentProduct[0]])
   const numOfPage = currentProduct ? Math.ceil(currentProduct.length / 2) : 0   //Phân trang
@@ -110,17 +110,10 @@ function Product() {
   })
 
   const changeOrder = (type, nextIsIncrease) => {
-    if (type === orderBy.name) {
-      setOrderBy({
-        name: type,
-        isIncrease: nextIsIncrease
-      })
-    } else {
-      setOrderBy({
-        name: type,
-        isIncrease: nextIsIncrease
-      })
-    }
+    setOrderBy({
+      name: type,
+      isIncrease: nextIsIncrease
+    })
   }
 
   //Xử lý sự kiện khi người dùng thay đổi lựa chọn trong dropdown
@@ -160,7 +153,7 @@ function Product() {
   //Dòng 201 tính giá đã giảm với sản phẩm giảm giá
   return (
       <div className="body">
-        <div style={{width: '100%', overflow: 'hidden'}}>
+        <div style={{width: '100%', overflow: 'hidden'}}> ,
           <Swiper
               spaceBetween={0}
               slidesPerView={1}
