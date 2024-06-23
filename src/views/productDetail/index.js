@@ -79,7 +79,8 @@ function ProductDetail() {
     localStorage.setItem('buyNow', JSON.stringify([{name: currentProduct.name, key: currentProduct.key, color: currentColor, quantity: +numOfProduct, link: currentProduct.link, price: currentProduct.price, discount: currentProduct.discount}]))
     navigate('/carts/buy_now')
   }
-
+//nút + - của dòng 109
+//khung dưới các ảnh sản phẩm chi tiết dòng 125
   return (
       <div className="body">
         <div className='main-detail'>
