@@ -43,7 +43,7 @@ const orderProductsByName = (products, chunkSize, isIncrease) => {
   const flattenedProducts = products.flat();
 
   //so sánh tên a, b
-  const orderedProducts = flattenedProducts.sort((a, b) => orderFlag * (a.name - b.name));
+  const orderedProducts = flattenedProducts.sort((a, b) => orderFlag * a.name.localeCompare(b.name));
 
   const chunkedProducts = [];
   for (let i = 0; i < orderedProducts.length; i += chunkSize) {
