@@ -642,7 +642,7 @@ Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏ
         'https://i.ibb.co/7YjtMJq/mua-Sen-xanh01.jpg',
         'https://i.ibb.co/mFc4Fr0/mua-Sen-xanh02.jpg',
       ],
-      link: 'https://scontent.fhan5-2.fna.fbcdn.net/v/t39.30808-6/448673499_988770916165271_7946605821474745585_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeG7Vp9WF_XqPXfZbaxRuS3LLN-g-HWXNTws36D4dZc1PBWQVlFmGvxhf_3q01TsE2Sp-3gT1da5iiF3uKVl9o51&_nc_ohc=uP_3e9c8G_sQ7kNvgEZiqFx&_nc_ht=scontent.fhan5-2.fna&oh=00_AYCC9uUQrukJTl2MciY_4FmyGiLEaTSrM2ZKFr1jSKamDQ&oe=6677C119',
+      link: 'https://i.ibb.co/k8k533h/mua-Sen-trang01.jpg',
       collection: 'fall',
       price: 999000,
       description: `Áo dài Mùa Sen mang đến vẻ đẹp tinh khôi của hoa sen, với màu trắng trong và họa tiết sen được thêu tỉ mỉ, tạo nên một phong cách thanh nhã và trang nhã.\n
