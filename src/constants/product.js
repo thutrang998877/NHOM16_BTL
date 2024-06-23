@@ -193,7 +193,7 @@ Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏ
         'https://i.ibb.co/1qCsc4V/tu-Hoa-Tet-vang01.jpg',
         'https://i.ibb.co/Dpm245y/tu-Hoa-Tet-vang02.jpg',
       ],
-      link: 'https://i.ibb.co/sKxmzm5/tu-Hoa-Tet-do01.jpg',
+      link: 'https://i.ibb.co/5MrkqFB/tu-Hoa-Tet-do01.jpg',
       collection: 'spring',
       price: 1299000,
       description: `Áo dài đỏ rực rỡ với họa tiết hoa đào tượng trưng cho sự tươi mới và may mắn trong năm mới.\n
@@ -662,10 +662,10 @@ Mây nhận đổi trả với hàng lỗi do nhà sản xuất (hàng bị hỏ
       key: 29,
       name: 'Nắng Thu',
       linksWithAngle: [
-        'https://i.ibb.co/Dz1kcRX/nang-Thu-hong01.jp',
         'https://i.ibb.co/pn0kvfY/nang-Thu-hong02.jpg',
+        'https://i.ibb.co/Dz1kcRX/nang-Thu-hong01.jpg',
       ],
-      link: 'https://i.ibb.co/Dz1kcRX/nang-Thu-hong01.jp',
+      link: 'https://i.ibb.co/pn0kvfY/nang-Thu-hong02.jpg',
       collection: 'fall',
       price: 799000,
       description: `Áo dài Nắng Thu là sự kết hợp giữa màu vàng ấm áp của nắng thu và chất liệu lụa mềm mại, với những đường nét thiết kế tinh tế, thích hợp cho những ngày thu trong lành.\n
