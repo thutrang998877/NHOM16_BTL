@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 function Cart() {
   const currentPath = window.location.pathname.replace('/carts/', '')
   const navigate = useNavigate();
+  //lấy dữ liệu của productDetail 
   const [productsInCart, setProductsInCart] = useState(currentPath === 'buy_now' ? JSON.parse(localStorage.getItem('buyNow')) : JSON.parse(localStorage.getItem('carts')))
   const USDollar = new Intl.NumberFormat('vi-VI', {
     style: 'currency',
@@ -69,6 +70,10 @@ function Cart() {
     const nextProductsInCart = [...productsInCart]
     nextProductsInCart.forEach(element => {
         if (element.key === key, element.color === color) {
+            if (+nextValue > 99) {
+                element.quantity = 99
+                return
+            }
             element.quantity = nextValue
         }
     });
@@ -77,6 +82,7 @@ function Cart() {
   }
 
   const removeItem = (key, color) => {
+    // tạo bản sao
     let nextProductsInCart = [...productsInCart]
     // Lọc sản phẩm bị xóa ra khỏi productInCart
     nextProductsInCart = nextProductsInCart.filter(element => {

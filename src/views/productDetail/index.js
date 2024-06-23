@@ -22,6 +22,10 @@ function ProductDetail() {
   const [sameProducts, setSameProducts] = useState(getProductsByCollection(currentProduct.collection, 5))
   const [numOfProduct, setNumOfProduct] = useState(1)
   const handleChangeNumOfProduct = (e) => {
+    if (+e.target.value > 99) {
+        setNumOfProduct(99)
+        return
+    }
     setNumOfProduct(+e.target.value)
   }
   const [currentColor, setCurrentColor] = useState('')
