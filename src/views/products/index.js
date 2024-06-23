@@ -43,7 +43,7 @@ const orderProductsByName = (products, chunkSize, isIncrease) => {
   const flattenedProducts = products.flat();
 
   //so sánh tên a, b
-  const orderedProducts = flattenedProducts.sort((a, b) => orderFlag * (a.name - b.name));
+  const orderedProducts = flattenedProducts.sort((a, b) => orderFlag * a.name.localeCompare(b.name));
 
   const chunkedProducts = [];
   for (let i = 0; i < orderedProducts.length; i += chunkSize) {
@@ -160,7 +160,7 @@ function Product() {
   //Dòng 201 tính giá đã giảm với sản phẩm giảm giá
   return (
       <div className="body">
-        <div style={{width: '100%', overflow: 'hidden'}}> ,
+        <div style={{width: '100%', overflow: 'hidden'}}>
           <Swiper
               spaceBetween={0}
               slidesPerView={1}
