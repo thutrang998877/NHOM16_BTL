@@ -9,6 +9,10 @@ function Introduce() {
     const [content, setContent] = useState('')
 
     const handleSendFeedback = () => {
+        if (!name || !phoneNumber || !content) {
+            window.alert('Vui lòng nhập đủ thông tin')
+            return
+        }
         setName('')
         setPhoneNumber('')
         setContent('')
