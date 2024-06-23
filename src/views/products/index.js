@@ -5,8 +5,7 @@ import 'swiper/css'
 import { BANNERSBYCOLLECTION, PRODUCTS } from '../../constants/product'
 import { useEffect, useState } from 'react';
 import { getProductsByCollection } from '../../helper/common';
-
-// Lọc sản phẩm theo collections
+//Lọc sản phẩm trg collectiom
 const filterAndReconstructProducts = (products, targetCollection, chunkSize) => {
   const flattenedProducts = products.flat();
 
@@ -20,8 +19,6 @@ const filterAndReconstructProducts = (products, targetCollection, chunkSize) => 
   return chunkedProducts;
 };
 
-
-// Lọc sản phẩm theo tên
 const filterAndReconstructByNameProducts = (products, name, chunkSize) => {
   const flattenedProducts = products.flat();
 
@@ -38,13 +35,12 @@ const filterAndReconstructByNameProducts = (products, name, chunkSize) => {
 
   return chunkedProducts;
 };
-
-// sap xem theo ten
+//Sắp xếp theo tên
 const orderProductsByName = (products, chunkSize, isIncrease) => {
   const orderFlag = isIncrease ? 1 : -1
   const flattenedProducts = products.flat();
 
-  const orderedProducts = flattenedProducts.sort((a, b) => orderFlag * a.name.localeCompare(b.name));
+  const orderedProducts = flattenedProducts.sort((a, b) => orderFlag * (a.name - b.name));
 
   const chunkedProducts = [];
   for (let i = 0; i < orderedProducts.length; i += chunkSize) {
@@ -53,8 +49,7 @@ const orderProductsByName = (products, chunkSize, isIncrease) => {
 
   return chunkedProducts;
 };
-
-// sap xep theo gia
+//Sắp xếp theo giá 
 const orderProductsByPrice = (products, chunkSize, isIncrease) => {
   const flattenedProducts = products.flat();
   const orderFlag = isIncrease ? 1 : -1
@@ -93,12 +88,10 @@ const getCollectionConvertToVN = (collection) => {
 
 function Product() {
   const urlParams = new URLSearchParams(window.location.search);
-  // lay gia tri tim kiem
   const nameQuery = urlParams.get('name')
   const collectionQuery = urlParams.get('collection')
   const [banners, setBanner] = useState(getBannerByCollection(collectionQuery))
   const [currentProduct, setCurrentProduct] = useState(collectionQuery ? filterAndReconstructProducts(PRODUCTS, collectionQuery, 4) : (nameQuery ? filterAndReconstructByNameProducts(PRODUCTS, nameQuery, 4) : PRODUCTS))
-
   const [sameProducts, setSameProducts] = useState(currentProduct[0].length ? getProductsByCollection(currentProduct[0][0].collection, 5) : [[]])
   const [showingItem, setShowingItem] = useState(currentProduct.length > 1 ? [currentProduct[0], currentProduct[1]] : [currentProduct[0]])
   const numOfPage = currentProduct ? Math.ceil(currentProduct.length / 2) : 0
@@ -220,10 +213,12 @@ function Product() {
             <div style={{width: 'calc(100% - 3rem)', display: 'flex', marginBottom: '2rem', marginTop: '1rem', justifyContent: 'center', marginRight: '3rem'}}>
               {pages.map(item => {
                 return <button style={{marginRight: '0.5rem'}} onClick={() => {
+                  // Trường hợp trang cuối có 1 hàng thì hiển thị phần tử cuối cùng
                   if ((item + 1) * 2 > currentProduct.length) {
                     setShowingItem([currentProduct[(item + 1) * 2 - 2]])
                     return
                   }
+                  // Trường hợp trang cuối có 2 hàng thì hiển thị 2 phần tử cuối cùng
                   setShowingItem([currentProduct[(item + 1) * 2 - 2], currentProduct[(item + 1) * 2 - 1]])
                 }}>{item + 1}</button>
               })}
