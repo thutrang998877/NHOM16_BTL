@@ -4,6 +4,16 @@ import { PRODUCTS } from '../../constants/product'
 import { useEffect, useState } from 'react';
 
 function Introduce() {
+    const [name, setName] = useState('')
+    const [phoneNumber, setPhoneNumber] = useState('')
+    const [content, setContent] = useState('')
+
+    const handleSendFeedback = () => {
+        setName('')
+        setPhoneNumber('')
+        setContent('')
+        window.alert('Cảm ơn bạn đã gửi email cho Mây ạ!')
+    }
   return (
       <div className="body" style={{marginLeft: '4rem', marginRight: '4rem', marginTop: '2rem', display: 'flex', flexDirection: 'column', marginBottom: '2rem', alignItems: 'center'}}>
         <div className='row' style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between', marginBottom: '3rem', width: '100%'}}>
@@ -55,10 +65,10 @@ function Introduce() {
         <div style={{display: 'flex', justifyContent: 'space-around', width: '100%'}}>
             <div style={{display: 'flex', flexDirection: 'column'}} className='letter-container'>
                 <h2>Gửi email đến Mây</h2>
-                <input placeholder='Họ tên của bạn' />
-                <input placeholder='Số điện thoại' />
-                <textarea placeholder='Nội dung' rows={8}/>
-                <button>Gửi</button>
+                <input placeholder='Họ tên của bạn' value={name} onChange={(e) => {setName(e.target.value)}}/>
+                <input type='number' placeholder='Số điện thoại' value={phoneNumber} onChange={(e) => {setPhoneNumber(e.target.value)}}/>
+                <textarea placeholder='Nội dung' rows={8}value={content} onChange={(e) => {setContent(e.target.value)}}/>
+                <button onClick={handleSendFeedback}>Gửi</button>
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.240302901744!2d105.8296885747142!3d21.023068787975028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9cfc8ffddd%3A0xec338c7386d7619!2zMTM3IFAuVMO0biDEkOG7qWMgVGjhuq9uZywgVGjhu5UgUXVhbiwgxJDhu5FuZyDEkGEsIEjDoCBO4buZaSwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1718667095792!5m2!1svi!2s" width="500" height="450" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
