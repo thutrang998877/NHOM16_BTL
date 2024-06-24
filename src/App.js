@@ -103,6 +103,7 @@ function App() {
 
   const handleAuth = () => {
     setCurrentUser('')
+    localStorage.setItem('currentUser', '')
     window.location.replace('/login')
   }
 
