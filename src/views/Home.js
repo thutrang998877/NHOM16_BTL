@@ -38,11 +38,11 @@ function Home() {
 
   const [bannerMid, setBannerMid] = useState([
     {
-      links: '',
+      links: '/products?collection=summer',
       img: "https://i.ibb.co/bdnWSgf/banner-mid-1.png"
     },
     {
-      links: '',
+      links: '/products?collection=spring',
       img: "https://i.ibb.co/c3ZtVtB/banner-mid-2.png"
     },
   ])
