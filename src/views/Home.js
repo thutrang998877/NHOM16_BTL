@@ -107,7 +107,7 @@ function Home() {
                   Miễn phí vận chuyển cho
                 </div>
                 <div className='sale-item-title'>
-                  hóa đơn từ 2 triệu đồng
+                  toàn bộ đơn hàng
                 </div>
                 <div className='sale-item-content'>
                   Nhận hàng trong vòng 3 ngày
